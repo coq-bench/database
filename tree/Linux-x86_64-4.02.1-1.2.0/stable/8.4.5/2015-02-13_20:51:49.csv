@@ -1,0 +1,2453 @@
+Name,Version,Status,Context,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:ssreflect,1.5.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:ssreflect/coq:ssreflect.1.5.0,0,0,"",opam install -y --show-action coq:ssreflect.1.5.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:ssreflect.1.5.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:ssreflect.1.5.0,0,30,"",opam remove -y coq:ssreflect.1.5.0,0,1,"","","","/home/bench/.opam/system/install/coq:ssreflect.install
+1
+/home/bench/.opam/system/lib/coq:ssreflect/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/choice.vo
+172787
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssrmatching.cmi
+9458
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssrnat.vo
+335089
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/fintype.vo
+551672
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/seq.vo
+753639
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssreflect.cmi
+186152
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssreflect.cmxs
+2180616
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssreflect.cma
+692188
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssrmatching.vo
+1709
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssreflect.vo
+29760
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/eqtype.vo
+155626
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssrfun.vo
+93443
+/home/bench/.opam/system/lib/coq/user-contrib/Ssreflect/ssrbool.vo
+363661"
+coq:math-comp,1.5.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+coq:ssreflect  1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:math-comp/coq:math-comp.1.5.0,0,0,"",opam install -y --show-action coq:math-comp.1.5.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:math-comp.1.5.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:math-comp.1.5.0,0,1327,"",opam remove -y coq:math-comp.1.5.0,0,1,"","","","/home/bench/.opam/system/install/coq:math-comp.install
+1
+/home/bench/.opam/system/lib/coq:math-comp/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/abelian.vo
+1090838
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/maximal.vo
+1000481
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/vcharacter.vo
+747778
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/pgroup.vo
+460702
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/path.vo
+280110
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/ssrint.vo
+542521
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/hall.vo
+526516
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/alt.vo
+314294
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/cyclotomic.vo
+162426
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/gseries.vo
+263289
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/separable.vo
+756248
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/ssrnum.vo
+981260
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/quotient.vo
+522768
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/extraspecial.vo
+564027
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/falgebra.vo
+694630
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/nilpotent.vo
+297245
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/closed_field.vo
+323340
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/rat.vo
+343030
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/finset.vo
+743233
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/cyclic.vo
+382390
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/poly.vo
+1043227
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/matrix.vo
+1475606
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/inertia.vo
+1176291
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/tuple.vo
+140449
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/automorphism.vo
+263698
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/algC.vo
+856663
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/zmodp.vo
+101220
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/morphism.vo
+806406
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/mxpoly.vo
+674018
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/countalg.vo
+405925
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/center.vo
+597707
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/finmodule.vo
+385470
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/prime.vo
+464280
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/mxabelem.vo
+779138
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/polyXY.vo
+254221
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/interval.vo
+192780
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/binomial.vo
+242501
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/bigop.vo
+483299
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/character.vo
+2070732
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/frobenius.vo
+427749
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/fingroup.vo
+993494
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/algnum.vo
+614645
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/extremal.vo
+2327007
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/commutator.vo
+167489
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/mxrepresentation.vo
+4454203
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/fieldext.vo
+4774708
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/mxalgebra.vo
+2004352
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/polydiv.vo
+1287200
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/presentation.vo
+80669
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/vector.vo
+1272471
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/generic_quotient.vo
+173239
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/finalg.vo
+333472
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/primitive_action.vo
+209954
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/sylow.vo
+326789
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/intdiv.vo
+532628
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/jordanholder.vo
+294298
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/integral_char.vo
+649715
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/algebraics_fundamentals.vo
+735939
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/gfunctor.vo
+128710
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/div.vo
+238048
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/ssralg.vo
+1685341
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/classfun.vo
+1685028
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/perm.vo
+260409
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/action.vo
+1444023
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/fingraph.vo
+254035
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/galois.vo
+1954632
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/ring_quotient.vo
+349034
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/gproduct.vo
+1377406
+/home/bench/.opam/system/lib/coq/user-contrib/MathComp/finfun.vo
+132152"
+coq:math-classes,1.0.2,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+coq:math-comp  1.5.0  Mathematical Components.
+coq:ssreflect  1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:math-classes/coq:math-classes.1.0.2,0,0,"",opam install -y --show-action coq:math-classes.1.0.2 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:math-classes.1.0.2,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:math-classes.1.0.2,0,162,"",opam remove -y coq:math-classes.1.0.2,0,1,"","","","/home/bench/.opam/system/install/coq:math-classes.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/NType_naturals.vo
+233026
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/stdlib_rationals.vo
+63809
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/stdlib_binary_integers.vo
+102629
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/mset_finite_set.vo
+620754
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/modular_ring.vo
+50920
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/nonzero_field_elements.vo
+65756
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/dyadics.vo
+376715
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/fast_rationals.vo
+219307
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/list.vo
+94056
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/positive_semiring_elements.vo
+74162
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/nonneg_semiring_elements.vo
+94686
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/semiring_pairs.vo
+159636
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/peano_naturals.vo
+69851
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/QType_rationals.vo
+155242
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/ZType_integers.vo
+247069
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/bool.vo
+9461
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/list_finite_set.vo
+129488
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/polynomials.vo
+18908
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/natpair_integers.vo
+113715
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/fast_naturals.vo
+238074
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/intfrac_rationals.vo
+36240
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/option.vo
+62565
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/ne_list.vo
+31823
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/fast_integers.vo
+263560
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/stdlib_binary_naturals.vo
+43866
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/field_of_fractions.vo
+124362
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/implementations/nonneg_integers_naturals.vo
+87700
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/orders.vo
+35215
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/categories.vo
+196119
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/unit.vo
+9865
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/algebras.vo
+44474
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/functors.vo
+111279
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/setoids.vo
+37944
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/JMcat.vo
+49225
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/empty.vo
+15663
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/dual.vo
+26933
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/varieties.vo
+36806
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/categories/product.vo
+63300
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/functors/constant.vo
+19902
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ring_congruence.vo
+78712
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/dec_fields.vo
+170195
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/groups.vo
+58522
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/rings.vo
+185997
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_mapped_operations.vo
+17748
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_term_monad.vo
+45471
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/forget_algebra.vo
+35281
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/quote_monoid.vo
+207294
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_homomorphisms.vo
+56693
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/integers.vo
+152309
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/fields.vo
+118183
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/categories.vo
+198075
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_subvariety.vo
+48372
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/int_abs.vo
+125257
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/monoid_normalization.vo
+827126
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/rationals.vo
+334248
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/jections.vo
+51380
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_subalgebra.vo
+53500
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/nat_distance.vo
+84773
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/sequences.vo
+56563
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_products.vo
+74557
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/abs.vo
+78243
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/naturals.vo
+116214
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/hom_functor.vo
+17378
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/strong_setoids.vo
+50804
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/functors.vo
+25008
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/setoids.vo
+27787
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/products.vo
+57149
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/monads.vo
+122143
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/shiftl.vo
+256399
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/streams.vo
+52765
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_congruence.vo
+132039
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ring_ideals.vo
+90466
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/adjunctions.vo
+139109
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/forget_variety.vo
+21523
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/series.vo
+137819
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/nat_pow.vo
+130215
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/int_pow.vo
+298067
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_subalgebraT.vo
+44077
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/finite_sets.vo
+273374
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/int_to_nat.vo
+148943
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/lattices.vo
+80505
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_packed.vo
+40188
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/cut_minus.vo
+148760
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/theory/ua_transference.vo
+42575
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/util.vo
+26932
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/setoid_tactics.vo
+10932
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/workarounds.vo
+6950
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/JMrelation.vo
+8560
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/workaround_tactics.vo
+1492
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/decision.vo
+87163
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/propholds.vo
+6531
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/misc/stdlib_hints.vo
+3921
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/quote/classquote.vo
+55096
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/dec_fields.vo
+69476
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/rings.vo
+129174
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/nat_int.vo
+92350
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/integers.vo
+142385
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/orders.vo
+106403
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/maps.vo
+137135
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/rationals.vo
+249056
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/naturals.vo
+96061
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/minmax.vo
+38435
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/semirings.vo
+251818
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/orders/lattices.vo
+100021
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/integers.vo
+70206
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/orders.vo
+207430
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/rationals.vo
+62469
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/abstract_algebra.vo
+332998
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/vectorspace.vo
+132813
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/ua_basic.vo
+30893
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/sequences.vo
+357887
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/naturals.vo
+62101
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/functors.vo
+84983
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/monads.vo
+131391
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/universal_algebra.vo
+83889
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/canonical_names.vo
+141664
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/additional_operations.vo
+143924
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/interfaces/finite_sets.vo
+87183
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/semigroups.vo
+56070
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/groups.vo
+64834
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/rings.vo
+104477
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/abgroup.vo
+90259
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/open_terms.vo
+131198
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/monoids.vo
+62315
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/setoids.vo
+16034
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/closed_terms.vo
+108053
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/empty.vo
+20604
+/home/bench/.opam/system/lib/coq/user-contrib/MathClasses/varieties/semirings.vo
+75362
+/home/bench/.opam/system/lib/coq:math-classes/opam.config
+1"
+coq:list-string,1.0.0,Success,"# Installed packages for system:
+base-bigarray      base  Bigarray library distributed with the OCaml compiler
+base-threads       base  Threads library distributed with the OCaml compiler
+base-unix          base  Unix library distributed with the OCaml compiler
+camlp5             6.12  Preprocessor-pretty-printer of OCaml
+coq               8.4.5  Formal proof management system
+coq:math-classes  1.0.2  A library of abstract interfaces for mathematical struc
+coq:math-comp     1.5.0  Mathematical Components.
+coq:ssreflect     1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"",opam install -y --show-action coq:list-string.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-string.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-string.1.0.0,0,7,"",opam remove -y coq:list-string.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-string.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.vo
+14836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.vo
+29836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.vo
+103259
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.vo
+20786
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.vo
+3043
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.vo
+39597
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.vo
+109008
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.vo
+7901
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.vo
+21110
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.vo
+20496
+/home/bench/.opam/system/lib/coq:list-string/opam.config
+1"
+coq:list-plus,1.0.0,Success,"# Installed packages for system:
+base-bigarray      base  Bigarray library distributed with the OCaml compiler
+base-threads       base  Threads library distributed with the OCaml compiler
+base-unix          base  Unix library distributed with the OCaml compiler
+camlp5             6.12  Preprocessor-pretty-printer of OCaml
+coq               8.4.5  Formal proof management system
+coq:list-string   1.0.0  Strings implemented as lists.
+coq:math-classes  1.0.2  A library of abstract interfaces for mathematical struc
+coq:math-comp     1.5.0  Mathematical Components.
+coq:ssreflect     1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:list-plus/coq:list-plus.1.0.0,0,0,"",opam install -y --show-action coq:list-plus.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-plus.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-plus.1.0.0,0,3,"",opam remove -y coq:list-plus.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-plus.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListPlus/All.vo
+2819
+/home/bench/.opam/system/lib/coq:list-plus/opam.config
+1"
+coq:function-ninjas,1.0.0,Success,"# Installed packages for system:
+base-bigarray      base  Bigarray library distributed with the OCaml compiler
+base-threads       base  Threads library distributed with the OCaml compiler
+base-unix          base  Unix library distributed with the OCaml compiler
+camlp5             6.12  Preprocessor-pretty-printer of OCaml
+coq               8.4.5  Formal proof management system
+coq:list-plus     1.0.0  More functions on lists.
+coq:list-string   1.0.0  Strings implemented as lists.
+coq:math-classes  1.0.2  A library of abstract interfaces for mathematical struc
+coq:math-comp     1.5.0  Mathematical Components.
+coq:ssreflect     1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"",opam install -y --show-action coq:function-ninjas.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:function-ninjas.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:function-ninjas.1.0.0,0,3,"",opam remove -y coq:function-ninjas.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:function-ninjas.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.vo
+1595
+/home/bench/.opam/system/lib/coq:function-ninjas/opam.config
+1"
+coq:iterable,1.0.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:iterable/coq:iterable.1.0.0,0,0,"",opam install -y --show-action coq:iterable.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:iterable.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:iterable.1.0.0,0,3,"",opam remove -y coq:iterable.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:iterable.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Iterable/All.vo
+21287
+/home/bench/.opam/system/lib/coq:iterable/opam.config
+1"
+coq:flocq,2.4.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.4.0,0,0,"",opam install -y --show-action coq:flocq.2.4.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.4.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.4.0,0,68,"",opam remove -y coq:flocq.2.4.0,0,1,"","","","/home/bench/.opam/system/install/coq:flocq.install
+1
+/home/bench/.opam/system/lib/coq:flocq/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+41417
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31243
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59389
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+101749
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52703
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_double_round.vo
+1638596
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+429207
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125390
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+174431
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107649
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50281
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+24500
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35174
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+56496
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147767
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60042
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+89488
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82051
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28107
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+173101
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100571
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51283
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17325
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+102924
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43503
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152115
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+151730
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+216558
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22039
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:interval,2.0.0,Error,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.2.0.0,0,0,"",opam install -y --show-action coq:interval.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:interval.2.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:interval.2.0.0,1024,16,"The following actions will be performed:
+ - install   coq:interval.2.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:interval.2.0.0] Downloading https://gforge.inria.fr/frs/download.php/file/34294/interval-2.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  246k  100  246k    0     0  1244k      0 --:--:-- --:--:-- --:--:-- 1250k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:interval.2.0.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for coqc... /home/bench/.opam/system/bin/coqc
+checking for coqdep... /home/bench/.opam/system/bin/coqdep
+checking for Flocq... yes
+checking for Ssreflect... yes
+checking for MathComp... yes
+configure: building remake...
+/tmp/ccu9NOJJ.o: In function `main':
+remake.cpp:(.text.startup+0x774): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+configure: creating ./config.status
+config.status: creating Remakefile
+Building src/Interval_bigint_carrier.vo
+Building src/Interval_bisect.vo
+Building src/Interval_definitions.vo
+Building src/Interval_float_sig.vo
+Building src/Interval_missing.vo
+Building src/Interval_generic.vo
+Building src/Interval_generic_proof.vo
+Building src/Interval_interval.vo
+Building src/Interval_xreal.vo
+Building src/Interval_taylor_model.vo
+Building src/Interval_xreal_derive.vo
+Building src/Interval_specific_sig.vo
+Building src/Interval_interval_float.vo
+Building src/Interval_interval_float_full.vo
+Building src/Interval_specific_ops.vo
+Building src/Interval_univariate.vo
+Building src/Interval_transcend.vo
+Building src/coqapprox/coeff_inst.vo
+Building src/coqapprox/interval_compl.vo
+Building src/coqapprox/poly_bound.vo
+Building src/coqapprox/poly_datatypes.vo
+Building src/coqapprox/xreal_ssr_compat.vo
+Building src/coqapprox/nary_tuple.vo
+Building src/coqapprox/basic_rec.vo
+Building src/coqapprox/Rstruct.vo
+Building src/coqapprox/seq_compl.vo
+Building src/coqapprox/taylor_thm.vo
+Building src/coqapprox/derive_compl.vo
+Building src/coqapprox/rpa_inst.vo
+Building src/coqapprox/taylor_poly.vo
+Building src/coqapprox/poly_bound_quad.vo
+Building src/coqapprox/poly_inst_seq.vo
+Building src/coqapprox/taylor_model_int_sharp.vo
+Building src/Interval_generic_ops.vo
+Building src/Interval_stdz_carrier.vo
+Building src/Interval_tactic.vo
+Building src/coqapprox/taylor_model_float_sharp.vo
+Finished src/coqapprox/Rstruct.vo
+Finished src/coqapprox/seq_compl.vo
+Finished src/Interval_missing.vo
+Finished src/coqapprox/nary_tuple.vo
+Finished src/Interval_xreal.vo
+Finished src/coqapprox/taylor_thm.vo
+Finished src/coqapprox/basic_rec.vo
+Finished src/Interval_definitions.vo
+Finished src/Interval_xreal_derive.vo
+File ""/home/bench/.opam/system/build/coq:interval.2.0.0/src/Interval_generic.v"", line 418, characters 5-8:
+Error: The reference eqb was not found in the current environment.
+Failed to build src/Interval_generic.vo
+Failed to build src/coqapprox/taylor_model_float_sharp.vo
+Failed to build src/Interval_generic_ops.vo
+Failed to build src/Interval_tactic.vo
+Failed to build src/Interval_stdz_carrier.vo
+Failed to build src/coqapprox/taylor_model_int_sharp.vo
+Failed to build src/coqapprox/poly_bound_quad.vo
+Failed to build src/coqapprox/taylor_poly.vo
+Failed to build src/coqapprox/poly_bound.vo
+Failed to build src/Interval_transcend.vo
+Failed to build src/Interval_specific_ops.vo
+Failed to build src/Interval_interval_float_full.vo
+Failed to build src/coqapprox/rpa_inst.vo
+Failed to build src/Interval_interval_float.vo
+Failed to build src/coqapprox/poly_inst_seq.vo
+Failed to build src/coqapprox/coeff_inst.vo
+Failed to build src/coqapprox/poly_datatypes.vo
+Failed to build src/Interval_taylor_model.vo
+Failed to build src/Interval_specific_sig.vo
+Failed to build src/Interval_generic_proof.vo
+Failed to build src/Interval_bisect.vo
+Failed to build src/Interval_interval.vo
+Failed to build src/Interval_float_sig.vo
+Failed to build src/coqapprox/derive_compl.vo
+Failed to build src/coqapprox/xreal_ssr_compat.vo
+Failed to build all
+Failed to build src/Interval_univariate.vo
+Failed to build src/coqapprox/interval_compl.vo
+Failed to build src/Interval_bigint_carrier.vo
+[ERROR] The compilation of coq:interval.2.0.0 failed.
+Removing coq:interval.2.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Interval
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Interval': No such file or directory
+
+
+#=== ERROR while installing coq:interval.2.0.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:interval.2.0.0
+# compiler             system (4.02.1)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:interval.2.0.0/coq:interval-7170-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:interval.2.0.0/coq:interval-7170-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:interval.2.0.0/coq:interval-7170-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Finished src/coqapprox/seq_compl.vo
+# Finished src/Interval_missing.vo
+# Finished src/coqapprox/nary_tuple.vo
+# Finished src/Interval_xreal.vo
+# Finished src/coqapprox/taylor_thm.vo
+# Finished src/coqapprox/basic_rec.vo
+# Finished src/Interval_definitions.vo
+# Finished src/Interval_xreal_derive.vo
+# File ""/home/bench/.opam/system/build/coq:interval.2.0.0/src/Interval_generic.v"", line 418, characters 5-8:
+# Error: The reference eqb was not found in the current environment.
+### stderr ###
+# ...[truncated]
+# Failed to build src/Interval_generic_proof.vo
+# Failed to build src/Interval_bisect.vo
+# Failed to build src/Interval_interval.vo
+# Failed to build src/Interval_float_sig.vo
+# Failed to build src/coqapprox/derive_compl.vo
+# Failed to build src/coqapprox/xreal_ssr_compat.vo
+# Failed to build all
+# Failed to build src/Interval_univariate.vo
+# Failed to build src/coqapprox/interval_compl.vo
+# Failed to build src/Interval_bigint_carrier.vo
+
+'opam install -y --verbose coq:interval.2.0.0' failed.
+",true,0,0,"","","",""
+coq:interval,1.1.0,Error,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.1.1.0,0,0,"",opam install -y --show-action coq:interval.1.1.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:interval.1.1.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:interval.1.1.0,1024,14,"The following actions will be performed:
+ - install   coq:interval.1.1.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:interval.1.1.0] Downloading https://gforge.inria.fr/frs/download.php/file/34004/interval-1.1.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  150k  100  150k    0     0   777k      0 --:--:-- --:--:-- --:--:--  777k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:interval.1.1.0:
+  ./configure
+  ./remake -j4
+  ./remake install
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for coqc... /home/bench/.opam/system/bin/coqc
+checking for coqdep... /home/bench/.opam/system/bin/coqdep
+checking for Flocq... yes
+configure: building remake...
+/tmp/ccaRW5nd.o: In function `main':
+remake.cpp:(.text.startup+0x774): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+configure: creating ./config.status
+config.status: creating Remakefile
+Building src/Interval_bigint_carrier.vo
+Building src/Interval_bisect.vo
+Building src/Interval_definitions.vo
+Building src/Interval_float_sig.vo
+Building src/Interval_missing.vo
+Building src/Interval_generic_proof.vo
+Building src/Interval_generic.vo
+Building src/Interval_xreal.vo
+Building src/Interval_specific_sig.vo
+Building src/Interval_interval.vo
+Building src/Interval_xreal_derive.vo
+Building src/Interval_generic_ops.vo
+Building src/Interval_interval_float.vo
+Building src/Interval_interval_float_full.vo
+Building src/Interval_specific_ops.vo
+Building src/Interval_transcend.vo
+Building src/Interval_stdz_carrier.vo
+Building src/Interval_tactic.vo
+Finished src/Interval_missing.vo
+Finished src/Interval_xreal.vo
+Finished src/Interval_definitions.vo
+Finished src/Interval_xreal_derive.vo
+File ""/home/bench/.opam/system/build/coq:interval.1.1.0/src/Interval_generic.v"", line 418, characters 5-8:
+Error: The reference eqb was not found in the current environment.
+Failed to build src/Interval_generic.vo
+Failed to build src/Interval_specific_ops.vo
+Failed to build src/Interval_stdz_carrier.vo
+Failed to build src/Interval_tactic.vo
+Failed to build src/Interval_transcend.vo
+Failed to build src/Interval_interval_float.vo
+Failed to build src/Interval_interval_float_full.vo
+Failed to build src/Interval_generic_ops.vo
+Failed to build src/Interval_specific_sig.vo
+Failed to build src/Interval_generic_proof.vo
+Failed to build src/Interval_bigint_carrier.vo
+Failed to build src/Interval_interval.vo
+Failed to build all
+Failed to build src/Interval_float_sig.vo
+Failed to build src/Interval_bisect.vo
+[ERROR] The compilation of coq:interval.1.1.0 failed.
+Removing coq:interval.1.1.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/Interval
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/Interval': No such file or directory
+
+
+#=== ERROR while installing coq:interval.1.1.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              ./remake -j4
+# path                 /home/bench/.opam/system/build/coq:interval.1.1.0
+# compiler             system (4.02.1)
+# exit-code            1
+# env-file             /home/bench/.opam/system/build/coq:interval.1.1.0/coq:interval-7926-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:interval.1.1.0/coq:interval-7926-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:interval.1.1.0/coq:interval-7926-c61e7b.err
+### stdout ###
+# ...[truncated]
+# Building src/Interval_specific_ops.vo
+# Building src/Interval_transcend.vo
+# Building src/Interval_stdz_carrier.vo
+# Building src/Interval_tactic.vo
+# Finished src/Interval_missing.vo
+# Finished src/Interval_xreal.vo
+# Finished src/Interval_definitions.vo
+# Finished src/Interval_xreal_derive.vo
+# File ""/home/bench/.opam/system/build/coq:interval.1.1.0/src/Interval_generic.v"", line 418, characters 5-8:
+# Error: The reference eqb was not found in the current environment.
+### stderr ###
+# ...[truncated]
+# Failed to build src/Interval_interval_float.vo
+# Failed to build src/Interval_interval_float_full.vo
+# Failed to build src/Interval_generic_ops.vo
+# Failed to build src/Interval_specific_sig.vo
+# Failed to build src/Interval_generic_proof.vo
+# Failed to build src/Interval_bigint_carrier.vo
+# Failed to build src/Interval_interval.vo
+# Failed to build all
+# Failed to build src/Interval_float_sig.vo
+# Failed to build src/Interval_bisect.vo
+
+'opam install -y --verbose coq:interval.1.1.0' failed.
+",true,0,0,"","","",""
+coq:error-handlers,1.0.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:error-handlers/coq:error-handlers.1.0.0,0,0,"",opam install -y --show-action coq:error-handlers.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:error-handlers.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:error-handlers.1.0.0,0,3,"",opam remove -y coq:error-handlers.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:error-handlers.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ErrorHandlers/All.vo
+2017
+/home/bench/.opam/system/lib/coq:error-handlers/opam.config
+1"
+coq:corn,1.0.0,Error,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:corn/coq:corn.1.0.0,0,0,"",opam install -y --show-action coq:corn.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:corn.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:corn.1.0.0,1024,27,"The following actions will be performed:
+ - install   coq:corn.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:corn.1.0.0] Downloading https://github.com/clarus/corn/archive/1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   118    0   118    0     0    320      0 --:--:-- --:--:-- --:--:--   320
+  0     0    0   867    0     0    937      0 --:--:-- --:--:-- --:--:--   937  0     0    0 1019k    0     0   724k      0 --:--:--  0:00:01 --:--:-- 2113k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:corn.1.0.0:
+  ./configure.sh
+  make -j4
+  make install
+""coqdep"" -c -slash -R . CoRN ""algebra/CSums.v"" > ""algebra/CSums.v.d"" || ( RV=$?; rm -f ""algebra/CSums.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/Cauchy_COF.v"" > ""algebra/Cauchy_COF.v.d"" || ( RV=$?; rm -f ""algebra/Cauchy_COF.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/COrdFields.v"" > ""algebra/COrdFields.v.d"" || ( RV=$?; rm -f ""algebra/COrdFields.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/Expon.v"" > ""algebra/Expon.v.d"" || ( RV=$?; rm -f ""algebra/Expon.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/Bernstein.v"" > ""algebra/Bernstein.v.d"" || ( RV=$?; rm -f ""algebra/Bernstein.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/COrdCauchy.v"" > ""algebra/COrdCauchy.v.d"" || ( RV=$?; rm -f ""algebra/COrdCauchy.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CAbGroups.v"" > ""algebra/CAbGroups.v.d"" || ( RV=$?; rm -f ""algebra/CAbGroups.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CPoly_NthCoeff.v"" > ""algebra/CPoly_NthCoeff.v.d"" || ( RV=$?; rm -f ""algebra/CPoly_NthCoeff.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CSetoids.v"" > ""algebra/CSetoids.v.d"" || ( RV=$?; rm -f ""algebra/CSetoids.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CSemiGroups.v"" > ""algebra/CSemiGroups.v.d"" || ( RV=$?; rm -f ""algebra/CSemiGroups.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CMonoids.v"" > ""algebra/CMonoids.v.d"" || ( RV=$?; rm -f ""algebra/CMonoids.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CSetoidFun.v"" > ""algebra/CSetoidFun.v.d"" || ( RV=$?; rm -f ""algebra/CSetoidFun.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CPoly_ApZero.v"" > ""algebra/CPoly_ApZero.v.d"" || ( RV=$?; rm -f ""algebra/CPoly_ApZero.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CFields.v"" > ""algebra/CFields.v.d"" || ( RV=$?; rm -f ""algebra/CFields.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CRing_Homomorphisms.v"" > ""algebra/CRing_Homomorphisms.v.d"" || ( RV=$?; rm -f ""algebra/CRing_Homomorphisms.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CGroups.v"" > ""algebra/CGroups.v.d"" || ( RV=$?; rm -f ""algebra/CGroups.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/COrdAbs.v"" > ""algebra/COrdAbs.v.d"" || ( RV=$?; rm -f ""algebra/COrdAbs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CPoly_Degree.v"" > ""algebra/CPoly_Degree.v.d"" || ( RV=$?; rm -f ""algebra/CPoly_Degree.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CPolynomials.v"" > ""algebra/CPolynomials.v.d"" || ( RV=$?; rm -f ""algebra/CPolynomials.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CRings.v"" > ""algebra/CRings.v.d"" || ( RV=$?; rm -f ""algebra/CRings.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CSetoidInc.v"" > ""algebra/CSetoidInc.v.d"" || ( RV=$?; rm -f ""algebra/CSetoidInc.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CAbMonoids.v"" > ""algebra/CAbMonoids.v.d"" || ( RV=$?; rm -f ""algebra/CAbMonoids.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CRing_as_Ring.v"" > ""algebra/CRing_as_Ring.v.d"" || ( RV=$?; rm -f ""algebra/CRing_as_Ring.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/RSetoid.v"" > ""algebra/RSetoid.v.d"" || ( RV=$?; rm -f ""algebra/RSetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/COrdFields2.v"" > ""algebra/COrdFields2.v.d"" || ( RV=$?; rm -f ""algebra/COrdFields2.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/OperationClasses.v"" > ""algebra/OperationClasses.v.d"" || ( RV=$?; rm -f ""algebra/OperationClasses.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""algebra/CornScope.v"" > ""algebra/CornScope.v.d"" || ( RV=$?; rm -f ""algebra/CornScope.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""complex/AbsCC.v"" > ""complex/AbsCC.v.d"" || ( RV=$?; rm -f ""complex/AbsCC.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""complex/NRootCC.v"" > ""complex/NRootCC.v.d"" || ( RV=$?; rm -f ""complex/NRootCC.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""complex/Complex_Exponential.v"" > ""complex/Complex_Exponential.v.d"" || ( RV=$?; rm -f ""complex/Complex_Exponential.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""complex/CComplex.v"" > ""complex/CComplex.v.d"" || ( RV=$?; rm -f ""complex/CComplex.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""coq_reals/Rsign.v"" > ""coq_reals/Rsign.v.d"" || ( RV=$?; rm -f ""coq_reals/Rsign.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""coq_reals/Rreals.v"" > ""coq_reals/Rreals.v.d"" || ( RV=$?; rm -f ""coq_reals/Rreals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""coq_reals/Rreals_iso.v"" > ""coq_reals/Rreals_iso.v.d"" || ( RV=$?; rm -f ""coq_reals/Rreals_iso.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/KneserLemma.v"" > ""fta/KneserLemma.v.d"" || ( RV=$?; rm -f ""fta/KneserLemma.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/CPoly_Rev.v"" > ""fta/CPoly_Rev.v.d"" || ( RV=$?; rm -f ""fta/CPoly_Rev.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/MainLemma.v"" > ""fta/MainLemma.v.d"" || ( RV=$?; rm -f ""fta/MainLemma.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/CPoly_Contin1.v"" > ""fta/CPoly_Contin1.v.d"" || ( RV=$?; rm -f ""fta/CPoly_Contin1.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/FTAreg.v"" > ""fta/FTAreg.v.d"" || ( RV=$?; rm -f ""fta/FTAreg.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/KeyLemma.v"" > ""fta/KeyLemma.v.d"" || ( RV=$?; rm -f ""fta/KeyLemma.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/CPoly_Shift.v"" > ""fta/CPoly_Shift.v.d"" || ( RV=$?; rm -f ""fta/CPoly_Shift.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/FTA.v"" > ""fta/FTA.v.d"" || ( RV=$?; rm -f ""fta/FTA.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""fta/CC_Props.v"" > ""fta/CC_Props.v.d"" || ( RV=$?; rm -f ""fta/CC_Props.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/TaylorLemma.v"" > ""ftc/TaylorLemma.v.d"" || ( RV=$?; rm -f ""ftc/TaylorLemma.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Continuity.v"" > ""ftc/Continuity.v.d"" || ( RV=$?; rm -f ""ftc/Continuity.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/PartFunEquality.v"" > ""ftc/PartFunEquality.v.d"" || ( RV=$?; rm -f ""ftc/PartFunEquality.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/PartInterval.v"" > ""ftc/PartInterval.v.d"" || ( RV=$?; rm -f ""ftc/PartInterval.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/MoreIntervals.v"" > ""ftc/MoreIntervals.v.d"" || ( RV=$?; rm -f ""ftc/MoreIntervals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/FunctSums.v"" > ""ftc/FunctSums.v.d"" || ( RV=$?; rm -f ""ftc/FunctSums.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/MoreFunctions.v"" > ""ftc/MoreFunctions.v.d"" || ( RV=$?; rm -f ""ftc/MoreFunctions.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/CalculusTheorems.v"" > ""ftc/CalculusTheorems.v.d"" || ( RV=$?; rm -f ""ftc/CalculusTheorems.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/RefLemma.v"" > ""ftc/RefLemma.v.d"" || ( RV=$?; rm -f ""ftc/RefLemma.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/WeakIVT.v"" > ""ftc/WeakIVT.v.d"" || ( RV=$?; rm -f ""ftc/WeakIVT.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Taylor.v"" > ""ftc/Taylor.v.d"" || ( RV=$?; rm -f ""ftc/Taylor.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/StrongIVT.v"" > ""ftc/StrongIVT.v.d"" || ( RV=$?; rm -f ""ftc/StrongIVT.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Derivative.v"" > ""ftc/Derivative.v.d"" || ( RV=$?; rm -f ""ftc/Derivative.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Integral.v"" > ""ftc/Integral.v.d"" || ( RV=$?; rm -f ""ftc/Integral.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/FTC.v"" > ""ftc/FTC.v.d"" || ( RV=$?; rm -f ""ftc/FTC.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/IntegrationRules.v"" > ""ftc/IntegrationRules.v.d"" || ( RV=$?; rm -f ""ftc/IntegrationRules.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/FunctSeries.v"" > ""ftc/FunctSeries.v.d"" || ( RV=$?; rm -f ""ftc/FunctSeries.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Differentiability.v"" > ""ftc/Differentiability.v.d"" || ( RV=$?; rm -f ""ftc/Differentiability.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/NthDerivative.v"" > ""ftc/NthDerivative.v.d"" || ( RV=$?; rm -f ""ftc/NthDerivative.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/MoreIntegrals.v"" > ""ftc/MoreIntegrals.v.d"" || ( RV=$?; rm -f ""ftc/MoreIntegrals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/RefSeparating.v"" > ""ftc/RefSeparating.v.d"" || ( RV=$?; rm -f ""ftc/RefSeparating.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Rolle.v"" > ""ftc/Rolle.v.d"" || ( RV=$?; rm -f ""ftc/Rolle.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/MoreFunSeries.v"" > ""ftc/MoreFunSeries.v.d"" || ( RV=$?; rm -f ""ftc/MoreFunSeries.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/RefSepRef.v"" > ""ftc/RefSepRef.v.d"" || ( RV=$?; rm -f ""ftc/RefSepRef.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/DerivativeOps.v"" > ""ftc/DerivativeOps.v.d"" || ( RV=$?; rm -f ""ftc/DerivativeOps.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Partitions.v"" > ""ftc/Partitions.v.d"" || ( RV=$?; rm -f ""ftc/Partitions.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/COrdLemmas.v"" > ""ftc/COrdLemmas.v.d"" || ( RV=$?; rm -f ""ftc/COrdLemmas.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/FunctSequence.v"" > ""ftc/FunctSequence.v.d"" || ( RV=$?; rm -f ""ftc/FunctSequence.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/Composition.v"" > ""ftc/Composition.v.d"" || ( RV=$?; rm -f ""ftc/Composition.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/IntervalFunct.v"" > ""ftc/IntervalFunct.v.d"" || ( RV=$?; rm -f ""ftc/IntervalFunct.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ftc/RefSeparated.v"" > ""ftc/RefSeparated.v.d"" || ( RV=$?; rm -f ""ftc/RefSeparated.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""logic/PropDecid.v"" > ""logic/PropDecid.v.d"" || ( RV=$?; rm -f ""logic/PropDecid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""logic/Stability.v"" > ""logic/Stability.v.d"" || ( RV=$?; rm -f ""logic/Stability.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""logic/Classic.v"" > ""logic/Classic.v.d"" || ( RV=$?; rm -f ""logic/Classic.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""logic/CLogic.v"" > ""logic/CLogic.v.d"" || ( RV=$?; rm -f ""logic/CLogic.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""logic/CornBasics.v"" > ""logic/CornBasics.v.d"" || ( RV=$?; rm -f ""logic/CornBasics.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/ContFunctions.v"" > ""metrics/ContFunctions.v.d"" || ( RV=$?; rm -f ""metrics/ContFunctions.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/CPMSTheory.v"" > ""metrics/CPMSTheory.v.d"" || ( RV=$?; rm -f ""metrics/CPMSTheory.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/LipExt.v"" > ""metrics/LipExt.v.d"" || ( RV=$?; rm -f ""metrics/LipExt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/Prod_Sub.v"" > ""metrics/Prod_Sub.v.d"" || ( RV=$?; rm -f ""metrics/Prod_Sub.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/CMetricSpaces.v"" > ""metrics/CMetricSpaces.v.d"" || ( RV=$?; rm -f ""metrics/CMetricSpaces.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/CPseudoMSpaces.v"" > ""metrics/CPseudoMSpaces.v.d"" || ( RV=$?; rm -f ""metrics/CPseudoMSpaces.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/IR_CPMSpace.v"" > ""metrics/IR_CPMSpace.v.d"" || ( RV=$?; rm -f ""metrics/IR_CPMSpace.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metrics/Equiv.v"" > ""metrics/Equiv.v.d"" || ( RV=$?; rm -f ""metrics/Equiv.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/totalorder/QMinMax.v"" > ""model/totalorder/QMinMax.v.d"" || ( RV=$?; rm -f ""model/totalorder/QMinMax.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/totalorder/ZMinMax.v"" > ""model/totalorder/ZMinMax.v.d"" || ( RV=$?; rm -f ""model/totalorder/ZMinMax.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/totalorder/QposMinMax.v"" > ""model/totalorder/QposMinMax.v.d"" || ( RV=$?; rm -f ""model/totalorder/QposMinMax.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/ordfields/CRordfield.v"" > ""model/ordfields/CRordfield.v.d"" || ( RV=$?; rm -f ""model/ordfields/CRordfield.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/ordfields/Qordfield.v"" > ""model/ordfields/Qordfield.v.d"" || ( RV=$?; rm -f ""model/ordfields/Qordfield.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/Zm.v"" > ""model/Zmod/Zm.v.d"" || ( RV=$?; rm -f ""model/Zmod/Zm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/ZGcd.v"" > ""model/Zmod/ZGcd.v.d"" || ( RV=$?; rm -f ""model/Zmod/ZGcd.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/ZDivides.v"" > ""model/Zmod/ZDivides.v.d"" || ( RV=$?; rm -f ""model/Zmod/ZDivides.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/ZBasics.v"" > ""model/Zmod/ZBasics.v.d"" || ( RV=$?; rm -f ""model/Zmod/ZBasics.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/Cmod.v"" > ""model/Zmod/Cmod.v.d"" || ( RV=$?; rm -f ""model/Zmod/Cmod.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/IrrCrit.v"" > ""model/Zmod/IrrCrit.v.d"" || ( RV=$?; rm -f ""model/Zmod/IrrCrit.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/Zmod/ZMod.v"" > ""model/Zmod/ZMod.v.d"" || ( RV=$?; rm -f ""model/Zmod/ZMod.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/reals/Cauchy_IR.v"" > ""model/reals/Cauchy_IR.v.d"" || ( RV=$?; rm -f ""model/reals/Cauchy_IR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/reals/CRreal.v"" > ""model/reals/CRreal.v.d"" || ( RV=$?; rm -f ""model/reals/CRreal.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/abgroups/Qabgroup.v"" > ""model/abgroups/Qabgroup.v.d"" || ( RV=$?; rm -f ""model/abgroups/Qabgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/abgroups/CRabgroup.v"" > ""model/abgroups/CRabgroup.v.d"" || ( RV=$?; rm -f ""model/abgroups/CRabgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/abgroups/Zabgroup.v"" > ""model/abgroups/Zabgroup.v.d"" || ( RV=$?; rm -f ""model/abgroups/Zabgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/abgroups/Qposabgroup.v"" > ""model/abgroups/Qposabgroup.v.d"" || ( RV=$?; rm -f ""model/abgroups/Qposabgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/abgroups/QSposabgroup.v"" > ""model/abgroups/QSposabgroup.v.d"" || ( RV=$?; rm -f ""model/abgroups/QSposabgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/groups/CRgroup.v"" > ""model/groups/CRgroup.v.d"" || ( RV=$?; rm -f ""model/groups/CRgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/groups/QSposgroup.v"" > ""model/groups/QSposgroup.v.d"" || ( RV=$?; rm -f ""model/groups/QSposgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/groups/Qposgroup.v"" > ""model/groups/Qposgroup.v.d"" || ( RV=$?; rm -f ""model/groups/Qposgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/groups/Zgroup.v"" > ""model/groups/Zgroup.v.d"" || ( RV=$?; rm -f ""model/groups/Zgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/groups/Qgroup.v"" > ""model/groups/Qgroup.v.d"" || ( RV=$?; rm -f ""model/groups/Qgroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/freem_to_Nm.v"" > ""model/monoids/freem_to_Nm.v.d"" || ( RV=$?; rm -f ""model/monoids/freem_to_Nm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Nm_to_freem.v"" > ""model/monoids/Nm_to_freem.v.d"" || ( RV=$?; rm -f ""model/monoids/Nm_to_freem.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Nposmonoid.v"" > ""model/monoids/Nposmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/Nposmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Zmonoid.v"" > ""model/monoids/Zmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/Zmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Nmonoid.v"" > ""model/monoids/Nmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/Nmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/QSposmonoid.v"" > ""model/monoids/QSposmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/QSposmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Qposmonoid.v"" > ""model/monoids/Qposmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/Qposmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/CRmonoid.v"" > ""model/monoids/CRmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/CRmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Nm_to_cycm.v"" > ""model/monoids/Nm_to_cycm.v.d"" || ( RV=$?; rm -f ""model/monoids/Nm_to_cycm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/monoids/Qmonoid.v"" > ""model/monoids/Qmonoid.v.d"" || ( RV=$?; rm -f ""model/monoids/Qmonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Qpossetoid.v"" > ""model/setoids/Qpossetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Qpossetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/CRsetoid.v"" > ""model/setoids/CRsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/CRsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Qsetoid.v"" > ""model/setoids/Qsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Qsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Npossetoid.v"" > ""model/setoids/Npossetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Npossetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Zfinsetoid.v"" > ""model/setoids/Zfinsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Zfinsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Nsetoid.v"" > ""model/setoids/Nsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Nsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/decsetoid.v"" > ""model/setoids/decsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/decsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Zsetoid.v"" > ""model/setoids/Zsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Zsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/setoids/Nfinsetoid.v"" > ""model/setoids/Nfinsetoid.v.d"" || ( RV=$?; rm -f ""model/setoids/Nfinsetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/StepQsec.v"" > ""model/structures/StepQsec.v.d"" || ( RV=$?; rm -f ""model/structures/StepQsec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Zsec.v"" > ""model/structures/Zsec.v.d"" || ( RV=$?; rm -f ""model/structures/Zsec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Npossec.v"" > ""model/structures/Npossec.v.d"" || ( RV=$?; rm -f ""model/structures/Npossec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/QnnInf.v"" > ""model/structures/QnnInf.v.d"" || ( RV=$?; rm -f ""model/structures/QnnInf.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Nsec.v"" > ""model/structures/Nsec.v.d"" || ( RV=$?; rm -f ""model/structures/Nsec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/NNUpperR.v"" > ""model/structures/NNUpperR.v.d"" || ( RV=$?; rm -f ""model/structures/NNUpperR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Qsec.v"" > ""model/structures/Qsec.v.d"" || ( RV=$?; rm -f ""model/structures/Qsec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/QnonNeg.v"" > ""model/structures/QnonNeg.v.d"" || ( RV=$?; rm -f ""model/structures/QnonNeg.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Qpossec.v"" > ""model/structures/Qpossec.v.d"" || ( RV=$?; rm -f ""model/structures/Qpossec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/QposInf.v"" > ""model/structures/QposInf.v.d"" || ( RV=$?; rm -f ""model/structures/QposInf.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/Qinf.v"" > ""model/structures/Qinf.v.d"" || ( RV=$?; rm -f ""model/structures/Qinf.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/structures/OpenUnit.v"" > ""model/structures/OpenUnit.v.d"" || ( RV=$?; rm -f ""model/structures/OpenUnit.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/rings/CRring.v"" > ""model/rings/CRring.v.d"" || ( RV=$?; rm -f ""model/rings/CRring.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/rings/Zring.v"" > ""model/rings/Zring.v.d"" || ( RV=$?; rm -f ""model/rings/Zring.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/rings/Qring.v"" > ""model/rings/Qring.v.d"" || ( RV=$?; rm -f ""model/rings/Qring.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/fields/Qfield.v"" > ""model/fields/Qfield.v.d"" || ( RV=$?; rm -f ""model/fields/Qfield.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/fields/CRfield.v"" > ""model/fields/CRfield.v.d"" || ( RV=$?; rm -f ""model/fields/CRfield.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/Qsemigroup.v"" > ""model/semigroups/Qsemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/Qsemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/QSpossemigroup.v"" > ""model/semigroups/QSpossemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/QSpossemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/CRsemigroup.v"" > ""model/semigroups/CRsemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/CRsemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/Nsemigroup.v"" > ""model/semigroups/Nsemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/Nsemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/Zsemigroup.v"" > ""model/semigroups/Zsemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/Zsemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/Npossemigroup.v"" > ""model/semigroups/Npossemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/Npossemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/semigroups/Qpossemigroup.v"" > ""model/semigroups/Qpossemigroup.v.d"" || ( RV=$?; rm -f ""model/semigroups/Qpossemigroup.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/LinfDistMonad.v"" > ""model/metric2/LinfDistMonad.v.d"" || ( RV=$?; rm -f ""model/metric2/LinfDistMonad.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/CRmetric.v"" > ""model/metric2/CRmetric.v.d"" || ( RV=$?; rm -f ""model/metric2/CRmetric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/IntegrableFunction.v"" > ""model/metric2/IntegrableFunction.v.d"" || ( RV=$?; rm -f ""model/metric2/IntegrableFunction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/LinfMetricMonad.v"" > ""model/metric2/LinfMetricMonad.v.d"" || ( RV=$?; rm -f ""model/metric2/LinfMetricMonad.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/LinfMetric.v"" > ""model/metric2/LinfMetric.v.d"" || ( RV=$?; rm -f ""model/metric2/LinfMetric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/L1metric.v"" > ""model/metric2/L1metric.v.d"" || ( RV=$?; rm -f ""model/metric2/L1metric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/Qmetric.v"" > ""model/metric2/Qmetric.v.d"" || ( RV=$?; rm -f ""model/metric2/Qmetric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/metric2/BoundedFunction.v"" > ""model/metric2/BoundedFunction.v.d"" || ( RV=$?; rm -f ""model/metric2/BoundedFunction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/partialorder/CRpartialorder.v"" > ""model/partialorder/CRpartialorder.v.d"" || ( RV=$?; rm -f ""model/partialorder/CRpartialorder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""model/lattice/CRlattice.v"" > ""model/lattice/CRlattice.v.d"" || ( RV=$?; rm -f ""model/lattice/CRlattice.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""raster/Raster.v"" > ""raster/Raster.v.d"" || ( RV=$?; rm -f ""raster/Raster.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Series.v"" > ""reals/Series.v.d"" || ( RV=$?; rm -f ""reals/Series.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Bridges_iso.v"" > ""reals/Bridges_iso.v.d"" || ( RV=$?; rm -f ""reals/Bridges_iso.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CPoly_Contin.v"" > ""reals/CPoly_Contin.v.d"" || ( RV=$?; rm -f ""reals/CPoly_Contin.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Cesaro.v"" > ""reals/Cesaro.v.d"" || ( RV=$?; rm -f ""reals/Cesaro.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Q_dense.v"" > ""reals/Q_dense.v.d"" || ( RV=$?; rm -f ""reals/Q_dense.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/NRootIR.v"" > ""reals/NRootIR.v.d"" || ( RV=$?; rm -f ""reals/NRootIR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CReals1.v"" > ""reals/CReals1.v.d"" || ( RV=$?; rm -f ""reals/CReals1.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/RealLists.v"" > ""reals/RealLists.v.d"" || ( RV=$?; rm -f ""reals/RealLists.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Q_in_CReals.v"" > ""reals/Q_in_CReals.v.d"" || ( RV=$?; rm -f ""reals/Q_in_CReals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/iso_CReals.v"" > ""reals/iso_CReals.v.d"" || ( RV=$?; rm -f ""reals/iso_CReals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CReals.v"" > ""reals/CReals.v.d"" || ( RV=$?; rm -f ""reals/CReals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/IVT.v"" > ""reals/IVT.v.d"" || ( RV=$?; rm -f ""reals/IVT.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/RealFuncts.v"" > ""reals/RealFuncts.v.d"" || ( RV=$?; rm -f ""reals/RealFuncts.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/OddPolyRootIR.v"" > ""reals/OddPolyRootIR.v.d"" || ( RV=$?; rm -f ""reals/OddPolyRootIR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/RealCount.v"" > ""reals/RealCount.v.d"" || ( RV=$?; rm -f ""reals/RealCount.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARsin.v"" > ""reals/faster/ARsin.v.d"" || ( RV=$?; rm -f ""reals/faster/ARsin.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ApproximateRationals.v"" > ""reals/faster/ApproximateRationals.v.d"" || ( RV=$?; rm -f ""reals/faster/ApproximateRationals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARsign.v"" > ""reals/faster/ARsign.v.d"" || ( RV=$?; rm -f ""reals/faster/ARsign.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARarctan.v"" > ""reals/faster/ARarctan.v.d"" || ( RV=$?; rm -f ""reals/faster/ARarctan.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARArith.v"" > ""reals/faster/ARArith.v.d"" || ( RV=$?; rm -f ""reals/faster/ARArith.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/AQmetric.v"" > ""reals/faster/AQmetric.v.d"" || ( RV=$?; rm -f ""reals/faster/AQmetric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARbigD.v"" > ""reals/faster/ARbigD.v.d"" || ( RV=$?; rm -f ""reals/faster/ARbigD.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARbigQ.v"" > ""reals/faster/ARbigQ.v.d"" || ( RV=$?; rm -f ""reals/faster/ARbigQ.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARtrans.v"" > ""reals/faster/ARtrans.v.d"" || ( RV=$?; rm -f ""reals/faster/ARtrans.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARexp.v"" > ""reals/faster/ARexp.v.d"" || ( RV=$?; rm -f ""reals/faster/ARexp.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARroot.v"" > ""reals/faster/ARroot.v.d"" || ( RV=$?; rm -f ""reals/faster/ARroot.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARarctan_small.v"" > ""reals/faster/ARarctan_small.v.d"" || ( RV=$?; rm -f ""reals/faster/ARarctan_small.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARAlternatingSum.v"" > ""reals/faster/ARAlternatingSum.v.d"" || ( RV=$?; rm -f ""reals/faster/ARAlternatingSum.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARQ.v"" > ""reals/faster/ARQ.v.d"" || ( RV=$?; rm -f ""reals/faster/ARQ.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARcos.v"" > ""reals/faster/ARcos.v.d"" || ( RV=$?; rm -f ""reals/faster/ARcos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/faster/ARpi.v"" > ""reals/faster/ARpi.v.d"" || ( RV=$?; rm -f ""reals/faster/ARpi.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Intervals.v"" > ""reals/Intervals.v.d"" || ( RV=$?; rm -f ""reals/Intervals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Cauchy_CReals.v"" > ""reals/Cauchy_CReals.v.d"" || ( RV=$?; rm -f ""reals/Cauchy_CReals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRpi_fast.v"" > ""reals/fast/CRpi_fast.v.d"" || ( RV=$?; rm -f ""reals/fast/CRpi_fast.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRpower.v"" > ""reals/fast/CRpower.v.d"" || ( RV=$?; rm -f ""reals/fast/CRpower.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRartanh_slow.v"" > ""reals/fast/CRartanh_slow.v.d"" || ( RV=$?; rm -f ""reals/fast/CRartanh_slow.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRGeometricSum.v"" > ""reals/fast/CRGeometricSum.v.d"" || ( RV=$?; rm -f ""reals/fast/CRGeometricSum.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRsin.v"" > ""reals/fast/CRsin.v.d"" || ( RV=$?; rm -f ""reals/fast/CRsin.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRarctan_small.v"" > ""reals/fast/CRarctan_small.v.d"" || ( RV=$?; rm -f ""reals/fast/CRarctan_small.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/PowerBound.v"" > ""reals/fast/PowerBound.v.d"" || ( RV=$?; rm -f ""reals/fast/PowerBound.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/RasterQ.v"" > ""reals/fast/RasterQ.v.d"" || ( RV=$?; rm -f ""reals/fast/RasterQ.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRGroupOps.v"" > ""reals/fast/CRGroupOps.v.d"" || ( RV=$?; rm -f ""reals/fast/CRGroupOps.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRarctan.v"" > ""reals/fast/CRarctan.v.d"" || ( RV=$?; rm -f ""reals/fast/CRarctan.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRpi_slow.v"" > ""reals/fast/CRpi_slow.v.d"" || ( RV=$?; rm -f ""reals/fast/CRpi_slow.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRArith.v"" > ""reals/fast/CRArith.v.d"" || ( RV=$?; rm -f ""reals/fast/CRArith.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRln.v"" > ""reals/fast/CRln.v.d"" || ( RV=$?; rm -f ""reals/fast/CRln.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRroot.v"" > ""reals/fast/CRroot.v.d"" || ( RV=$?; rm -f ""reals/fast/CRroot.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRpi.v"" > ""reals/fast/CRpi.v.d"" || ( RV=$?; rm -f ""reals/fast/CRpi.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRFieldOps.v"" > ""reals/fast/CRFieldOps.v.d"" || ( RV=$?; rm -f ""reals/fast/CRFieldOps.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/uneven_CRplus.v"" > ""reals/fast/uneven_CRplus.v.d"" || ( RV=$?; rm -f ""reals/fast/uneven_CRplus.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/ContinuousCorrect.v"" > ""reals/fast/ContinuousCorrect.v.d"" || ( RV=$?; rm -f ""reals/fast/ContinuousCorrect.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRcos.v"" > ""reals/fast/CRcos.v.d"" || ( RV=$?; rm -f ""reals/fast/CRcos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRsign.v"" > ""reals/fast/CRsign.v.d"" || ( RV=$?; rm -f ""reals/fast/CRsign.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/RasterizeQ.v"" > ""reals/fast/RasterizeQ.v.d"" || ( RV=$?; rm -f ""reals/fast/RasterizeQ.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRcorrect.v"" > ""reals/fast/CRcorrect.v.d"" || ( RV=$?; rm -f ""reals/fast/CRcorrect.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRtrans.v"" > ""reals/fast/CRtrans.v.d"" || ( RV=$?; rm -f ""reals/fast/CRtrans.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/Plot.v"" > ""reals/fast/Plot.v.d"" || ( RV=$?; rm -f ""reals/fast/Plot.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/Interval.v"" > ""reals/fast/Interval.v.d"" || ( RV=$?; rm -f ""reals/fast/Interval.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/LazyNat.v"" > ""reals/fast/LazyNat.v.d"" || ( RV=$?; rm -f ""reals/fast/LazyNat.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRabs.v"" > ""reals/fast/CRabs.v.d"" || ( RV=$?; rm -f ""reals/fast/CRabs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRconst.v"" > ""reals/fast/CRconst.v.d"" || ( RV=$?; rm -f ""reals/fast/CRconst.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRsum.v"" > ""reals/fast/CRsum.v.d"" || ( RV=$?; rm -f ""reals/fast/CRsum.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRball.v"" > ""reals/fast/CRball.v.d"" || ( RV=$?; rm -f ""reals/fast/CRball.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/Integration.v"" > ""reals/fast/Integration.v.d"" || ( RV=$?; rm -f ""reals/fast/Integration.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/MultivariatePolynomials.v"" > ""reals/fast/MultivariatePolynomials.v.d"" || ( RV=$?; rm -f ""reals/fast/MultivariatePolynomials.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRIR.v"" > ""reals/fast/CRIR.v.d"" || ( RV=$?; rm -f ""reals/fast/CRIR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/ModulusDerivative.v"" > ""reals/fast/ModulusDerivative.v.d"" || ( RV=$?; rm -f ""reals/fast/ModulusDerivative.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRexp.v"" > ""reals/fast/CRexp.v.d"" || ( RV=$?; rm -f ""reals/fast/CRexp.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRAlternatingSum.v"" > ""reals/fast/CRAlternatingSum.v.d"" || ( RV=$?; rm -f ""reals/fast/CRAlternatingSum.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/CRseries.v"" > ""reals/fast/CRseries.v.d"" || ( RV=$?; rm -f ""reals/fast/CRseries.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/fast/Compress.v"" > ""reals/fast/Compress.v.d"" || ( RV=$?; rm -f ""reals/fast/Compress.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/R_morphism.v"" > ""reals/R_morphism.v.d"" || ( RV=$?; rm -f ""reals/R_morphism.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CSumsReals.v"" > ""reals/CSumsReals.v.d"" || ( RV=$?; rm -f ""reals/CSumsReals.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CMetricFields.v"" > ""reals/CMetricFields.v.d"" || ( RV=$?; rm -f ""reals/CMetricFields.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Bridges_LUB.v"" > ""reals/Bridges_LUB.v.d"" || ( RV=$?; rm -f ""reals/Bridges_LUB.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/Max_AbsIR.v"" > ""reals/Max_AbsIR.v.d"" || ( RV=$?; rm -f ""reals/Max_AbsIR.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/CauchySeq.v"" > ""reals/CauchySeq.v.d"" || ( RV=$?; rm -f ""reals/CauchySeq.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""reals/PosSeq.v"" > ""reals/PosSeq.v.d"" || ( RV=$?; rm -f ""reals/PosSeq.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/CornTac.v"" > ""tactics/CornTac.v.d"" || ( RV=$?; rm -f ""tactics/CornTac.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/DiffTactics1.v"" > ""tactics/DiffTactics1.v.d"" || ( RV=$?; rm -f ""tactics/DiffTactics1.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/DiffTactics3.v"" > ""tactics/DiffTactics3.v.d"" || ( RV=$?; rm -f ""tactics/DiffTactics3.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/Rational.v"" > ""tactics/Rational.v.d"" || ( RV=$?; rm -f ""tactics/Rational.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/FieldReflection.v"" > ""tactics/FieldReflection.v.d"" || ( RV=$?; rm -f ""tactics/FieldReflection.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/Step.v"" > ""tactics/Step.v.d"" || ( RV=$?; rm -f ""tactics/Step.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/Qauto.v"" > ""tactics/Qauto.v.d"" || ( RV=$?; rm -f ""tactics/Qauto.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/AlgReflection.v"" > ""tactics/AlgReflection.v.d"" || ( RV=$?; rm -f ""tactics/AlgReflection.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/csetoid_rewrite.v"" > ""tactics/csetoid_rewrite.v.d"" || ( RV=$?; rm -f ""tactics/csetoid_rewrite.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/RingReflection.v"" > ""tactics/RingReflection.v.d"" || ( RV=$?; rm -f ""tactics/RingReflection.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""tactics/DiffTactics2.v"" > ""tactics/DiffTactics2.v.d"" || ( RV=$?; rm -f ""tactics/DiffTactics2.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/ArTanH.v"" > ""transc/ArTanH.v.d"" || ( RV=$?; rm -f ""transc/ArTanH.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/InvTrigonom.v"" > ""transc/InvTrigonom.v.d"" || ( RV=$?; rm -f ""transc/InvTrigonom.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/RealPowers.v"" > ""transc/RealPowers.v.d"" || ( RV=$?; rm -f ""transc/RealPowers.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/MoreArcTan.v"" > ""transc/MoreArcTan.v.d"" || ( RV=$?; rm -f ""transc/MoreArcTan.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/PowerSeries.v"" > ""transc/PowerSeries.v.d"" || ( RV=$?; rm -f ""transc/PowerSeries.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/SinCos.v"" > ""transc/SinCos.v.d"" || ( RV=$?; rm -f ""transc/SinCos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/TrigMon.v"" > ""transc/TrigMon.v.d"" || ( RV=$?; rm -f ""transc/TrigMon.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/Exponential.v"" > ""transc/Exponential.v.d"" || ( RV=$?; rm -f ""transc/Exponential.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/Trigonometric.v"" > ""transc/Trigonometric.v.d"" || ( RV=$?; rm -f ""transc/Trigonometric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/Pi.v"" > ""transc/Pi.v.d"" || ( RV=$?; rm -f ""transc/Pi.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""transc/TaylorSeries.v"" > ""transc/TaylorSeries.v.d"" || ( RV=$?; rm -f ""transc/TaylorSeries.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""order/PartialOrder.v"" > ""order/PartialOrder.v.d"" || ( RV=$?; rm -f ""order/PartialOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""order/Lattice.v"" > ""order/Lattice.v.d"" || ( RV=$?; rm -f ""order/Lattice.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""order/TotalOrder.v"" > ""order/TotalOrder.v.d"" || ( RV=$?; rm -f ""order/TotalOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""order/SemiLattice.v"" > ""order/SemiLattice.v.d"" || ( RV=$?; rm -f ""order/SemiLattice.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/DistanceMetricSpace.v"" > ""metric2/DistanceMetricSpace.v.d"" || ( RV=$?; rm -f ""metric2/DistanceMetricSpace.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/FinEnum.v"" > ""metric2/FinEnum.v.d"" || ( RV=$?; rm -f ""metric2/FinEnum.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/CompleteProduct.v"" > ""metric2/CompleteProduct.v.d"" || ( RV=$?; rm -f ""metric2/CompleteProduct.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/MetricMorphisms.v"" > ""metric2/MetricMorphisms.v.d"" || ( RV=$?; rm -f ""metric2/MetricMorphisms.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/ProductMetric.v"" > ""metric2/ProductMetric.v.d"" || ( RV=$?; rm -f ""metric2/ProductMetric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Graph.v"" > ""metric2/Graph.v.d"" || ( RV=$?; rm -f ""metric2/Graph.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Classification.v"" > ""metric2/Classification.v.d"" || ( RV=$?; rm -f ""metric2/Classification.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/StepFunctionMonad.v"" > ""metric2/StepFunctionMonad.v.d"" || ( RV=$?; rm -f ""metric2/StepFunctionMonad.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Compact.v"" > ""metric2/Compact.v.d"" || ( RV=$?; rm -f ""metric2/Compact.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/UniformContinuity.v"" > ""metric2/UniformContinuity.v.d"" || ( RV=$?; rm -f ""metric2/UniformContinuity.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/CompletePointFree.v"" > ""metric2/CompletePointFree.v.d"" || ( RV=$?; rm -f ""metric2/CompletePointFree.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Metric.v"" > ""metric2/Metric.v.d"" || ( RV=$?; rm -f ""metric2/Metric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Complete.v"" > ""metric2/Complete.v.d"" || ( RV=$?; rm -f ""metric2/Complete.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Hausdorff.v"" > ""metric2/Hausdorff.v.d"" || ( RV=$?; rm -f ""metric2/Hausdorff.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/UCFnMonoid.v"" > ""metric2/UCFnMonoid.v.d"" || ( RV=$?; rm -f ""metric2/UCFnMonoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/StepFunctionSetoid.v"" > ""metric2/StepFunctionSetoid.v.d"" || ( RV=$?; rm -f ""metric2/StepFunctionSetoid.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Limit.v"" > ""metric2/Limit.v.d"" || ( RV=$?; rm -f ""metric2/Limit.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/Prelength.v"" > ""metric2/Prelength.v.d"" || ( RV=$?; rm -f ""metric2/Prelength.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""metric2/StepFunction.v"" > ""metric2/StepFunction.v.d"" || ( RV=$?; rm -f ""metric2/StepFunction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/Z.v"" > ""stdlib_omissions/Z.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/Z.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/Pair.v"" > ""stdlib_omissions/Pair.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/Pair.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/List.v"" > ""stdlib_omissions/List.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/List.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/P.v"" > ""stdlib_omissions/P.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/P.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/Q.v"" > ""stdlib_omissions/Q.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/Q.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""stdlib_omissions/N.v"" > ""stdlib_omissions/N.v.d"" || ( RV=$?; rm -f ""stdlib_omissions/N.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/Container.v"" > ""util/Container.v.d"" || ( RV=$?; rm -f ""util/Container.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/Extract.v"" > ""util/Extract.v.d"" || ( RV=$?; rm -f ""util/Extract.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/Qdlog.v"" > ""util/Qdlog.v.d"" || ( RV=$?; rm -f ""util/Qdlog.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/Qgcd.v"" > ""util/Qgcd.v.d"" || ( RV=$?; rm -f ""util/Qgcd.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/SetoidPermutation.v"" > ""util/SetoidPermutation.v.d"" || ( RV=$?; rm -f ""util/SetoidPermutation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/Qsums.v"" > ""util/Qsums.v.d"" || ( RV=$?; rm -f ""util/Qsums.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""util/PointFree.v"" > ""util/PointFree.v.d"" || ( RV=$?; rm -f ""util/PointFree.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""classes/Qposclasses.v"" > ""classes/Qposclasses.v.d"" || ( RV=$?; rm -f ""classes/Qposclasses.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""classes/Qclasses.v"" > ""classes/Qclasses.v.d"" || ( RV=$?; rm -f ""classes/Qclasses.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/Picard.v"" > ""ode/Picard.v.d"" || ( RV=$?; rm -f ""ode/Picard.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/AbstractIntegration.v"" > ""ode/AbstractIntegration.v.d"" || ( RV=$?; rm -f ""ode/AbstractIntegration.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/FromMetric2.v"" > ""ode/FromMetric2.v.d"" || ( RV=$?; rm -f ""ode/FromMetric2.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/metric.v"" > ""ode/metric.v.d"" || ( RV=$?; rm -f ""ode/metric.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/BanachFixpoint.v"" > ""ode/BanachFixpoint.v.d"" || ( RV=$?; rm -f ""ode/BanachFixpoint.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoRN ""ode/SimpleIntegration.v"" > ""ode/SimpleIntegration.v.d"" || ( RV=$?; rm -f ""ode/SimpleIntegration.v.d""; exit ${RV} )
+""coqc""  -q  -R . CoRN   stdlib_omissions/Pair
+""coqc""  -q  -R . CoRN   stdlib_omissions/P
+""coqc""  -q  -R . CoRN   tactics/CornTac
+""coqc""  -q  -R . CoRN   tactics/Step
+""coqc""  -q  -R . CoRN   reals/fast/LazyNat
+""coqc""  -q  -R . CoRN   tactics/DiffTactics1
+""coqc""  -q  -R . CoRN   util/Container
+""coqc""  -q  -R . CoRN   metric2/CompletePointFree
+""coqc""  -q  -R . CoRN   logic/PropDecid
+""coqc""  -q  -R . CoRN   algebra/OperationClasses
+""coqc""  -q  -R . CoRN   stdlib_omissions/List
+""coqc""  -q  -R . CoRN   stdlib_omissions/Z
+""coqc""  -q  -R . CoRN   util/PointFree
+""coqc""  -q  -R . CoRN   logic/CornBasics
+""coqc""  -q  -R . CoRN   util/SetoidPermutation
+""coqc""  -q  -R . CoRN   stdlib_omissions/N
+""coqc""  -q  -R . CoRN   logic/Classic
+""coqc""  -q  -R . CoRN   raster/Raster
+""coqc""  -q  -R . CoRN   stdlib_omissions/Q
+""coqc""  -q  -R . CoRN   logic/CLogic
+""coqc""  -q  -R . CoRN   algebra/RSetoid
+Identifier 'CProp' now a keyword
+Identifier 'or' now a keyword
+Identifier 'and' now a keyword
+Identifier 'IFF' now a keyword
+""coqc""  -q  -R . CoRN   util/Qdlog
+""coqc""  -q  -R . CoRN   order/PartialOrder
+""coqc""  -q  -R . CoRN   model/structures/Zsec
+""coqc""  -q  -R . CoRN   algebra/CSetoids
+""coqc""  -q  -R . CoRN   model/Zmod/ZBasics
+""coqc""  -q  -R . CoRN   model/structures/Nsec
+""coqc""  -q  -R . CoRN   tactics/AlgReflection
+""coqc""  -q  -R . CoRN   model/setoids/Nfinsetoid
+File ""/home/bench/.opam/system/build/coq:corn.1.0.0/tactics/AlgReflection.v"", line 177, characters 6-9:
+Error: The reference ifb was not found in the current environment.
+Makefile:506: recipe for target 'tactics/AlgReflection.vo' failed
+make: *** [tactics/AlgReflection.vo] Error 1
+make: *** Waiting for unfinished jobs....
+[ERROR] The compilation of coq:corn.1.0.0 failed.
+Removing coq:corn.1.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/CoRN
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/CoRN': No such file or directory
+
+
+#=== ERROR while installing coq:corn.1.0.0 ====================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:corn.1.0.0
+# compiler             system (4.02.1)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:corn.1.0.0/coq:corn-9148-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:corn.1.0.0/coq:corn-9148-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:corn.1.0.0/coq:corn-9148-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqc""  -q  -R . CoRN   order/PartialOrder
+# ""coqc""  -q  -R . CoRN   model/structures/Zsec
+# ""coqc""  -q  -R . CoRN   algebra/CSetoids
+# ""coqc""  -q  -R . CoRN   model/Zmod/ZBasics
+# ""coqc""  -q  -R . CoRN   model/structures/Nsec
+# ""coqc""  -q  -R . CoRN   tactics/AlgReflection
+# ""coqc""  -q  -R . CoRN   model/setoids/Nfinsetoid
+# File ""/home/bench/.opam/system/build/coq:corn.1.0.0/tactics/AlgReflection.v"", line 177, characters 6-9:
+# Error: The reference ifb was not found in the current environment.
+# Makefile:506: recipe for target 'tactics/AlgReflection.vo' failed
+### stderr ###
+# make: *** [tactics/AlgReflection.vo] Error 1
+# make: *** Waiting for unfinished jobs....
+
+'opam install -y --verbose coq:corn.1.0.0' failed.
+",true,0,0,"","","",""
+coq:coquelicot,2.0.1,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:coquelicot/coq:coquelicot.2.0.1,0,0,"",opam install -y --show-action coq:coquelicot.2.0.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coquelicot.2.0.1,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:coquelicot.2.0.1,0,81,"",opam remove -y coq:coquelicot.2.0.1,0,1,"","","","/home/bench/.opam/system/install/coq:coquelicot.install
+1
+/home/bench/.opam/system/lib/coq:coquelicot/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Continuity.vo
+189666
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Compactness.vo
+72123
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Coquelicot.vo
+19103
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Derive.vo
+468931
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Hierarchy.vo
+506692
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Markov.vo
+32810
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Series.vo
+162192
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Derive_2d.vo
+265484
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/SF_seq.vo
+634478
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Limit.vo
+384005
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/AutoDerive.vo
+306150
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/PSeries.vo
+341237
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Equiv.vo
+107881
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Seq_fct.vo
+218583
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/RInt.vo
+1568783
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Lub.vo
+97029
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Complex.vo
+133552
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/ElemFct.vo
+63274
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Rcomplements.vo
+269475
+/home/bench/.opam/system/lib/coq/user-contrib/Coquelicot/Rbar.vo
+143492"
+coq:plouffe,1.0.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:coquelicot       2.0.1  A Coq formalization of real analysis compatible with
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:plouffe/coq:plouffe.1.0.0,0,0,"",opam install -y --show-action coq:plouffe.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:plouffe.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:plouffe.1.0.0,0,97,"",opam remove -y coq:plouffe.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:plouffe.install
+1
+/home/bench/.opam/system/lib/coq:plouffe/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Plouffe/Plouffe.vo
+156148
+/home/bench/.opam/system/lib/coq/user-contrib/Plouffe/CPlouffe.vo
+545885"
+coq:coqeal:theory,0.9.1,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:coquelicot       2.0.1  A Coq formalization of real analysis compatible with
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:plouffe          1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:coqeal:theory/coq:coqeal:theory.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:theory.0.9.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coqeal:theory.0.9.1,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:coqeal:theory.0.9.1,0,34,"",opam remove -y coq:coqeal:theory.0.9.1,0,1,"","","","/home/bench/.opam/system/install/coq:coqeal:theory.install
+1
+/home/bench/.opam/system/lib/coq:coqeal:theory/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/binetcauchy.vo
+237311
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/mxstructure.vo
+306260
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/hrel.vo
+53125
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/minor.vo
+141349
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/dvdring.vo
+578160
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/similar.vo
+309798
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_theory/ssrcomplements.vo
+142581"
+coq:fpmods,0.2.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:coqeal:theory    0.9.1  The theory needed by the refinement framework librar
+coq:coquelicot       2.0.1  A Coq formalization of real analysis compatible with
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:plouffe          1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:fpmods/coq:fpmods.0.2.0,0,0,"",opam install -y --show-action coq:fpmods.0.2.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:fpmods.0.2.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:fpmods.0.2.0,0,25,"",opam remove -y coq:fpmods.0.2.0,0,1,"","","","/home/bench/.opam/system/install/coq:fpmods.install
+1
+/home/bench/.opam/system/lib/coq:fpmods/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/fpmods/fpmod.vo
+486932
+/home/bench/.opam/system/lib/coq/user-contrib/fpmods/coherent.vo
+182724
+/home/bench/.opam/system/lib/coq/user-contrib/fpmods/stronglydiscrete.vo
+191314"
+coq:coqeal:refinements,0.9.1,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:coqeal:theory    0.9.1  The theory needed by the refinement framework librar
+coq:coquelicot       2.0.1  A Coq formalization of real analysis compatible with
+coq:error-handlers   1.0.0  More functions on lists.
+coq:flocq            2.4.0  A floating-point formalization for the Coq system.
+coq:fpmods           0.2.0  A short constructive formalization of finitely prese
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:plouffe          1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:coqeal:refinements/coq:coqeal:refinements.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:refinements.0.9.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coqeal:refinements.0.9.1,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:coqeal:refinements.0.9.1,0,77,"",opam remove -y coq:coqeal:refinements.0.9.1,0,1,"","","","/home/bench/.opam/system/install/coq:coqeal:refinements.install
+1
+/home/bench/.opam/system/lib/coq:coqeal:refinements/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/pos.vo
+27168
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/smith.vo
+534652
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/karatsuba.vo
+57482
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/refinements.vo
+231336
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/strassen.vo
+250768
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/seqmatrix.vo
+384969
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/seqpoly.vo
+242619
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/binnat.vo
+96158
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/rational.vo
+165976
+/home/bench/.opam/system/lib/coq/user-contrib/CoqEAL_refinements/binint.vo
+201457"
+coq:compcert,2.0.0,Error,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:coqeal:refinements  0.9.1  A refinement framework (for algebra).
+coq:coqeal:theory       0.9.1  The theory needed by the refinement framework lib
+coq:coquelicot          2.0.1  A Coq formalization of real analysis compatible w
+coq:error-handlers      1.0.0  More functions on lists.
+coq:flocq               2.4.0  A floating-point formalization for the Coq system
+coq:fpmods              0.2.0  A short constructive formalization of finitely pr
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:iterable            1.0.0  Generic definition of iterators.
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         1.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:plouffe             1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.0.0,0,0,"",opam install -y --show-action coq:compcert.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:compcert.2.0.0,1024,9,"The following actions will be performed:
+ - install   coq:compcert.2.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:compcert.2.0.0] Downloading http://compcert.inria.fr/release/compcert-2.0.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2047k  100 2047k    0     0  9554k      0 --:--:-- --:--:-- --:--:-- 9566k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:compcert/coq:compcert.2.0.0/files/coq:compcert.install to ~/.opam/system/build/coq:compcert.2.0.0/
+Building coq:compcert.2.0.0:
+  ./configure ia32-linux
+  make -j4
+Testing assembler support for CFI directives... yes
+
+CompCert configuration:
+    Target architecture........... ia32
+    Application binary interface.. standard
+    OS and development env........ linux
+    C compiler.................... gcc -m32
+    C preprocessor................ gcc -m32 -U__GNUC__ -E
+    Assembler..................... gcc -m32 -c
+    Assembler supports CFI........ true
+    Assembler for runtime lib..... gcc -m32 -c
+    Linker........................ gcc -m32
+    Math library.................. -lm
+    Binaries installed in......... /usr/local/bin
+    Runtime library provided...... true
+    Library files installed in.... /usr/local/lib/compcert
+    cchecklink tool supported..... false
+
+If anything above looks wrong, please edit file ./Makefile.config to correct.
+
+make proof
+make[1]: Entering directory '/home/bench/.opam/system/build/coq:compcert.2.0.0'
+COQC lib/Axioms.v
+COQC lib/Coqlib.v
+ocamlopt -o tools/ndfun str.cmxa tools/ndfun.ml
+COQC flocq/Core/Fcore_Zaux.v
+File ""tools/ndfun.ml"", line 12, characters 10-23:
+Warning 3: deprecated: String.create
+Use Bytes.create instead.
+File ""tools/ndfun.ml"", line 14, characters 4-52:
+Warning 3: deprecated: String.set
+Use Bytes.set instead.
+COQC lib/Wfsimpl.v
+Preprocessing ia32/SelectOp.vp
+Preprocessing backend/SelectLong.vp
+Preprocessing ia32/ConstpropOp.vp
+COQC flocq/Core/Fcore_digits.v
+COQC flocq/Core/Fcore_Raux.v
+File ""/home/bench/.opam/system/build/coq:compcert.2.0.0/lib/Coqlib.v"", line 1275, characters 9-15:
+Error: Unknown interpretation for notation ""_ && _"".
+make[1]: *** [lib/Coqlib.vo] Error 1
+Makefile:197: recipe for target 'lib/Coqlib.vo' failed
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/bench/.opam/system/build/coq:compcert.2.0.0'
+make: *** [all] Error 2
+Makefile:125: recipe for target 'all' failed
+[ERROR] The compilation of coq:compcert.2.0.0 failed.
+Removing coq:compcert.2.0.0.
+  Nothing to do.
+
+
+#=== ERROR while installing coq:compcert.2.0.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:compcert.2.0.0
+# compiler             system (4.02.1)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-12998-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-12998-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:compcert.2.0.0/coq:compcert-12998-ad8886.err
+### stdout ###
+# ...[truncated]
+# Preprocessing ia32/SelectOp.vp
+# Preprocessing backend/SelectLong.vp
+# Preprocessing ia32/ConstpropOp.vp
+# COQC flocq/Core/Fcore_digits.v
+# COQC flocq/Core/Fcore_Raux.v
+# File ""/home/bench/.opam/system/build/coq:compcert.2.0.0/lib/Coqlib.v"", line 1275, characters 9-15:
+# Error: Unknown interpretation for notation ""_ && _"".
+# Makefile:197: recipe for target 'lib/Coqlib.vo' failed
+# make[1]: Leaving directory '/home/bench/.opam/system/build/coq:compcert.2.0.0'
+# Makefile:125: recipe for target 'all' failed
+### stderr ###
+# File ""tools/ndfun.ml"", line 12, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File ""tools/ndfun.ml"", line 14, characters 4-52:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# make[1]: *** [lib/Coqlib.vo] Error 1
+# make[1]: *** Waiting for unfinished jobs....
+# make: *** [all] Error 2
+
+'opam install -y --verbose coq:compcert.2.0.0' failed.
+",true,0,0,"","","",""
+coq:color,1.0.0,Error,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:coqeal:refinements  0.9.1  A refinement framework (for algebra).
+coq:coqeal:theory       0.9.1  The theory needed by the refinement framework lib
+coq:coquelicot          2.0.1  A Coq formalization of real analysis compatible w
+coq:error-handlers      1.0.0  More functions on lists.
+coq:flocq               2.4.0  A floating-point formalization for the Coq system
+coq:fpmods              0.2.0  A short constructive formalization of finitely pr
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:iterable            1.0.0  Generic definition of iterators.
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         1.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:plouffe             1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:color/coq:color.1.0.0,0,0,"",opam install -y --show-action coq:color.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:color.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:color.1.0.0,1024,5,"The following actions will be performed:
+ - install   coq:color.1.0.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:color.1.0.0] Downloading http://color.inria.fr/color.1.0.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  540k  100  540k    0     0  5233k      0 --:--:-- --:--:-- --:--:-- 5252k
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building coq:color.1.0.0:
+  make -j4
+  make install
+coq_makefile -R . CoLoR ./SemLab/ASemLab.v ./SemLab/ARootLab.v ./SemLab/AFlatCont.v ./Filter/AFilterBool.v ./Filter/AFilterPerm.v ./Filter/AProj.v ./SubtermCrit/ASimpleProj.v ./HORPO/HorpoExNonTrans.v ./HORPO/HorpoWf.v ./HORPO/Horpo.v ./HORPO/Computability.v ./HORPO/HorpoComp.v ./HORPO/HorpoExMap.v ./NonTermin/SModLoop.v ./NonTermin/AVarCond.v ./NonTermin/AModLoop.v ./NonTermin/SLoop.v ./NonTermin/ALoop.v ./DP/ADP.v ./DP/ADPUnif.v ./DP/ASCCUnion.v ./DP/ADecomp.v ./DP/AHDE.v ./DP/ADPGraph.v ./DP/AGraph.v ./ProofChecker/EmptyChecker.v ./ProofChecker/ProofChecker.v ./ProofChecker/Proof.v ./ProofChecker/IntBasedChecker.v ./ProofChecker/Problem.v ./MannaNess/ARedPair.v ./MannaNess/AMannaNess.v ./Conversion/String_of_ATerm.v ./Conversion/ATerm_of_String.v ./Conversion/VTerm_of_ATerm.v ./Conversion/AReverse.v ./RPO/VRPO_Results.v ./RPO/VPrecedence.v ./RPO/VRPO_Status.v ./RPO/VRPO_Type.v ./RPO/VLPO.v ./RPO/VRPO_Prover.v ./RPO/VMPO.v ./Term/Lambda/LAlpha.v ./Term/Lambda/LCompRewrite.v ./Term/Lambda/LComp.v ./Term/Lambda/LCompClos.v ./Term/Lambda/LAlphaAlt.v ./Term/Lambda/LCall.v ./Term/Lambda/LSystemT.v ./Term/Lambda/LCompSimple.v ./Term/Lambda/LBeta.v ./Term/Lambda/LSimple.v ./Term/Lambda/LTerm.v ./Term/Lambda/LCompInt.v ./Term/Lambda/LSubs.v ./Term/Varyadic/VSubstitution.v ./Term/Varyadic/VContext.v ./Term/Varyadic/VTrs.v ./Term/Varyadic/VSignature.v ./Term/Varyadic/VTerm.v ./Term/String/SContext.v ./Term/String/SReverse.v ./Term/String/Srs.v ./Term/WithArity/AUnary.v ./Term/WithArity/ASignature.v ./Term/WithArity/ANotvar.v ./Term/WithArity/AWFMInterpretation.v ./Term/WithArity/ADepRel.v ./Term/WithArity/ARelation.v ./Term/WithArity/AUnif.v ./Term/WithArity/ARules.v ./Term/WithArity/AMatching.v ./Term/WithArity/AReduct.v ./Term/WithArity/AContext.v ./Term/WithArity/ASubterm.v ./Term/WithArity/ATrsNorm.v ./Term/WithArity/MonAlgChecker.v ./Term/WithArity/ACompat.v ./Term/WithArity/APosition.v ./Term/WithArity/ADuplicateSymb.v ./Term/WithArity/ACalls.v ./Term/WithArity/AVariables.v ./Term/WithArity/AShift.v ./Term/WithArity/ABinary.v ./Term/WithArity/AMorphism.v ./Term/WithArity/ASubstitution.v ./Term/WithArity/AMonAlg.v ./Term/WithArity/ATrs.v ./Term/WithArity/ASN.v ./Term/WithArity/ACap.v ./Term/WithArity/AInfSeq.v ./Term/WithArity/AInterpretation.v ./Term/WithArity/ATerm.v ./Term/WithArity/ABterm.v ./Term/WithArity/ARenCap.v ./Term/SimpleType/TermsPos.v ./Term/SimpleType/TermsAlgebraic.v ./Term/SimpleType/TermsSubstConv.v ./Term/SimpleType/TermsBeta.v ./Term/SimpleType/TermsRed.v ./Term/SimpleType/TermsEnv.v ./Term/SimpleType/TermsActiveEnv.v ./Term/SimpleType/TermsLifting.v ./Term/SimpleType/TermsTyping.v ./Term/SimpleType/Terms.v ./Term/SimpleType/TermsEta.v ./Term/SimpleType/TermsDef.v ./Term/SimpleType/TermsConv.v ./Term/SimpleType/TermsSubst.v ./Term/SimpleType/TermsSig.v ./Term/SimpleType/TermsBuilding.v ./Term/SimpleType/TermsManip.v ./Util/Polynom/Polynom.v ./Util/Polynom/MonotonePolynom.v ./Util/Polynom/PositivePolynom.v ./Util/Integer/ZUtil.v ./Util/Integer/BigZUtil.v ./Util/Logic/ClassicUtil.v ./Util/Logic/DepChoice.v ./Util/Logic/LogicUtil.v ./Util/Logic/DepChoicePrf.v ./Util/Logic/EqUtil.v ./Util/FMap/FMapUtil.v ./Util/Pair/LexOrder.v ./Util/Pair/PairUtil.v ./Util/Multiset/MultisetList.v ./Util/Multiset/MultisetNat.v ./Util/Multiset/MultisetTheory.v ./Util/Multiset/MultisetOrder.v ./Util/Multiset/MultisetListOrder.v ./Util/Multiset/MultisetCore.v ./Util/Matrix/Matrix.v ./Util/FSet/FSetUtil.v ./Util/FGraph/TransClos.v ./Util/FGraph/FGraph.v ./Util/Nat/NatLeast.v ./Util/Nat/BoundNat.v ./Util/Nat/Log2.v ./Util/Nat/NatUtil.v ./Util/Nat/BigNUtil.v ./Util/Set/SetUtil.v ./Util/Option/ExcUtil.v ./Util/List/ListPermutation.v ./Util/List/ListExtras.v ./Util/List/ListSort.v ./Util/List/ListUtil.v ./Util/List/ListOccur.v ./Util/List/ListDec.v ./Util/List/ListMax.v ./Util/List/SortUtil.v ./Util/List/ListForall.v ./Util/List/ListRepeatFree.v ./Util/List/ListShrink.v ./Util/List/LexicographicOrder.v ./Util/Vector/VecArith.v ./Util/Vector/VecBool.v ./Util/Vector/VecMax.v ./Util/Vector/VecFilter.v ./Util/Vector/NaryFunction.v ./Util/Vector/VecFilterPerm.v ./Util/Vector/VecOrd.v ./Util/Vector/VecUtil.v ./Util/Bool/BoolUtil.v ./Util/Algebra/OrdSemiRing.v ./Util/Algebra/SemiRing.v ./Util/Relation/Iter.v ./Util/Relation/NotSN_IS.v ./Util/Relation/RelSub.v ./Util/Relation/Tarski.v ./Util/Relation/RelMidex.v ./Util/Relation/AccUtil.v ./Util/Relation/Total.v ./Util/Relation/SCCTopoOrdering.v ./Util/Relation/InfSeq.v ./Util/Relation/NotSN.v ./Util/Relation/Union.v ./Util/Relation/Cycle.v ./Util/Relation/RedLength.v ./Util/Relation/Path.v ./Util/Relation/RelExtras.v ./Util/Relation/SN.v ./Util/Relation/OrdUtil.v ./Util/Relation/GDomainBij.v ./Util/Relation/SCC_dec.v ./Util/Relation/SCC.v ./Util/Relation/Lexico.v ./Util/Relation/AdjMat.v ./Util/Relation/RelUtil.v ./Util/Relation/Preorder.v ./Util/Relation/RelDec.v ./MatrixInt/AArcticInt.v ./MatrixInt/ATropicalInt.v ./MatrixInt/AArcticBZInt.v ./MatrixInt/AMatrixBasedInt.v ./MatrixInt/ABigMatrixInt.v ./MatrixInt/ATropicalBasedInt.v ./MatrixInt/AArcticBasedInt.v ./MatrixInt/AMatrixInt.v ./PolyInt/APolyInt_MA.v ./PolyInt/APolyInt.v ./PolyInt/PolyChecker.v ./MPO/VMpo.v > Makefile.coq
+make -r -f Makefile.coq depend
+make[1]: Entering directory '/home/bench/.opam/system/build/coq:color.1.0.0'
+""coqdep"" -c -slash -R . CoLoR ""MPO/VMpo.v"" > ""MPO/VMpo.v.d"" || ( RV=$?; rm -f ""MPO/VMpo.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""PolyInt/PolyChecker.v"" > ""PolyInt/PolyChecker.v.d"" || ( RV=$?; rm -f ""PolyInt/PolyChecker.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""PolyInt/APolyInt.v"" > ""PolyInt/APolyInt.v.d"" || ( RV=$?; rm -f ""PolyInt/APolyInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""PolyInt/APolyInt_MA.v"" > ""PolyInt/APolyInt_MA.v.d"" || ( RV=$?; rm -f ""PolyInt/APolyInt_MA.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/AMatrixInt.v"" > ""MatrixInt/AMatrixInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/AMatrixInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/AArcticBasedInt.v"" > ""MatrixInt/AArcticBasedInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/AArcticBasedInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/ATropicalBasedInt.v"" > ""MatrixInt/ATropicalBasedInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/ATropicalBasedInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/ABigMatrixInt.v"" > ""MatrixInt/ABigMatrixInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/ABigMatrixInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/AMatrixBasedInt.v"" > ""MatrixInt/AMatrixBasedInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/AMatrixBasedInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/AArcticBZInt.v"" > ""MatrixInt/AArcticBZInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/AArcticBZInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/ATropicalInt.v"" > ""MatrixInt/ATropicalInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/ATropicalInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MatrixInt/AArcticInt.v"" > ""MatrixInt/AArcticInt.v.d"" || ( RV=$?; rm -f ""MatrixInt/AArcticInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RelDec.v"" > ""Util/Relation/RelDec.v.d"" || ( RV=$?; rm -f ""Util/Relation/RelDec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Preorder.v"" > ""Util/Relation/Preorder.v.d"" || ( RV=$?; rm -f ""Util/Relation/Preorder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RelUtil.v"" > ""Util/Relation/RelUtil.v.d"" || ( RV=$?; rm -f ""Util/Relation/RelUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/AdjMat.v"" > ""Util/Relation/AdjMat.v.d"" || ( RV=$?; rm -f ""Util/Relation/AdjMat.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Lexico.v"" > ""Util/Relation/Lexico.v.d"" || ( RV=$?; rm -f ""Util/Relation/Lexico.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/SCC.v"" > ""Util/Relation/SCC.v.d"" || ( RV=$?; rm -f ""Util/Relation/SCC.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/SCC_dec.v"" > ""Util/Relation/SCC_dec.v.d"" || ( RV=$?; rm -f ""Util/Relation/SCC_dec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/GDomainBij.v"" > ""Util/Relation/GDomainBij.v.d"" || ( RV=$?; rm -f ""Util/Relation/GDomainBij.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/OrdUtil.v"" > ""Util/Relation/OrdUtil.v.d"" || ( RV=$?; rm -f ""Util/Relation/OrdUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/SN.v"" > ""Util/Relation/SN.v.d"" || ( RV=$?; rm -f ""Util/Relation/SN.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RelExtras.v"" > ""Util/Relation/RelExtras.v.d"" || ( RV=$?; rm -f ""Util/Relation/RelExtras.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Path.v"" > ""Util/Relation/Path.v.d"" || ( RV=$?; rm -f ""Util/Relation/Path.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RedLength.v"" > ""Util/Relation/RedLength.v.d"" || ( RV=$?; rm -f ""Util/Relation/RedLength.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Cycle.v"" > ""Util/Relation/Cycle.v.d"" || ( RV=$?; rm -f ""Util/Relation/Cycle.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Union.v"" > ""Util/Relation/Union.v.d"" || ( RV=$?; rm -f ""Util/Relation/Union.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/NotSN.v"" > ""Util/Relation/NotSN.v.d"" || ( RV=$?; rm -f ""Util/Relation/NotSN.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/InfSeq.v"" > ""Util/Relation/InfSeq.v.d"" || ( RV=$?; rm -f ""Util/Relation/InfSeq.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/SCCTopoOrdering.v"" > ""Util/Relation/SCCTopoOrdering.v.d"" || ( RV=$?; rm -f ""Util/Relation/SCCTopoOrdering.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Total.v"" > ""Util/Relation/Total.v.d"" || ( RV=$?; rm -f ""Util/Relation/Total.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/AccUtil.v"" > ""Util/Relation/AccUtil.v.d"" || ( RV=$?; rm -f ""Util/Relation/AccUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RelMidex.v"" > ""Util/Relation/RelMidex.v.d"" || ( RV=$?; rm -f ""Util/Relation/RelMidex.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Tarski.v"" > ""Util/Relation/Tarski.v.d"" || ( RV=$?; rm -f ""Util/Relation/Tarski.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/RelSub.v"" > ""Util/Relation/RelSub.v.d"" || ( RV=$?; rm -f ""Util/Relation/RelSub.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/NotSN_IS.v"" > ""Util/Relation/NotSN_IS.v.d"" || ( RV=$?; rm -f ""Util/Relation/NotSN_IS.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Relation/Iter.v"" > ""Util/Relation/Iter.v.d"" || ( RV=$?; rm -f ""Util/Relation/Iter.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Algebra/SemiRing.v"" > ""Util/Algebra/SemiRing.v.d"" || ( RV=$?; rm -f ""Util/Algebra/SemiRing.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Algebra/OrdSemiRing.v"" > ""Util/Algebra/OrdSemiRing.v.d"" || ( RV=$?; rm -f ""Util/Algebra/OrdSemiRing.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Bool/BoolUtil.v"" > ""Util/Bool/BoolUtil.v.d"" || ( RV=$?; rm -f ""Util/Bool/BoolUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecUtil.v"" > ""Util/Vector/VecUtil.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecOrd.v"" > ""Util/Vector/VecOrd.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecOrd.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecFilterPerm.v"" > ""Util/Vector/VecFilterPerm.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecFilterPerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/NaryFunction.v"" > ""Util/Vector/NaryFunction.v.d"" || ( RV=$?; rm -f ""Util/Vector/NaryFunction.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecFilter.v"" > ""Util/Vector/VecFilter.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecFilter.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecMax.v"" > ""Util/Vector/VecMax.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecMax.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecBool.v"" > ""Util/Vector/VecBool.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecBool.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Vector/VecArith.v"" > ""Util/Vector/VecArith.v.d"" || ( RV=$?; rm -f ""Util/Vector/VecArith.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/LexicographicOrder.v"" > ""Util/List/LexicographicOrder.v.d"" || ( RV=$?; rm -f ""Util/List/LexicographicOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListShrink.v"" > ""Util/List/ListShrink.v.d"" || ( RV=$?; rm -f ""Util/List/ListShrink.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListRepeatFree.v"" > ""Util/List/ListRepeatFree.v.d"" || ( RV=$?; rm -f ""Util/List/ListRepeatFree.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListForall.v"" > ""Util/List/ListForall.v.d"" || ( RV=$?; rm -f ""Util/List/ListForall.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/SortUtil.v"" > ""Util/List/SortUtil.v.d"" || ( RV=$?; rm -f ""Util/List/SortUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListMax.v"" > ""Util/List/ListMax.v.d"" || ( RV=$?; rm -f ""Util/List/ListMax.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListDec.v"" > ""Util/List/ListDec.v.d"" || ( RV=$?; rm -f ""Util/List/ListDec.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListOccur.v"" > ""Util/List/ListOccur.v.d"" || ( RV=$?; rm -f ""Util/List/ListOccur.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListUtil.v"" > ""Util/List/ListUtil.v.d"" || ( RV=$?; rm -f ""Util/List/ListUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListSort.v"" > ""Util/List/ListSort.v.d"" || ( RV=$?; rm -f ""Util/List/ListSort.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListExtras.v"" > ""Util/List/ListExtras.v.d"" || ( RV=$?; rm -f ""Util/List/ListExtras.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/List/ListPermutation.v"" > ""Util/List/ListPermutation.v.d"" || ( RV=$?; rm -f ""Util/List/ListPermutation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Option/ExcUtil.v"" > ""Util/Option/ExcUtil.v.d"" || ( RV=$?; rm -f ""Util/Option/ExcUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Set/SetUtil.v"" > ""Util/Set/SetUtil.v.d"" || ( RV=$?; rm -f ""Util/Set/SetUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Nat/BigNUtil.v"" > ""Util/Nat/BigNUtil.v.d"" || ( RV=$?; rm -f ""Util/Nat/BigNUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Nat/NatUtil.v"" > ""Util/Nat/NatUtil.v.d"" || ( RV=$?; rm -f ""Util/Nat/NatUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Nat/Log2.v"" > ""Util/Nat/Log2.v.d"" || ( RV=$?; rm -f ""Util/Nat/Log2.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Nat/BoundNat.v"" > ""Util/Nat/BoundNat.v.d"" || ( RV=$?; rm -f ""Util/Nat/BoundNat.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Nat/NatLeast.v"" > ""Util/Nat/NatLeast.v.d"" || ( RV=$?; rm -f ""Util/Nat/NatLeast.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/FGraph/FGraph.v"" > ""Util/FGraph/FGraph.v.d"" || ( RV=$?; rm -f ""Util/FGraph/FGraph.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/FGraph/TransClos.v"" > ""Util/FGraph/TransClos.v.d"" || ( RV=$?; rm -f ""Util/FGraph/TransClos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/FSet/FSetUtil.v"" > ""Util/FSet/FSetUtil.v.d"" || ( RV=$?; rm -f ""Util/FSet/FSetUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Matrix/Matrix.v"" > ""Util/Matrix/Matrix.v.d"" || ( RV=$?; rm -f ""Util/Matrix/Matrix.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetCore.v"" > ""Util/Multiset/MultisetCore.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetCore.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetListOrder.v"" > ""Util/Multiset/MultisetListOrder.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetListOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetOrder.v"" > ""Util/Multiset/MultisetOrder.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetTheory.v"" > ""Util/Multiset/MultisetTheory.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetTheory.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetNat.v"" > ""Util/Multiset/MultisetNat.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetNat.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Multiset/MultisetList.v"" > ""Util/Multiset/MultisetList.v.d"" || ( RV=$?; rm -f ""Util/Multiset/MultisetList.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Pair/PairUtil.v"" > ""Util/Pair/PairUtil.v.d"" || ( RV=$?; rm -f ""Util/Pair/PairUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Pair/LexOrder.v"" > ""Util/Pair/LexOrder.v.d"" || ( RV=$?; rm -f ""Util/Pair/LexOrder.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/FMap/FMapUtil.v"" > ""Util/FMap/FMapUtil.v.d"" || ( RV=$?; rm -f ""Util/FMap/FMapUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Logic/EqUtil.v"" > ""Util/Logic/EqUtil.v.d"" || ( RV=$?; rm -f ""Util/Logic/EqUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Logic/DepChoicePrf.v"" > ""Util/Logic/DepChoicePrf.v.d"" || ( RV=$?; rm -f ""Util/Logic/DepChoicePrf.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Logic/LogicUtil.v"" > ""Util/Logic/LogicUtil.v.d"" || ( RV=$?; rm -f ""Util/Logic/LogicUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Logic/DepChoice.v"" > ""Util/Logic/DepChoice.v.d"" || ( RV=$?; rm -f ""Util/Logic/DepChoice.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Logic/ClassicUtil.v"" > ""Util/Logic/ClassicUtil.v.d"" || ( RV=$?; rm -f ""Util/Logic/ClassicUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Integer/BigZUtil.v"" > ""Util/Integer/BigZUtil.v.d"" || ( RV=$?; rm -f ""Util/Integer/BigZUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Integer/ZUtil.v"" > ""Util/Integer/ZUtil.v.d"" || ( RV=$?; rm -f ""Util/Integer/ZUtil.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Polynom/PositivePolynom.v"" > ""Util/Polynom/PositivePolynom.v.d"" || ( RV=$?; rm -f ""Util/Polynom/PositivePolynom.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Polynom/MonotonePolynom.v"" > ""Util/Polynom/MonotonePolynom.v.d"" || ( RV=$?; rm -f ""Util/Polynom/MonotonePolynom.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Util/Polynom/Polynom.v"" > ""Util/Polynom/Polynom.v.d"" || ( RV=$?; rm -f ""Util/Polynom/Polynom.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsManip.v"" > ""Term/SimpleType/TermsManip.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsManip.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsBuilding.v"" > ""Term/SimpleType/TermsBuilding.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsBuilding.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsSig.v"" > ""Term/SimpleType/TermsSig.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsSig.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsSubst.v"" > ""Term/SimpleType/TermsSubst.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsSubst.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsConv.v"" > ""Term/SimpleType/TermsConv.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsConv.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsDef.v"" > ""Term/SimpleType/TermsDef.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsDef.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsEta.v"" > ""Term/SimpleType/TermsEta.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsEta.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/Terms.v"" > ""Term/SimpleType/Terms.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/Terms.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsTyping.v"" > ""Term/SimpleType/TermsTyping.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsTyping.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsLifting.v"" > ""Term/SimpleType/TermsLifting.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsLifting.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsActiveEnv.v"" > ""Term/SimpleType/TermsActiveEnv.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsActiveEnv.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsEnv.v"" > ""Term/SimpleType/TermsEnv.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsEnv.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsRed.v"" > ""Term/SimpleType/TermsRed.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsRed.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsBeta.v"" > ""Term/SimpleType/TermsBeta.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsBeta.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsSubstConv.v"" > ""Term/SimpleType/TermsSubstConv.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsSubstConv.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsAlgebraic.v"" > ""Term/SimpleType/TermsAlgebraic.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsAlgebraic.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/SimpleType/TermsPos.v"" > ""Term/SimpleType/TermsPos.v.d"" || ( RV=$?; rm -f ""Term/SimpleType/TermsPos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ARenCap.v"" > ""Term/WithArity/ARenCap.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ARenCap.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ABterm.v"" > ""Term/WithArity/ABterm.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ABterm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ATerm.v"" > ""Term/WithArity/ATerm.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ATerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AInterpretation.v"" > ""Term/WithArity/AInterpretation.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AInterpretation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AInfSeq.v"" > ""Term/WithArity/AInfSeq.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AInfSeq.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ACap.v"" > ""Term/WithArity/ACap.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ACap.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ASN.v"" > ""Term/WithArity/ASN.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ASN.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ATrs.v"" > ""Term/WithArity/ATrs.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ATrs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AMonAlg.v"" > ""Term/WithArity/AMonAlg.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AMonAlg.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ASubstitution.v"" > ""Term/WithArity/ASubstitution.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ASubstitution.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AMorphism.v"" > ""Term/WithArity/AMorphism.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AMorphism.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ABinary.v"" > ""Term/WithArity/ABinary.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ABinary.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AShift.v"" > ""Term/WithArity/AShift.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AShift.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AVariables.v"" > ""Term/WithArity/AVariables.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AVariables.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ACalls.v"" > ""Term/WithArity/ACalls.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ACalls.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ADuplicateSymb.v"" > ""Term/WithArity/ADuplicateSymb.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ADuplicateSymb.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/APosition.v"" > ""Term/WithArity/APosition.v.d"" || ( RV=$?; rm -f ""Term/WithArity/APosition.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ACompat.v"" > ""Term/WithArity/ACompat.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ACompat.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/MonAlgChecker.v"" > ""Term/WithArity/MonAlgChecker.v.d"" || ( RV=$?; rm -f ""Term/WithArity/MonAlgChecker.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ATrsNorm.v"" > ""Term/WithArity/ATrsNorm.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ATrsNorm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ASubterm.v"" > ""Term/WithArity/ASubterm.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ASubterm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AContext.v"" > ""Term/WithArity/AContext.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AContext.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AReduct.v"" > ""Term/WithArity/AReduct.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AReduct.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AMatching.v"" > ""Term/WithArity/AMatching.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AMatching.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ARules.v"" > ""Term/WithArity/ARules.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ARules.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AUnif.v"" > ""Term/WithArity/AUnif.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AUnif.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ARelation.v"" > ""Term/WithArity/ARelation.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ARelation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ADepRel.v"" > ""Term/WithArity/ADepRel.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ADepRel.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AWFMInterpretation.v"" > ""Term/WithArity/AWFMInterpretation.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AWFMInterpretation.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ANotvar.v"" > ""Term/WithArity/ANotvar.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ANotvar.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/ASignature.v"" > ""Term/WithArity/ASignature.v.d"" || ( RV=$?; rm -f ""Term/WithArity/ASignature.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/WithArity/AUnary.v"" > ""Term/WithArity/AUnary.v.d"" || ( RV=$?; rm -f ""Term/WithArity/AUnary.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/String/Srs.v"" > ""Term/String/Srs.v.d"" || ( RV=$?; rm -f ""Term/String/Srs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/String/SReverse.v"" > ""Term/String/SReverse.v.d"" || ( RV=$?; rm -f ""Term/String/SReverse.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/String/SContext.v"" > ""Term/String/SContext.v.d"" || ( RV=$?; rm -f ""Term/String/SContext.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Varyadic/VTerm.v"" > ""Term/Varyadic/VTerm.v.d"" || ( RV=$?; rm -f ""Term/Varyadic/VTerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Varyadic/VSignature.v"" > ""Term/Varyadic/VSignature.v.d"" || ( RV=$?; rm -f ""Term/Varyadic/VSignature.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Varyadic/VTrs.v"" > ""Term/Varyadic/VTrs.v.d"" || ( RV=$?; rm -f ""Term/Varyadic/VTrs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Varyadic/VContext.v"" > ""Term/Varyadic/VContext.v.d"" || ( RV=$?; rm -f ""Term/Varyadic/VContext.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Varyadic/VSubstitution.v"" > ""Term/Varyadic/VSubstitution.v.d"" || ( RV=$?; rm -f ""Term/Varyadic/VSubstitution.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LSubs.v"" > ""Term/Lambda/LSubs.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LSubs.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LCompInt.v"" > ""Term/Lambda/LCompInt.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LCompInt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LTerm.v"" > ""Term/Lambda/LTerm.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LTerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LSimple.v"" > ""Term/Lambda/LSimple.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LSimple.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LBeta.v"" > ""Term/Lambda/LBeta.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LBeta.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LCompSimple.v"" > ""Term/Lambda/LCompSimple.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LCompSimple.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LSystemT.v"" > ""Term/Lambda/LSystemT.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LSystemT.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LCall.v"" > ""Term/Lambda/LCall.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LCall.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LAlphaAlt.v"" > ""Term/Lambda/LAlphaAlt.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LAlphaAlt.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LCompClos.v"" > ""Term/Lambda/LCompClos.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LCompClos.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LComp.v"" > ""Term/Lambda/LComp.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LComp.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LCompRewrite.v"" > ""Term/Lambda/LCompRewrite.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LCompRewrite.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Term/Lambda/LAlpha.v"" > ""Term/Lambda/LAlpha.v.d"" || ( RV=$?; rm -f ""Term/Lambda/LAlpha.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VMPO.v"" > ""RPO/VMPO.v.d"" || ( RV=$?; rm -f ""RPO/VMPO.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VRPO_Prover.v"" > ""RPO/VRPO_Prover.v.d"" || ( RV=$?; rm -f ""RPO/VRPO_Prover.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VLPO.v"" > ""RPO/VLPO.v.d"" || ( RV=$?; rm -f ""RPO/VLPO.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VRPO_Type.v"" > ""RPO/VRPO_Type.v.d"" || ( RV=$?; rm -f ""RPO/VRPO_Type.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VRPO_Status.v"" > ""RPO/VRPO_Status.v.d"" || ( RV=$?; rm -f ""RPO/VRPO_Status.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VPrecedence.v"" > ""RPO/VPrecedence.v.d"" || ( RV=$?; rm -f ""RPO/VPrecedence.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""RPO/VRPO_Results.v"" > ""RPO/VRPO_Results.v.d"" || ( RV=$?; rm -f ""RPO/VRPO_Results.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Conversion/AReverse.v"" > ""Conversion/AReverse.v.d"" || ( RV=$?; rm -f ""Conversion/AReverse.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Conversion/VTerm_of_ATerm.v"" > ""Conversion/VTerm_of_ATerm.v.d"" || ( RV=$?; rm -f ""Conversion/VTerm_of_ATerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Conversion/ATerm_of_String.v"" > ""Conversion/ATerm_of_String.v.d"" || ( RV=$?; rm -f ""Conversion/ATerm_of_String.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Conversion/String_of_ATerm.v"" > ""Conversion/String_of_ATerm.v.d"" || ( RV=$?; rm -f ""Conversion/String_of_ATerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MannaNess/AMannaNess.v"" > ""MannaNess/AMannaNess.v.d"" || ( RV=$?; rm -f ""MannaNess/AMannaNess.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""MannaNess/ARedPair.v"" > ""MannaNess/ARedPair.v.d"" || ( RV=$?; rm -f ""MannaNess/ARedPair.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""ProofChecker/Problem.v"" > ""ProofChecker/Problem.v.d"" || ( RV=$?; rm -f ""ProofChecker/Problem.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""ProofChecker/IntBasedChecker.v"" > ""ProofChecker/IntBasedChecker.v.d"" || ( RV=$?; rm -f ""ProofChecker/IntBasedChecker.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""ProofChecker/Proof.v"" > ""ProofChecker/Proof.v.d"" || ( RV=$?; rm -f ""ProofChecker/Proof.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""ProofChecker/ProofChecker.v"" > ""ProofChecker/ProofChecker.v.d"" || ( RV=$?; rm -f ""ProofChecker/ProofChecker.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""ProofChecker/EmptyChecker.v"" > ""ProofChecker/EmptyChecker.v.d"" || ( RV=$?; rm -f ""ProofChecker/EmptyChecker.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/AGraph.v"" > ""DP/AGraph.v.d"" || ( RV=$?; rm -f ""DP/AGraph.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/ADPGraph.v"" > ""DP/ADPGraph.v.d"" || ( RV=$?; rm -f ""DP/ADPGraph.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/AHDE.v"" > ""DP/AHDE.v.d"" || ( RV=$?; rm -f ""DP/AHDE.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/ADecomp.v"" > ""DP/ADecomp.v.d"" || ( RV=$?; rm -f ""DP/ADecomp.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/ASCCUnion.v"" > ""DP/ASCCUnion.v.d"" || ( RV=$?; rm -f ""DP/ASCCUnion.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/ADPUnif.v"" > ""DP/ADPUnif.v.d"" || ( RV=$?; rm -f ""DP/ADPUnif.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""DP/ADP.v"" > ""DP/ADP.v.d"" || ( RV=$?; rm -f ""DP/ADP.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""NonTermin/ALoop.v"" > ""NonTermin/ALoop.v.d"" || ( RV=$?; rm -f ""NonTermin/ALoop.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""NonTermin/SLoop.v"" > ""NonTermin/SLoop.v.d"" || ( RV=$?; rm -f ""NonTermin/SLoop.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""NonTermin/AModLoop.v"" > ""NonTermin/AModLoop.v.d"" || ( RV=$?; rm -f ""NonTermin/AModLoop.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""NonTermin/AVarCond.v"" > ""NonTermin/AVarCond.v.d"" || ( RV=$?; rm -f ""NonTermin/AVarCond.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""NonTermin/SModLoop.v"" > ""NonTermin/SModLoop.v.d"" || ( RV=$?; rm -f ""NonTermin/SModLoop.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/HorpoExMap.v"" > ""HORPO/HorpoExMap.v.d"" || ( RV=$?; rm -f ""HORPO/HorpoExMap.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/HorpoComp.v"" > ""HORPO/HorpoComp.v.d"" || ( RV=$?; rm -f ""HORPO/HorpoComp.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/Computability.v"" > ""HORPO/Computability.v.d"" || ( RV=$?; rm -f ""HORPO/Computability.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/Horpo.v"" > ""HORPO/Horpo.v.d"" || ( RV=$?; rm -f ""HORPO/Horpo.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/HorpoWf.v"" > ""HORPO/HorpoWf.v.d"" || ( RV=$?; rm -f ""HORPO/HorpoWf.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""HORPO/HorpoExNonTrans.v"" > ""HORPO/HorpoExNonTrans.v.d"" || ( RV=$?; rm -f ""HORPO/HorpoExNonTrans.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""SubtermCrit/ASimpleProj.v"" > ""SubtermCrit/ASimpleProj.v.d"" || ( RV=$?; rm -f ""SubtermCrit/ASimpleProj.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Filter/AProj.v"" > ""Filter/AProj.v.d"" || ( RV=$?; rm -f ""Filter/AProj.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Filter/AFilterPerm.v"" > ""Filter/AFilterPerm.v.d"" || ( RV=$?; rm -f ""Filter/AFilterPerm.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""Filter/AFilterBool.v"" > ""Filter/AFilterBool.v.d"" || ( RV=$?; rm -f ""Filter/AFilterBool.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""SemLab/AFlatCont.v"" > ""SemLab/AFlatCont.v.d"" || ( RV=$?; rm -f ""SemLab/AFlatCont.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""SemLab/ARootLab.v"" > ""SemLab/ARootLab.v.d"" || ( RV=$?; rm -f ""SemLab/ARootLab.v.d""; exit ${RV} )
+""coqdep"" -c -slash -R . CoLoR ""SemLab/ASemLab.v"" > ""SemLab/ASemLab.v.d"" || ( RV=$?; rm -f ""SemLab/ASemLab.v.d""; exit ${RV} )
+make[1]: Nothing to be done for 'depend'.
+make[1]: Leaving directory '/home/bench/.opam/system/build/coq:color.1.0.0'
+make -r -f Makefile.coq
+make[1]: Entering directory '/home/bench/.opam/system/build/coq:color.1.0.0'
+""coqc""  -q  -R . CoLoR   Util/Logic/LogicUtil
+""coqc""  -q  -R . CoLoR   Term/SimpleType/TermsSig
+""coqc""  -q  -R . CoLoR   Util/Nat/NatLeast
+""coqc""  -q  -R . CoLoR   Util/List/ListSort
+""coqc""  -q  -R . CoLoR   Util/Relation/RelMidex
+""coqc""  -q  -R . CoLoR   Util/Bool/BoolUtil
+""coqc""  -q  -R . CoLoR   Util/Nat/Log2
+File ""/home/bench/.opam/system/build/coq:color.1.0.0/Util/Bool/BoolUtil.v"", line 16, characters 19-33:
+Error: The reference orb_false_elim was not found in the current environment.
+Makefile.coq:395: recipe for target 'Util/Bool/BoolUtil.vo' failed
+make[1]: *** [Util/Bool/BoolUtil.vo] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/bench/.opam/system/build/coq:color.1.0.0'
+Makefile:17: recipe for target 'default' failed
+make: *** [default] Error 2
+[ERROR] The compilation of coq:color.1.0.0 failed.
+Removing coq:color.1.0.0.
+  rm -R /home/bench/.opam/system/lib/coq/user-contrib/CoLoR
+rm: cannot remove '/home/bench/.opam/system/lib/coq/user-contrib/CoLoR': No such file or directory
+
+
+#=== ERROR while installing coq:color.1.0.0 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:color.1.0.0
+# compiler             system (4.02.1)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:color.1.0.0/coq:color-13451-c61e7b.env
+# stdout-file          /home/bench/.opam/system/build/coq:color.1.0.0/coq:color-13451-c61e7b.out
+# stderr-file          /home/bench/.opam/system/build/coq:color.1.0.0/coq:color-13451-c61e7b.err
+### stdout ###
+# ...[truncated]
+# ""coqc""  -q  -R . CoLoR   Util/Nat/NatLeast
+# ""coqc""  -q  -R . CoLoR   Util/List/ListSort
+# ""coqc""  -q  -R . CoLoR   Util/Relation/RelMidex
+# ""coqc""  -q  -R . CoLoR   Util/Bool/BoolUtil
+# ""coqc""  -q  -R . CoLoR   Util/Nat/Log2
+# File ""/home/bench/.opam/system/build/coq:color.1.0.0/Util/Bool/BoolUtil.v"", line 16, characters 19-33:
+# Error: The reference orb_false_elim was not found in the current environment.
+# Makefile.coq:395: recipe for target 'Util/Bool/BoolUtil.vo' failed
+# make[1]: Leaving directory '/home/bench/.opam/system/build/coq:color.1.0.0'
+# Makefile:17: recipe for target 'default' failed
+### stderr ###
+# make[1]: *** [Util/Bool/BoolUtil.vo] Error 1
+# make[1]: *** Waiting for unfinished jobs....
+# make: *** [default] Error 2
+
+'opam install -y --verbose coq:color.1.0.0' failed.
+",true,0,0,"","","",""
+coq:compcert,2.4.0,Error,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:coqeal:refinements  0.9.1  A refinement framework (for algebra).
+coq:coqeal:theory       0.9.1  The theory needed by the refinement framework lib
+coq:coquelicot          2.0.1  A Coq formalization of real analysis compatible w
+coq:error-handlers      1.0.0  More functions on lists.
+coq:flocq               2.4.0  A floating-point formalization for the Coq system
+coq:fpmods              0.2.0  A short constructive formalization of finitely pr
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:iterable            1.0.0  Generic definition of iterators.
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         1.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:plouffe             1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.4.0,0,0,"",opam install -y --show-action coq:compcert.2.4.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.4.0,0,33,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:compcert.2.4.0,1024,10,"The following actions will be performed:
+ - install   coq:compcert.2.4.0
+=== 1 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:compcert.2.4.0] Downloading http://compcert.inria.fr/release/compcert-2.4.tgz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2390k  100 2390k    0     0  10.1M      0 --:--:-- --:--:-- --:--:-- 10.2M
+200
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Copying ~/.opam/repo/stable/packages/coq:compcert/coq:compcert.2.4.0/files/coq:compcert.install to ~/.opam/system/build/coq:compcert.2.4.0/
+Building coq:compcert.2.4.0:
+  ./configure ia32-linux
+  make -j4
+Testing assembler support for CFI directives... yes
+Testing Coq... version 8.4pl5 -- good!
+Testing OCaml... version 4.02.1 -- good!
+Testing Menhir... version 20141215 -- good!
+
+CompCert configuration:
+    Target architecture........... ia32
+    Hardware model................ sse2
+    Application binary interface.. standard
+    OS and development env........ linux
+    C compiler.................... gcc -m32
+    C preprocessor................ gcc -m32 -U__GNUC__ -E
+    Assembler..................... gcc -m32 -c
+    Assembler supports CFI........ true
+    Assembler for runtime lib..... gcc -m32 -c
+    Linker........................ gcc -m32
+    Math library.................. -lm
+    Binaries installed in......... /usr/local/bin
+    Runtime library provided...... true
+    Library files installed in.... /usr/local/lib/compcert
+    cchecklink tool supported..... false
+
+If anything above looks wrong, please edit file ./Makefile.config to correct.
+
+make proof
+make[1]: Entering directory '/home/bench/.opam/system/build/coq:compcert.2.4.0'
+COQC lib/Axioms.v
+COQC lib/Coqlib.v
+ocamlopt -o tools/ndfun str.cmxa tools/ndfun.ml
+COQC flocq/Core/Fcore_Zaux.v
+File ""tools/ndfun.ml"", line 12, characters 10-23:
+Warning 3: deprecated: String.create
+Use Bytes.create instead.
+File ""tools/ndfun.ml"", line 14, characters 4-52:
+Warning 3: deprecated: String.set
+Use Bytes.set instead.
+COQC driver/Compopts.v
+COQC cparser/validator/Alphabet.v
+COQC cparser/validator/Tuples.v
+COQC cparser/Cabs.v
+COQC lib/Wfsimpl.v
+Preprocessing ia32/SelectOp.vp
+Preprocessing backend/SelectDiv.vp
+Preprocessing backend/SelectLong.vp
+Preprocessing ia32/ConstpropOp.vp
+COQC flocq/Core/Fcore_digits.v
+COQC flocq/Core/Fcore_Raux.v
+File ""/home/bench/.opam/system/build/coq:compcert.2.4.0/lib/Coqlib.v"", line 1275, characters 9-15:
+Error: Unknown interpretation for notation ""_ && _"".
+Makefile:213: recipe for target 'lib/Coqlib.vo' failed
+make[1]: *** [lib/Coqlib.vo] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory '/home/bench/.opam/system/build/coq:compcert.2.4.0'
+Makefile:141: recipe for target 'all' failed
+make: *** [all] Error 2
+[ERROR] The compilation of coq:compcert.2.4.0 failed.
+Removing coq:compcert.2.4.0.
+  Nothing to do.
+
+
+#=== ERROR while installing coq:compcert.2.4.0 ================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make -j4
+# path                 /home/bench/.opam/system/build/coq:compcert.2.4.0
+# compiler             system (4.02.1)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-16523-ad8886.env
+# stdout-file          /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-16523-ad8886.out
+# stderr-file          /home/bench/.opam/system/build/coq:compcert.2.4.0/coq:compcert-16523-ad8886.err
+### stdout ###
+# ...[truncated]
+# Preprocessing backend/SelectDiv.vp
+# Preprocessing backend/SelectLong.vp
+# Preprocessing ia32/ConstpropOp.vp
+# COQC flocq/Core/Fcore_digits.v
+# COQC flocq/Core/Fcore_Raux.v
+# File ""/home/bench/.opam/system/build/coq:compcert.2.4.0/lib/Coqlib.v"", line 1275, characters 9-15:
+# Error: Unknown interpretation for notation ""_ && _"".
+# Makefile:213: recipe for target 'lib/Coqlib.vo' failed
+# make[1]: Leaving directory '/home/bench/.opam/system/build/coq:compcert.2.4.0'
+# Makefile:141: recipe for target 'all' failed
+### stderr ###
+# File ""tools/ndfun.ml"", line 12, characters 10-23:
+# Warning 3: deprecated: String.create
+# Use Bytes.create instead.
+# File ""tools/ndfun.ml"", line 14, characters 4-52:
+# Warning 3: deprecated: String.set
+# Use Bytes.set instead.
+# make[1]: *** [lib/Coqlib.vo] Error 1
+# make[1]: *** Waiting for unfinished jobs....
+# make: *** [all] Error 2
+
+'opam install -y --verbose coq:compcert.2.4.0' failed.
+",true,0,0,"","","",""
+coq:compcert,2.3.2,DepsError,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:coqeal:refinements  0.9.1  A refinement framework (for algebra).
+coq:coqeal:theory       0.9.1  The theory needed by the refinement framework lib
+coq:coquelicot          2.0.1  A Coq formalization of real analysis compatible w
+coq:error-handlers      1.0.0  More functions on lists.
+coq:flocq               2.4.0  A floating-point formalization for the Coq system
+coq:fpmods              0.2.0  A short constructive formalization of finitely pr
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:iterable            1.0.0  Generic definition of iterators.
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         1.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:plouffe             1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.3.2,0,0,"",opam install -y --show-action coq:compcert.2.3.2 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.3.2,1024,20,"The following actions will be performed:
+ - install   ocamlfind.1.5.5                       [required by menhir]
+ - install   menhir.20141215                       [required by coq:compcert]
+=== 2 to install ===
+
+=-=- Synchronizing package archives -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+=-=- Installing packages =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Building ocamlfind.1.5.5:
+  ./configure -bindir /home/bench/.opam/system/bin -sitelib /home/bench/.opam/system/lib -mandir /home/bench/.opam/system/man -config /home/bench/.opam/system/lib/findlib.conf -no-topfind
+  make all
+  make opt
+  make install
+Installing ocamlfind.1.5.5.
+Applying warn_error.patch.
+Building menhir.20141215:
+  make PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+  make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+[ERROR] The compilation of menhir.20141215 failed.
+Removing menhir.20141215.
+  ocamlfind remove menhirLib
+[WARNING] Directory /home/bench/.opam/system/lib/menhir is not empty, not removing
+[WARNING] Directory /home/bench/.opam/system/doc/menhir is not empty, not removing
+
+
+#=== ERROR while installing menhir.20141215 ===================================#
+# opam-version         1.2.0
+# os                   linux
+# command              make install PREFIX=/home/bench/.opam/system docdir=/home/bench/.opam/system/doc/menhir libdir=/home/bench/.opam/system/lib/menhir mandir=/home/bench/.opam/system/man/man1
+# path                 /home/bench/.opam/system/build/menhir.20141215
+# compiler             system (4.02.1)
+# exit-code            2
+# env-file             /home/bench/.opam/system/build/menhir.20141215/menhir-17239-865888.env
+# stdout-file          /home/bench/.opam/system/build/menhir.20141215/menhir-17239-865888.out
+# stderr-file          /home/bench/.opam/system/build/menhir.20141215/menhir-17239-865888.err
+### stdout ###
+# ...[truncated]
+# mkdir -p /home/bench/.opam/system/bin
+# mkdir -p /home/bench/.opam/system/lib/menhir
+# mkdir -p /home/bench/.opam/system/doc/menhir
+# mkdir -p /home/bench/.opam/system/man/man1
+# install src/_stage2/menhir.native /home/bench/.opam/system/bin/menhir
+# install -m 644 src/standard.mly /home/bench/.opam/system/lib/menhir
+# cp -r manual.pdf demos /home/bench/.opam/system/doc/menhir
+# cp -r menhir.1 /home/bench/.opam/system/man/man1
+# Installing MenhirLib via ocamlfind.
+# Makefile:94: recipe for target 'install' failed
+### stderr ###
+# ocamlfind: Package menhirLib is already installed
+#  - (file /home/bench/.opam/system/lib/menhirLib/META already exists)
+# make: *** [install] Error 2
+
+
+=-=- Error report -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These actions have been completed successfully
+ - install   ocamlfind.1.5.5
+The following failed
+ - install   menhir.20141215
+
+The former state can be restored with opam switch import ""/home/bench/.opam/system/backup/state-20150113204406.export""
+",true,0,0,"",true,0,0,"","","",""
+coq:concurrency:proxy,1.0.0,Success,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:coqeal:refinements  0.9.1  A refinement framework (for algebra).
+coq:coqeal:theory       0.9.1  The theory needed by the refinement framework lib
+coq:coquelicot          2.0.1  A Coq formalization of real analysis compatible w
+coq:error-handlers      1.0.0  More functions on lists.
+coq:flocq               2.4.0  A floating-point formalization for the Coq system
+coq:fpmods              0.2.0  A short constructive formalization of finitely pr
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:iterable            1.0.0  Generic definition of iterators.
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         1.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:plouffe             1.0.0  A Coq formalization of Plouffe formula.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:concurrency:proxy/coq:concurrency:proxy.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:proxy.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:proxy.1.0.0,0,49,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:proxy.1.0.0,0,3,"",opam remove -y coq:concurrency:proxy.1.0.0,0,2,"","","","/home/bench/.opam/system/install/coq:concurrency:proxy.install
+69
+/home/bench/.opam/system/bin/coqConcurrencyProxy.byte
+448903
+/home/bench/.opam/system/bin/coqConcurrencyProxy.native
+1545136
+/home/bench/.opam/system/lib/coq:concurrency:proxy/opam.config
+1"
+coq:flocq,2.3.0,UninstallError,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.3.0,0,0,"",opam install -y --show-action coq:flocq.2.3.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.3.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.3.0,0,52,"",opam remove -y coq:flocq.2.3.0,0,1,"","/home/bench/.opam/system/lib/stublibs
+/home/bench/.opam/system/lib/toplevel","","/home/bench/.opam/system/install/coq:flocq.install
+1
+/home/bench/.opam/system/lib/coq:flocq/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+38125
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31243
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59389
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+96568
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52703
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+428281
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125390
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+146845
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107649
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50281
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+26617
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35174
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+56496
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147767
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60042
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+88293
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82051
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28107
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+147134
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100571
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51283
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17325
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+88700
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43503
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152115
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+148906
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+210103
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22039
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:flocq,2.2.0,UninstallError,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:iterable         1.0.0  Generic definition of iterators.
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      1.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.2.0,0,0,"",opam install -y --show-action coq:flocq.2.2.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.2.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.2.0,0,52,"",opam remove -y coq:flocq.2.2.0,0,1,"",/home/bench/.opam/system/build,"","/home/bench/.opam/system/install/coq:flocq.install
+1
+/home/bench/.opam/system/lib/coq:flocq/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+38225
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31343
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59489
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+96668
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52803
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+428381
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125490
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+146935
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107720
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50402
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+58095
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35274
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+93044
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147866
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60142
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+88393
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82151
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28207
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+146407
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100671
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51383
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17425
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+88801
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43603
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152235
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+116852
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+210203
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22139
+/home/bench/.opam/system/lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:list-string,2.0.0,Success,"# Installed packages for system:
+base-bigarray      base  Bigarray library distributed with the OCaml compiler
+base-threads       base  Threads library distributed with the OCaml compiler
+base-unix          base  Unix library distributed with the OCaml compiler
+camlp5             6.12  Preprocessor-pretty-printer of OCaml
+coq               8.4.5  Formal proof management system
+coq:math-classes  1.0.2  A library of abstract interfaces for mathematical struc
+coq:math-comp     1.5.0  Mathematical Components.
+coq:ssreflect     1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.2.0.0,0,0,"",opam install -y --show-action coq:list-string.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-string.2.0.0,0,3,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-string.2.0.0,0,7,"",opam remove -y coq:list-string.2.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-string.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.vo
+14836
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.vo
+27612
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.vo
+121768
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.vo
+20786
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.vo
+3043
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.vo
+21373
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.vo
+94925
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.vo
+7901
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.vo
+21110
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.vo
+20496
+/home/bench/.opam/system/lib/coq:list-string/opam.config
+1"
+coq:moment,1.0.0,Success,"# Installed packages for system:
+base-bigarray        base  Bigarray library distributed with the OCaml compiler
+base-threads         base  Threads library distributed with the OCaml compiler
+base-unix            base  Unix library distributed with the OCaml compiler
+camlp5               6.12  Preprocessor-pretty-printer of OCaml
+coq                 8.4.5  Formal proof management system
+coq:error-handlers  1.0.0  More functions on lists.
+coq:list-plus       1.0.0  More functions on lists.
+coq:list-string     2.0.0  Strings implemented as lists.
+coq:math-classes    1.0.2  A library of abstract interfaces for mathematical str
+coq:math-comp       1.5.0  Mathematical Components.
+coq:ssreflect       1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:moment/coq:moment.1.0.0,0,0,"",opam install -y --show-action coq:moment.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:moment.1.0.0,0,3,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:moment.1.0.0,0,8,"",opam remove -y coq:moment.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:moment.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/All.vo
+16235
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Time.vo
+35088
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Date.vo
+440002
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Moment.vo
+30533
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/TestHelpers.vo
+4820
+/home/bench/.opam/system/lib/coq:moment/opam.config
+1"
+coq:concurrency:system,1.0.0,Success,"# Installed packages for system:
+base-bigarray         base  Bigarray library distributed with the OCaml compiler
+base-threads          base  Threads library distributed with the OCaml compiler
+base-unix             base  Unix library distributed with the OCaml compiler
+camlp5                6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.4.5  Formal proof management system
+coq:error-handlers   1.0.0  More functions on lists.
+coq:function-ninjas  1.0.0  Write readable code using simple functional combinat
+coq:list-plus        1.0.0  More functions on lists.
+coq:list-string      2.0.0  Strings implemented as lists.
+coq:math-classes     1.0.2  A library of abstract interfaces for mathematical st
+coq:math-comp        1.5.0  Mathematical Components.
+coq:moment           1.0.0  Parse, manipulate and pretty-print dates in Coq.
+coq:ssreflect        1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:concurrency:system/coq:concurrency:system.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:system.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:system.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:system.1.0.0,0,10,"",opam remove -y coq:concurrency:system.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:system.install
+1
+/home/bench/.opam/system/lib/coq:concurrency:system/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Events.vo
+73442
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Extraction.vo
+71213
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Computation.vo
+34044
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Run.vo
+52613
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Test.vo
+34259
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/StdLib.vo
+23657"
+coq:concurrency:pluto,1.0.0,Success,"# Installed packages for system:
+base-bigarray            base  Bigarray library distributed with the OCaml compi
+base-threads             base  Threads library distributed with the OCaml compil
+base-unix                base  Unix library distributed with the OCaml compiler
+camlp5                   6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.4.5  Formal proof management system
+coq:concurrency:system  1.0.0  Experimental library to write concurrent applicat
+coq:error-handlers      1.0.0  More functions on lists.
+coq:function-ninjas     1.0.0  Write readable code using simple functional combi
+coq:list-plus           1.0.0  More functions on lists.
+coq:list-string         2.0.0  Strings implemented as lists.
+coq:math-classes        1.0.2  A library of abstract interfaces for mathematical
+coq:math-comp           1.5.0  Mathematical Components.
+coq:moment              1.0.0  Parse, manipulate and pretty-print dates in Coq.
+coq:ssreflect           1.5.0  The Small Scale Reflection extension.
+",ruby lint.rb stable ../stable/packages/coq:concurrency:pluto/coq:concurrency:pluto.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:pluto.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:pluto.1.0.0,0,28,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:pluto.1.0.0,0,8,"",opam remove -y coq:concurrency:pluto.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:pluto.install
+95
+/home/bench/.opam/system/bin/pluto.byte
+417676
+/home/bench/.opam/system/bin/pluto.native
+1356152
+/home/bench/.opam/system/lib/coq:concurrency:pluto/opam.config
+1"
