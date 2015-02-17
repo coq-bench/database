@@ -1,0 +1,524 @@
+Name,Version,Status,Context,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:ssreflect,1.5.0,NotCompatible,"# Installed packages for system:
+base-bigarray     base  Bigarray library distributed with the OCaml compiler
+base-threads      base  Threads library distributed with the OCaml compiler
+base-unix         base  Unix library distributed with the OCaml compiler
+camlp5            6.12  Preprocessor-pretty-printer of OCaml
+coq            8.5.dev  Formal proof management system.
+",ruby lint.rb stable ../stable/packages/coq:ssreflect/coq:ssreflect.1.5.0,0,0,"",opam install -y --show-action coq:ssreflect.1.5.0 coq.8.5.dev,768,5,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:ssreflect -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:ssreflect.1.5.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:plouffe,1.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:plouffe/coq:plouffe.1.0.0,0,0,"",opam install -y --show-action coq:plouffe.1.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:plouffe -> coq:coquelicot -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:plouffe.1.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:moment,1.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:moment/coq:moment.1.0.0,0,0,"",opam install -y --show-action coq:moment.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:moment.1.0.0,0,22,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:moment.1.0.0,0,11,"",opam remove -y coq:moment.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:moment.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Date.glob
+110188
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/All.v
+65
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/All.vo
+26281
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/TestHelpers.glob
+2901
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Moment.v
+2368
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Time.vo
+44076
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/All.glob
+141
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Date.vo
+451940
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Moment.vo
+42669
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/TestHelpers.v
+572
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Time.v
+4053
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Date.v
+20581
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Moment.glob
+6997
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/TestHelpers.vo
+9976
+/home/bench/.opam/system/lib/coq/user-contrib/Moment/Time.glob
+21841
+/home/bench/.opam/system/lib/coq:moment/opam.config
+1"
+coq:math-comp,1.5.0,NotCompatible,"# Installed packages for system:
+base-bigarray           base  Bigarray library distributed with the OCaml compil
+base-threads            base  Threads library distributed with the OCaml compile
+base-unix               base  Unix library distributed with the OCaml compiler
+camlp5                  6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.5.dev  Formal proof management system.
+coq:error-handlers     1.0.0  More functions on lists.
+coq:function-ninjas    1.0.0  Write readable code using simple functional combin
+coq:list-plus          1.0.0  More functions on lists.
+coq:list-string        2.0.0  Strings implemented as lists.
+",ruby lint.rb stable ../stable/packages/coq:math-comp/coq:math-comp.1.5.0,0,0,"",opam install -y --show-action coq:math-comp.1.5.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:math-comp -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:math-comp.1.5.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:math-classes,1.0.2,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:math-classes/coq:math-classes.1.0.2,0,0,"",opam install -y --show-action coq:math-classes.1.0.2 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:math-classes -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:math-classes.1.0.2,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:list-string,2.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.2.0.0,0,0,"",opam install -y --show-action coq:list-string.2.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-string.2.0.0,0,3,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-string.2.0.0,0,8,"",opam remove -y coq:list-string.2.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-string.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.glob
+224
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.vo
+22948
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.vo
+36266
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.v
+1087
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.vo
+138230
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.vo
+29002
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.v
+146
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.vo
+3045
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.vo
+30649
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.v
+2330
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.v
+378
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.v
+3092
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.vo
+145771
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.glob
+7418
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Conversion.glob
+6483
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Etc.v
+2105
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.v
+403
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.glob
+4751
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/LString.vo
+12436
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/All.glob
+723
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.v
+10319
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.glob
+1018
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.glob
+2838
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Case.v
+581
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/UnitTests.glob
+121762
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Trim.vo
+29418
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Bool.glob
+1446
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.vo
+28455
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Comparison.v
+1560
+/home/bench/.opam/system/lib/coq/user-contrib/ListString/Char.glob
+6980
+/home/bench/.opam/system/lib/coq:list-string/opam.config
+1"
+coq:list-string,1.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray          base  Bigarray library distributed with the OCaml compile
+base-threads           base  Threads library distributed with the OCaml compiler
+base-unix              base  Unix library distributed with the OCaml compiler
+camlp5                 6.12  Preprocessor-pretty-printer of OCaml
+coq                 8.5.dev  Formal proof management system.
+coq:error-handlers    1.0.0  More functions on lists.
+coq:list-plus         1.0.0  More functions on lists.
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"",opam install -y --show-action coq:list-string.1.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:list-string -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:list-string.1.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:list-plus,1.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:list-plus/coq:list-plus.1.0.0,0,0,"",opam install -y --show-action coq:list-plus.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-plus.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-plus.1.0.0,0,3,"",opam remove -y coq:list-plus.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:list-plus.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ListPlus/All.v
+353
+/home/bench/.opam/system/lib/coq/user-contrib/ListPlus/All.vo
+7792
+/home/bench/.opam/system/lib/coq/user-contrib/ListPlus/All.glob
+1069
+/home/bench/.opam/system/lib/coq:list-plus/opam.config
+1"
+coq:iterable,1.0.0,Success,"# Installed packages for system:
+base-bigarray     base  Bigarray library distributed with the OCaml compiler
+base-threads      base  Threads library distributed with the OCaml compiler
+base-unix         base  Unix library distributed with the OCaml compiler
+camlp5            6.12  Preprocessor-pretty-printer of OCaml
+coq            8.5.dev  Formal proof management system.
+",ruby lint.rb stable ../stable/packages/coq:iterable/coq:iterable.1.0.0,0,0,"",opam install -y --show-action coq:iterable.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:iterable.1.0.0,0,3,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:iterable.1.0.0,0,4,"",opam remove -y coq:iterable.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:iterable.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Iterable/All.v
+1375
+/home/bench/.opam/system/lib/coq/user-contrib/Iterable/All.vo
+29006
+/home/bench/.opam/system/lib/coq/user-contrib/Iterable/All.glob
+4722
+/home/bench/.opam/system/lib/coq:iterable/opam.config
+1"
+coq:interval,2.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray           base  Bigarray library distributed with the OCaml compil
+base-threads            base  Threads library distributed with the OCaml compile
+base-unix               base  Unix library distributed with the OCaml compiler
+camlp5                  6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.5.dev  Formal proof management system.
+coq:function-ninjas    1.0.0  Write readable code using simple functional combin
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.2.0.0,0,0,"",opam install -y --show-action coq:interval.2.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:interval -> coq:ssreflect >= 1.5.0 -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:interval.2.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:interval,1.1.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.1.1.0,0,0,"",opam install -y --show-action coq:interval.1.1.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:interval -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:interval.1.1.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:function-ninjas,1.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"",opam install -y --show-action coq:function-ninjas.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:function-ninjas.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:function-ninjas.1.0.0,0,3,"",opam remove -y coq:function-ninjas.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:function-ninjas.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.v
+198
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.vo
+1597
+/home/bench/.opam/system/lib/coq/user-contrib/FunctionNinjas/All.glob
+434
+/home/bench/.opam/system/lib/coq:function-ninjas/opam.config
+1"
+coq:fpmods,0.2.0,NotCompatible,"# Installed packages for system:
+base-bigarray     base  Bigarray library distributed with the OCaml compiler
+base-threads      base  Threads library distributed with the OCaml compiler
+base-unix         base  Unix library distributed with the OCaml compiler
+camlp5            6.12  Preprocessor-pretty-printer of OCaml
+coq            8.5.dev  Formal proof management system.
+",ruby lint.rb stable ../stable/packages/coq:fpmods/coq:fpmods.0.2.0,0,0,"",opam install -y --show-action coq:fpmods.0.2.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:fpmods -> coq:coqeal:theory >= 0.9.1 -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:fpmods.0.2.0,0,4,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.4.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.4.0,0,0,"",opam install -y --show-action coq:flocq.2.4.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:flocq.2.4.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.3.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.3.0,0,0,"",opam install -y --show-action coq:flocq.2.3.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:flocq.2.3.0,0,4,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.2.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.2.0,0,0,"",opam install -y --show-action coq:flocq.2.2.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:flocq -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:flocq.2.2.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:error-handlers,1.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:error-handlers/coq:error-handlers.1.0.0,0,0,"",opam install -y --show-action coq:error-handlers.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:error-handlers.1.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:error-handlers.1.0.0,0,3,"",opam remove -y coq:error-handlers.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:error-handlers.install
+1
+/home/bench/.opam/system/lib/coq/user-contrib/ErrorHandlers/All.v
+332
+/home/bench/.opam/system/lib/coq/user-contrib/ErrorHandlers/All.vo
+2461
+/home/bench/.opam/system/lib/coq/user-contrib/ErrorHandlers/All.glob
+1465
+/home/bench/.opam/system/lib/coq:error-handlers/opam.config
+1"
+coq:corn,1.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray     base  Bigarray library distributed with the OCaml compiler
+base-threads      base  Threads library distributed with the OCaml compiler
+base-unix         base  Unix library distributed with the OCaml compiler
+camlp5            6.12  Preprocessor-pretty-printer of OCaml
+coq            8.5.dev  Formal proof management system.
+",ruby lint.rb stable ../stable/packages/coq:corn/coq:corn.1.0.0,0,0,"",opam install -y --show-action coq:corn.1.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:corn -> coq:math-classes = 1.0.2 -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:corn.1.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coquelicot,2.0.1,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:coquelicot/coq:coquelicot.2.0.1,0,0,"",opam install -y --show-action coq:coquelicot.2.0.1 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:coquelicot -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:coquelicot.2.0.1,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:theory,0.9.1,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:coqeal:theory/coq:coqeal:theory.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:theory.0.9.1 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:coqeal:theory -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:coqeal:theory.0.9.1,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:refinements,0.9.1,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:coqeal:refinements/coq:coqeal:refinements.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:refinements.0.9.1 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:coqeal:refinements -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:coqeal:refinements.0.9.1,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:concurrency:system,1.0.0,Success,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:concurrency:system/coq:concurrency:system.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:system.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:system.1.0.0,0,22,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:system.1.0.0,0,11,"",opam remove -y coq:concurrency:system.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:system.install
+1
+/home/bench/.opam/system/lib/coq:concurrency:system/opam.config
+1
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Extraction.glob
+31887
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Run.glob
+28798
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Test.v
+3084
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Extraction.v
+13423
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/StdLib.glob
+7689
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Events.glob
+4263
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/StdLib.v
+2321
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Events.vo
+77372
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Computation.v
+3283
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Computation.glob
+8114
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Extraction.vo
+92573
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Computation.vo
+47342
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Run.vo
+63718
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Test.vo
+50313
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Run.v
+6715
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/StdLib.vo
+37778
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Test.glob
+9256
+/home/bench/.opam/system/lib/coq/user-contrib/Concurrency/Events.v
+2057"
+coq:concurrency:proxy,1.0.0,Success,"# Installed packages for system:
+base-bigarray           base  Bigarray library distributed with the OCaml compil
+base-threads            base  Threads library distributed with the OCaml compile
+base-unix               base  Unix library distributed with the OCaml compiler
+camlp5                  6.12  Preprocessor-pretty-printer of OCaml
+coq                  8.5.dev  Formal proof management system.
+coq:error-handlers     1.0.0  More functions on lists.
+coq:function-ninjas    1.0.0  Write readable code using simple functional combin
+coq:list-plus          1.0.0  More functions on lists.
+coq:list-string        2.0.0  Strings implemented as lists.
+",ruby lint.rb stable ../stable/packages/coq:concurrency:proxy/coq:concurrency:proxy.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:proxy.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:proxy.1.0.0,0,27,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:proxy.1.0.0,0,3,"",opam remove -y coq:concurrency:proxy.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:proxy.install
+69
+/home/bench/.opam/system/bin/coqConcurrencyProxy.byte
+448903
+/home/bench/.opam/system/bin/coqConcurrencyProxy.native
+1545136
+/home/bench/.opam/system/lib/coq:concurrency:proxy/opam.config
+1"
+coq:concurrency:pluto,1.0.0,Success,"# Installed packages for system:
+base-bigarray     base  Bigarray library distributed with the OCaml compiler
+base-threads      base  Threads library distributed with the OCaml compiler
+base-unix         base  Unix library distributed with the OCaml compiler
+base64           1.0.0  Base64 encoding and decoding library
+camlp5            6.12  Preprocessor-pretty-printer of OCaml
+coq            8.5.dev  Formal proof management system.
+lwt              2.4.7  A cooperative threads library for OCaml
+ocamlfind        1.5.5  A library manager for OCaml
+ppx_tools       0.99.2  Tools for authors of ppx rewriters and other syntactic t
+",ruby lint.rb stable ../stable/packages/coq:concurrency:pluto/coq:concurrency:pluto.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:pluto.1.0.0 coq.8.5.dev,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:pluto.1.0.0,0,35,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:pluto.1.0.0,0,8,"",opam remove -y coq:concurrency:pluto.1.0.0,0,1,"","","","/home/bench/.opam/system/install/coq:concurrency:pluto.install
+95
+/home/bench/.opam/system/bin/pluto.byte
+309741
+/home/bench/.opam/system/bin/pluto.native
+1094624
+/home/bench/.opam/system/lib/coq:concurrency:pluto/opam.config
+1"
+coq:compcert,2.4.0,NotCompatible,"# Installed packages for system:
+base-bigarray              base  Bigarray library distributed with the OCaml com
+base-threads               base  Threads library distributed with the OCaml comp
+base-unix                  base  Unix library distributed with the OCaml compile
+base64                    1.0.0  Base64 encoding and decoding library
+camlp5                     6.12  Preprocessor-pretty-printer of OCaml
+coq                     8.5.dev  Formal proof management system.
+coq:concurrency:proxy     1.0.0  A proxy to interface concurrent Coq program wit
+coq:concurrency:system    1.0.0  Experimental library to write concurrent applic
+coq:error-handlers        1.0.0  More functions on lists.
+coq:function-ninjas       1.0.0  Write readable code using simple functional com
+coq:iterable              1.0.0  Generic definition of iterators.
+coq:list-plus             1.0.0  More functions on lists.
+coq:list-string           2.0.0  Strings implemented as lists.
+coq:moment                1.0.0  Parse, manipulate and pretty-print dates in Coq
+lwt                       2.4.7  A cooperative threads library for OCaml
+ocamlfind                 1.5.5  A library manager for OCaml
+ppx_tools                0.99.2  Tools for authors of ppx rewriters and other sy
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.4.0,0,0,"",opam install -y --show-action coq:compcert.2.4.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:compcert.2.4.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:compcert,2.3.2,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.3.2,0,0,"",opam install -y --show-action coq:compcert.2.3.2 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:compcert.2.3.2,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:compcert,2.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.0.0,0,0,"",opam install -y --show-action coq:compcert.2.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:compcert -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:compcert.2.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
+coq:color,1.0.0,NotCompatible,"# Installed packages for system:
+base-bigarray  base  Bigarray library distributed with the OCaml compiler
+base-threads   base  Threads library distributed with the OCaml compiler
+base-unix      base  Unix library distributed with the OCaml compiler
+camlp5         6.12  Preprocessor-pretty-printer of OCaml
+",ruby lint.rb stable ../stable/packages/coq:color/coq:color.1.0.0,0,0,"",opam install -y --show-action coq:color.1.0.0 coq.8.5.dev,768,0,"[NOTE] Package coq is already installed (current version is 8.5.dev).
+The following dependencies couldn't be met:
+  - coq:color -> coq <= 8.4.dev+ltacprof
+Your request can't be satisfied:
+  - Conflicting version constraints for coq
+
+No solution found, exiting
+",opam remove -y coq; opam install -y --show-action coq:color.1.0.0,0,3,"",true,0,0,"",true,0,0,"",true,0,0,"","","",""
