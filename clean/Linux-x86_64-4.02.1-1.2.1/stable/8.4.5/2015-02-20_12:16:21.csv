@@ -1,0 +1,2169 @@
+Name,Version,Status,Context,Lint command,Lint status,Lint duration,Lint output,Dry with Coq command,Dry with Coq status,Dry with Coq duration,Dry with Coq output,Dry without Coq command,Dry without Coq status,Dry without Coq duration,Dry without Coq output,Deps command,Deps status,Deps duration,Deps output,Package command,Package status,Package duration,Package output,Uninstall command,Uninstall status,Uninstall duration,Uninstall output,Missing removes,Mistake removes,Install sizes
+coq:ssreflect,1.5.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:ssreflect/coq:ssreflect.1.5.0,0,0,"",opam install -y --show-action coq:ssreflect.1.5.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:ssreflect.1.5.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:ssreflect.1.5.0,0,40,"",opam remove -y coq:ssreflect.1.5.0,0,2,"","","","install/coq:ssreflect.install
+12
+lib/coq:ssreflect/opam.config
+0
+lib/coq/user-contrib/Ssreflect/choice.vo
+172787
+lib/coq/user-contrib/Ssreflect/ssrmatching.cmi
+9458
+lib/coq/user-contrib/Ssreflect/ssrnat.vo
+335089
+lib/coq/user-contrib/Ssreflect/fintype.vo
+551672
+lib/coq/user-contrib/Ssreflect/seq.vo
+753639
+lib/coq/user-contrib/Ssreflect/ssreflect.cmi
+186152
+lib/coq/user-contrib/Ssreflect/ssreflect.cmxs
+2180616
+lib/coq/user-contrib/Ssreflect/ssreflect.cma
+692188
+lib/coq/user-contrib/Ssreflect/ssrmatching.vo
+1709
+lib/coq/user-contrib/Ssreflect/ssreflect.vo
+29760
+lib/coq/user-contrib/Ssreflect/eqtype.vo
+155626
+lib/coq/user-contrib/Ssreflect/ssrfun.vo
+93443
+lib/coq/user-contrib/Ssreflect/ssrbool.vo
+363661"
+coq:plouffe,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:plouffe/coq:plouffe.1.0.0,0,0,"",opam install -y --show-action coq:plouffe.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:plouffe.1.0.0,0,115,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:plouffe.1.0.0,0,99,"",opam remove -y coq:plouffe.1.0.0,0,2,"","","","install/coq:plouffe.install
+12
+lib/coq:plouffe/opam.config
+0
+lib/coq/user-contrib/Plouffe/Plouffe.vo
+156148
+lib/coq/user-contrib/Plouffe/CPlouffe.vo
+545885"
+coq:moment,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:moment/coq:moment.1.0.0,0,0,"",opam install -y --show-action coq:moment.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:moment.1.0.0,0,19,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:moment.1.0.0,0,9,"",opam remove -y coq:moment.1.0.0,0,2,"","","","install/coq:moment.install
+12
+lib/coq/user-contrib/Moment/All.vo
+16235
+lib/coq/user-contrib/Moment/Time.vo
+35088
+lib/coq/user-contrib/Moment/Date.vo
+440002
+lib/coq/user-contrib/Moment/Moment.vo
+30533
+lib/coq/user-contrib/Moment/TestHelpers.vo
+4820
+lib/coq:moment/opam.config
+0"
+coq:math-comp,1.5.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:math-comp/coq:math-comp.1.5.0,0,0,"",opam install -y --show-action coq:math-comp.1.5.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:math-comp.1.5.0,0,31,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:math-comp.1.5.0,0,1343,"",opam remove -y coq:math-comp.1.5.0,0,2,"","","","install/coq:math-comp.install
+12
+lib/coq:math-comp/opam.config
+0
+lib/coq/user-contrib/MathComp/abelian.vo
+1090838
+lib/coq/user-contrib/MathComp/maximal.vo
+1000481
+lib/coq/user-contrib/MathComp/vcharacter.vo
+747778
+lib/coq/user-contrib/MathComp/pgroup.vo
+460702
+lib/coq/user-contrib/MathComp/path.vo
+280110
+lib/coq/user-contrib/MathComp/ssrint.vo
+542521
+lib/coq/user-contrib/MathComp/hall.vo
+526516
+lib/coq/user-contrib/MathComp/alt.vo
+314294
+lib/coq/user-contrib/MathComp/cyclotomic.vo
+162426
+lib/coq/user-contrib/MathComp/gseries.vo
+263289
+lib/coq/user-contrib/MathComp/separable.vo
+756248
+lib/coq/user-contrib/MathComp/ssrnum.vo
+981260
+lib/coq/user-contrib/MathComp/quotient.vo
+522768
+lib/coq/user-contrib/MathComp/extraspecial.vo
+564027
+lib/coq/user-contrib/MathComp/falgebra.vo
+694630
+lib/coq/user-contrib/MathComp/nilpotent.vo
+297245
+lib/coq/user-contrib/MathComp/closed_field.vo
+323340
+lib/coq/user-contrib/MathComp/rat.vo
+343030
+lib/coq/user-contrib/MathComp/finset.vo
+743233
+lib/coq/user-contrib/MathComp/cyclic.vo
+382390
+lib/coq/user-contrib/MathComp/poly.vo
+1043227
+lib/coq/user-contrib/MathComp/matrix.vo
+1475606
+lib/coq/user-contrib/MathComp/inertia.vo
+1176291
+lib/coq/user-contrib/MathComp/tuple.vo
+140449
+lib/coq/user-contrib/MathComp/automorphism.vo
+263698
+lib/coq/user-contrib/MathComp/algC.vo
+856663
+lib/coq/user-contrib/MathComp/zmodp.vo
+101220
+lib/coq/user-contrib/MathComp/morphism.vo
+806406
+lib/coq/user-contrib/MathComp/mxpoly.vo
+674018
+lib/coq/user-contrib/MathComp/countalg.vo
+405925
+lib/coq/user-contrib/MathComp/center.vo
+597707
+lib/coq/user-contrib/MathComp/finmodule.vo
+385470
+lib/coq/user-contrib/MathComp/prime.vo
+464280
+lib/coq/user-contrib/MathComp/mxabelem.vo
+779138
+lib/coq/user-contrib/MathComp/polyXY.vo
+254221
+lib/coq/user-contrib/MathComp/interval.vo
+192780
+lib/coq/user-contrib/MathComp/binomial.vo
+242501
+lib/coq/user-contrib/MathComp/bigop.vo
+483299
+lib/coq/user-contrib/MathComp/character.vo
+2070732
+lib/coq/user-contrib/MathComp/frobenius.vo
+427749
+lib/coq/user-contrib/MathComp/fingroup.vo
+993494
+lib/coq/user-contrib/MathComp/algnum.vo
+614645
+lib/coq/user-contrib/MathComp/extremal.vo
+2327007
+lib/coq/user-contrib/MathComp/commutator.vo
+167489
+lib/coq/user-contrib/MathComp/mxrepresentation.vo
+4454203
+lib/coq/user-contrib/MathComp/fieldext.vo
+4774708
+lib/coq/user-contrib/MathComp/mxalgebra.vo
+2004352
+lib/coq/user-contrib/MathComp/polydiv.vo
+1287200
+lib/coq/user-contrib/MathComp/presentation.vo
+80669
+lib/coq/user-contrib/MathComp/vector.vo
+1272471
+lib/coq/user-contrib/MathComp/generic_quotient.vo
+173239
+lib/coq/user-contrib/MathComp/finalg.vo
+333472
+lib/coq/user-contrib/MathComp/primitive_action.vo
+209954
+lib/coq/user-contrib/MathComp/sylow.vo
+326789
+lib/coq/user-contrib/MathComp/intdiv.vo
+532628
+lib/coq/user-contrib/MathComp/jordanholder.vo
+294298
+lib/coq/user-contrib/MathComp/integral_char.vo
+649715
+lib/coq/user-contrib/MathComp/algebraics_fundamentals.vo
+735939
+lib/coq/user-contrib/MathComp/gfunctor.vo
+128710
+lib/coq/user-contrib/MathComp/div.vo
+238048
+lib/coq/user-contrib/MathComp/ssralg.vo
+1685341
+lib/coq/user-contrib/MathComp/classfun.vo
+1685028
+lib/coq/user-contrib/MathComp/perm.vo
+260409
+lib/coq/user-contrib/MathComp/action.vo
+1444023
+lib/coq/user-contrib/MathComp/fingraph.vo
+254035
+lib/coq/user-contrib/MathComp/galois.vo
+1954632
+lib/coq/user-contrib/MathComp/ring_quotient.vo
+349034
+lib/coq/user-contrib/MathComp/gproduct.vo
+1377406
+lib/coq/user-contrib/MathComp/finfun.vo
+132152"
+coq:math-classes,1.0.2,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:math-classes/coq:math-classes.1.0.2,0,0,"",opam install -y --show-action coq:math-classes.1.0.2 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:math-classes.1.0.2,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:math-classes.1.0.2,0,178,"",opam remove -y coq:math-classes.1.0.2,0,2,"","","","install/coq:math-classes.install
+12
+lib/coq/user-contrib/MathClasses/implementations/NType_naturals.vo
+233026
+lib/coq/user-contrib/MathClasses/implementations/stdlib_rationals.vo
+63809
+lib/coq/user-contrib/MathClasses/implementations/stdlib_binary_integers.vo
+102629
+lib/coq/user-contrib/MathClasses/implementations/mset_finite_set.vo
+620754
+lib/coq/user-contrib/MathClasses/implementations/modular_ring.vo
+50920
+lib/coq/user-contrib/MathClasses/implementations/nonzero_field_elements.vo
+65756
+lib/coq/user-contrib/MathClasses/implementations/dyadics.vo
+376715
+lib/coq/user-contrib/MathClasses/implementations/fast_rationals.vo
+219307
+lib/coq/user-contrib/MathClasses/implementations/list.vo
+94056
+lib/coq/user-contrib/MathClasses/implementations/positive_semiring_elements.vo
+74162
+lib/coq/user-contrib/MathClasses/implementations/nonneg_semiring_elements.vo
+94686
+lib/coq/user-contrib/MathClasses/implementations/semiring_pairs.vo
+159636
+lib/coq/user-contrib/MathClasses/implementations/peano_naturals.vo
+69851
+lib/coq/user-contrib/MathClasses/implementations/QType_rationals.vo
+155242
+lib/coq/user-contrib/MathClasses/implementations/ZType_integers.vo
+247069
+lib/coq/user-contrib/MathClasses/implementations/bool.vo
+9461
+lib/coq/user-contrib/MathClasses/implementations/list_finite_set.vo
+129488
+lib/coq/user-contrib/MathClasses/implementations/polynomials.vo
+18908
+lib/coq/user-contrib/MathClasses/implementations/natpair_integers.vo
+113715
+lib/coq/user-contrib/MathClasses/implementations/fast_naturals.vo
+238074
+lib/coq/user-contrib/MathClasses/implementations/intfrac_rationals.vo
+36240
+lib/coq/user-contrib/MathClasses/implementations/option.vo
+62565
+lib/coq/user-contrib/MathClasses/implementations/ne_list.vo
+31823
+lib/coq/user-contrib/MathClasses/implementations/fast_integers.vo
+263560
+lib/coq/user-contrib/MathClasses/implementations/stdlib_binary_naturals.vo
+43866
+lib/coq/user-contrib/MathClasses/implementations/field_of_fractions.vo
+124362
+lib/coq/user-contrib/MathClasses/implementations/nonneg_integers_naturals.vo
+87700
+lib/coq/user-contrib/MathClasses/categories/orders.vo
+35215
+lib/coq/user-contrib/MathClasses/categories/categories.vo
+196119
+lib/coq/user-contrib/MathClasses/categories/unit.vo
+9865
+lib/coq/user-contrib/MathClasses/categories/algebras.vo
+44474
+lib/coq/user-contrib/MathClasses/categories/functors.vo
+111279
+lib/coq/user-contrib/MathClasses/categories/setoids.vo
+37944
+lib/coq/user-contrib/MathClasses/categories/JMcat.vo
+49225
+lib/coq/user-contrib/MathClasses/categories/empty.vo
+15663
+lib/coq/user-contrib/MathClasses/categories/dual.vo
+26933
+lib/coq/user-contrib/MathClasses/categories/varieties.vo
+36806
+lib/coq/user-contrib/MathClasses/categories/product.vo
+63300
+lib/coq/user-contrib/MathClasses/functors/constant.vo
+19902
+lib/coq/user-contrib/MathClasses/theory/ring_congruence.vo
+78712
+lib/coq/user-contrib/MathClasses/theory/dec_fields.vo
+170195
+lib/coq/user-contrib/MathClasses/theory/groups.vo
+58522
+lib/coq/user-contrib/MathClasses/theory/rings.vo
+185997
+lib/coq/user-contrib/MathClasses/theory/ua_mapped_operations.vo
+17748
+lib/coq/user-contrib/MathClasses/theory/ua_term_monad.vo
+45471
+lib/coq/user-contrib/MathClasses/theory/forget_algebra.vo
+35281
+lib/coq/user-contrib/MathClasses/theory/quote_monoid.vo
+207294
+lib/coq/user-contrib/MathClasses/theory/ua_homomorphisms.vo
+56693
+lib/coq/user-contrib/MathClasses/theory/integers.vo
+152309
+lib/coq/user-contrib/MathClasses/theory/fields.vo
+118183
+lib/coq/user-contrib/MathClasses/theory/categories.vo
+198075
+lib/coq/user-contrib/MathClasses/theory/ua_subvariety.vo
+48372
+lib/coq/user-contrib/MathClasses/theory/int_abs.vo
+125257
+lib/coq/user-contrib/MathClasses/theory/monoid_normalization.vo
+827126
+lib/coq/user-contrib/MathClasses/theory/rationals.vo
+334248
+lib/coq/user-contrib/MathClasses/theory/jections.vo
+51380
+lib/coq/user-contrib/MathClasses/theory/ua_subalgebra.vo
+53500
+lib/coq/user-contrib/MathClasses/theory/nat_distance.vo
+84773
+lib/coq/user-contrib/MathClasses/theory/sequences.vo
+56563
+lib/coq/user-contrib/MathClasses/theory/ua_products.vo
+74557
+lib/coq/user-contrib/MathClasses/theory/abs.vo
+78243
+lib/coq/user-contrib/MathClasses/theory/naturals.vo
+116214
+lib/coq/user-contrib/MathClasses/theory/hom_functor.vo
+17378
+lib/coq/user-contrib/MathClasses/theory/strong_setoids.vo
+50804
+lib/coq/user-contrib/MathClasses/theory/functors.vo
+25008
+lib/coq/user-contrib/MathClasses/theory/setoids.vo
+27787
+lib/coq/user-contrib/MathClasses/theory/products.vo
+57149
+lib/coq/user-contrib/MathClasses/theory/monads.vo
+122143
+lib/coq/user-contrib/MathClasses/theory/shiftl.vo
+256399
+lib/coq/user-contrib/MathClasses/theory/streams.vo
+52765
+lib/coq/user-contrib/MathClasses/theory/ua_congruence.vo
+132039
+lib/coq/user-contrib/MathClasses/theory/ring_ideals.vo
+90466
+lib/coq/user-contrib/MathClasses/theory/adjunctions.vo
+139109
+lib/coq/user-contrib/MathClasses/theory/forget_variety.vo
+21523
+lib/coq/user-contrib/MathClasses/theory/series.vo
+137819
+lib/coq/user-contrib/MathClasses/theory/nat_pow.vo
+130215
+lib/coq/user-contrib/MathClasses/theory/int_pow.vo
+298067
+lib/coq/user-contrib/MathClasses/theory/ua_subalgebraT.vo
+44077
+lib/coq/user-contrib/MathClasses/theory/finite_sets.vo
+273374
+lib/coq/user-contrib/MathClasses/theory/int_to_nat.vo
+148943
+lib/coq/user-contrib/MathClasses/theory/lattices.vo
+80505
+lib/coq/user-contrib/MathClasses/theory/ua_packed.vo
+40188
+lib/coq/user-contrib/MathClasses/theory/cut_minus.vo
+148760
+lib/coq/user-contrib/MathClasses/theory/ua_transference.vo
+42575
+lib/coq/user-contrib/MathClasses/misc/util.vo
+26932
+lib/coq/user-contrib/MathClasses/misc/setoid_tactics.vo
+10932
+lib/coq/user-contrib/MathClasses/misc/workarounds.vo
+6950
+lib/coq/user-contrib/MathClasses/misc/JMrelation.vo
+8560
+lib/coq/user-contrib/MathClasses/misc/workaround_tactics.vo
+1492
+lib/coq/user-contrib/MathClasses/misc/decision.vo
+87163
+lib/coq/user-contrib/MathClasses/misc/propholds.vo
+6531
+lib/coq/user-contrib/MathClasses/misc/stdlib_hints.vo
+3921
+lib/coq/user-contrib/MathClasses/quote/classquote.vo
+55096
+lib/coq/user-contrib/MathClasses/orders/dec_fields.vo
+69476
+lib/coq/user-contrib/MathClasses/orders/rings.vo
+129174
+lib/coq/user-contrib/MathClasses/orders/nat_int.vo
+92350
+lib/coq/user-contrib/MathClasses/orders/integers.vo
+142385
+lib/coq/user-contrib/MathClasses/orders/orders.vo
+106403
+lib/coq/user-contrib/MathClasses/orders/maps.vo
+137135
+lib/coq/user-contrib/MathClasses/orders/rationals.vo
+249056
+lib/coq/user-contrib/MathClasses/orders/naturals.vo
+96061
+lib/coq/user-contrib/MathClasses/orders/minmax.vo
+38435
+lib/coq/user-contrib/MathClasses/orders/semirings.vo
+251818
+lib/coq/user-contrib/MathClasses/orders/lattices.vo
+100021
+lib/coq/user-contrib/MathClasses/interfaces/integers.vo
+70206
+lib/coq/user-contrib/MathClasses/interfaces/orders.vo
+207430
+lib/coq/user-contrib/MathClasses/interfaces/rationals.vo
+62469
+lib/coq/user-contrib/MathClasses/interfaces/abstract_algebra.vo
+332998
+lib/coq/user-contrib/MathClasses/interfaces/vectorspace.vo
+132813
+lib/coq/user-contrib/MathClasses/interfaces/ua_basic.vo
+30893
+lib/coq/user-contrib/MathClasses/interfaces/sequences.vo
+357887
+lib/coq/user-contrib/MathClasses/interfaces/naturals.vo
+62101
+lib/coq/user-contrib/MathClasses/interfaces/functors.vo
+84983
+lib/coq/user-contrib/MathClasses/interfaces/monads.vo
+131391
+lib/coq/user-contrib/MathClasses/interfaces/universal_algebra.vo
+83889
+lib/coq/user-contrib/MathClasses/interfaces/canonical_names.vo
+141664
+lib/coq/user-contrib/MathClasses/interfaces/additional_operations.vo
+143924
+lib/coq/user-contrib/MathClasses/interfaces/finite_sets.vo
+87183
+lib/coq/user-contrib/MathClasses/varieties/semigroups.vo
+56070
+lib/coq/user-contrib/MathClasses/varieties/groups.vo
+64834
+lib/coq/user-contrib/MathClasses/varieties/rings.vo
+104477
+lib/coq/user-contrib/MathClasses/varieties/abgroup.vo
+90259
+lib/coq/user-contrib/MathClasses/varieties/open_terms.vo
+131198
+lib/coq/user-contrib/MathClasses/varieties/monoids.vo
+62315
+lib/coq/user-contrib/MathClasses/varieties/setoids.vo
+16034
+lib/coq/user-contrib/MathClasses/varieties/closed_terms.vo
+108053
+lib/coq/user-contrib/MathClasses/varieties/empty.vo
+20604
+lib/coq/user-contrib/MathClasses/varieties/semirings.vo
+75362
+lib/coq:math-classes/opam.config
+0"
+coq:list-string,2.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.2.0.0,0,0,"",opam install -y --show-action coq:list-string.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-string.2.0.0,0,2,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-string.2.0.0,0,7,"",opam remove -y coq:list-string.2.0.0,0,2,"","","","install/coq:list-string.install
+12
+lib/coq/user-contrib/ListString/Case.vo
+14836
+lib/coq/user-contrib/ListString/Char.vo
+27612
+lib/coq/user-contrib/ListString/UnitTests.vo
+121768
+lib/coq/user-contrib/ListString/Etc.vo
+20786
+lib/coq/user-contrib/ListString/Bool.vo
+3043
+lib/coq/user-contrib/ListString/Conversion.vo
+21373
+lib/coq/user-contrib/ListString/All.vo
+94925
+lib/coq/user-contrib/ListString/LString.vo
+7901
+lib/coq/user-contrib/ListString/Trim.vo
+21110
+lib/coq/user-contrib/ListString/Comparison.vo
+20496
+lib/coq:list-string/opam.config
+0"
+coq:list-string,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:list-string/coq:list-string.1.0.0,0,0,"",opam install -y --show-action coq:list-string.1.0.0 coq.8.4.5,0,2,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-string.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-string.1.0.0,0,7,"",opam remove -y coq:list-string.1.0.0,0,2,"","","","install/coq:list-string.install
+12
+lib/coq/user-contrib/ListString/Case.vo
+14836
+lib/coq/user-contrib/ListString/Char.vo
+29836
+lib/coq/user-contrib/ListString/UnitTests.vo
+103259
+lib/coq/user-contrib/ListString/Etc.vo
+20786
+lib/coq/user-contrib/ListString/Bool.vo
+3043
+lib/coq/user-contrib/ListString/Conversion.vo
+39597
+lib/coq/user-contrib/ListString/All.vo
+109008
+lib/coq/user-contrib/ListString/LString.vo
+7901
+lib/coq/user-contrib/ListString/Trim.vo
+21110
+lib/coq/user-contrib/ListString/Comparison.vo
+20496
+lib/coq:list-string/opam.config
+0"
+coq:list-plus,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:list-plus/coq:list-plus.1.0.0,0,0,"",opam install -y --show-action coq:list-plus.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:list-plus.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:list-plus.1.0.0,0,3,"",opam remove -y coq:list-plus.1.0.0,0,2,"","","","install/coq:list-plus.install
+12
+lib/coq/user-contrib/ListPlus/All.vo
+2819
+lib/coq:list-plus/opam.config
+0"
+coq:iterable,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:iterable/coq:iterable.1.0.0,0,0,"",opam install -y --show-action coq:iterable.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:iterable.1.0.0,0,3,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:iterable.1.0.0,0,3,"",opam remove -y coq:iterable.1.0.0,0,1,"","","","install/coq:iterable.install
+12
+lib/coq/user-contrib/Iterable/All.vo
+21287
+lib/coq:iterable/opam.config
+0"
+coq:interval,2.0.0,DepsError,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.2.0.0,0,0,"",opam install -y --show-action coq:interval.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:interval.2.0.0,31744,300,"The following actions will be performed:
+  - install coq:ssreflect 1.5.0
+  - install coq:flocq     2.4.0
+  - install coq:math-comp 1.5.0
+===== 3 to install =====
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq: http] Command started
+[coq:math-comp: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect.1.5.0] http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz downloaded
+[coq:math-comp: http] Command started
+[coq:math-comp.1.5.0] http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz downloaded
+[coq:flocq: http] Command started
+[coq:flocq.2.4.0] https://gforge.inria.fr/frs/download.php/file/33979/flocq-2.4.0.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:flocq: ./configure] Command started
+[coq:ssreflect: make] Command started
+[coq:flocq: ./remake] Command started
+[coq:ssreflect: make install] Command started
+-> installed coq:ssreflect.1.5.0
+[coq:math-comp: make] Command started
+[coq:flocq: ./remake install] Command started
+-> installed coq:flocq.2.4.0
+",true,0,0,"",true,0,0,"","","",""
+coq:interval,1.1.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:interval/coq:interval.1.1.0,0,0,"",opam install -y --show-action coq:interval.1.1.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:interval.1.1.0,0,67,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:interval.1.1.0,0,50,"",opam remove -y coq:interval.1.1.0,0,2,"","","","install/coq:interval.install
+12
+lib/coq:interval/opam.config
+0
+lib/coq/user-contrib/Interval/Interval_interval_float.vo
+283851
+lib/coq/user-contrib/Interval/Interval_specific_ops.vo
+180661
+lib/coq/user-contrib/Interval/Interval_float_sig.vo
+26382
+lib/coq/user-contrib/Interval/Interval_generic.vo
+85640
+lib/coq/user-contrib/Interval/Interval_generic_proof.vo
+156952
+lib/coq/user-contrib/Interval/Interval_xreal_derive.vo
+145506
+lib/coq/user-contrib/Interval/Interval_xreal.vo
+58943
+lib/coq/user-contrib/Interval/Interval_bisect.vo
+156676
+lib/coq/user-contrib/Interval/Interval_definitions.vo
+21979
+lib/coq/user-contrib/Interval/Interval_generic_ops.vo
+31025
+lib/coq/user-contrib/Interval/Interval_interval_float_full.vo
+979762
+lib/coq/user-contrib/Interval/Interval_interval.vo
+58277
+lib/coq/user-contrib/Interval/Interval_specific_sig.vo
+31289
+lib/coq/user-contrib/Interval/Interval_missing.vo
+113061
+lib/coq/user-contrib/Interval/Interval_stdz_carrier.vo
+90465
+lib/coq/user-contrib/Interval/Interval_bigint_carrier.vo
+110834
+lib/coq/user-contrib/Interval/Interval_tactic.vo
+1524930
+lib/coq/user-contrib/Interval/Interval_transcend.vo
+627918"
+coq:function-ninjas,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:function-ninjas/coq:function-ninjas.1.0.0,0,0,"",opam install -y --show-action coq:function-ninjas.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:function-ninjas.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:function-ninjas.1.0.0,0,3,"",opam remove -y coq:function-ninjas.1.0.0,0,1,"","","","install/coq:function-ninjas.install
+12
+lib/coq/user-contrib/FunctionNinjas/All.vo
+1595
+lib/coq:function-ninjas/opam.config
+0"
+coq:fpmods,0.2.0,DepsError,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:fpmods/coq:fpmods.0.2.0,0,0,"",opam install -y --show-action coq:fpmods.0.2.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:fpmods.0.2.0,31744,300,"The following actions will be performed:
+  - install coq:ssreflect     1.5.0
+  - install coq:math-comp     1.5.0
+  - install coq:coqeal:theory 0.9.1
+===== 3 to install =====
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:coqeal:theory: http] Command started
+[coq:math-comp: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect.1.5.0] http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz downloaded
+[coq:math-comp: http] Command started
+[coq:math-comp.1.5.0] http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz downloaded
+[coq:coqeal:theory: http] Command started
+[coq:coqeal:theory.0.9.1] https://github.com/Barbichu/CoqEAL/raw/master/release/CoqEAL_theory.0.9.1.tgz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect: make] Command started
+[coq:ssreflect: make install] Command started
+-> installed coq:ssreflect.1.5.0
+[coq:math-comp: make] Command started
+",true,0,0,"",true,0,0,"","","",""
+coq:flocq,2.4.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.4.0,0,0,"",opam install -y --show-action coq:flocq.2.4.0 coq.8.4.5,0,2,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.4.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.4.0,0,69,"",opam remove -y coq:flocq.2.4.0,0,2,"","","","install/coq:flocq.install
+12
+lib/coq:flocq/opam.config
+0
+lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+41417
+lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31243
+lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59389
+lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+101749
+lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52703
+lib/coq/user-contrib/Flocq/Appli/Fappli_double_round.vo
+1638596
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+429207
+lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125390
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+174431
+lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107649
+lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50281
+lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+24500
+lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35174
+lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+56496
+lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147767
+lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60042
+lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+89488
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82051
+lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28107
+lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+173101
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100571
+lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51283
+lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17325
+lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+102924
+lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43503
+lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152115
+lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+151730
+lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+216558
+lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22039
+lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:flocq,2.3.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.3.0,0,0,"",opam install -y --show-action coq:flocq.2.3.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.3.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.3.0,0,53,"",opam remove -y coq:flocq.2.3.0,0,2,"","","","install/coq:flocq.install
+12
+lib/coq:flocq/opam.config
+0
+lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+38125
+lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31243
+lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59389
+lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+96568
+lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52703
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+428281
+lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125390
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+146845
+lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107649
+lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50281
+lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+26617
+lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35174
+lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+56496
+lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147767
+lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60042
+lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+88293
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82051
+lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28107
+lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+147134
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100571
+lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51283
+lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17325
+lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+88700
+lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43503
+lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152115
+lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+148906
+lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+210103
+lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22039
+lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:flocq,2.2.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:flocq/coq:flocq.2.2.0,0,0,"",opam install -y --show-action coq:flocq.2.2.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:flocq.2.2.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:flocq.2.2.0,0,52,"",opam remove -y coq:flocq.2.2.0,0,2,"","","","install/coq:flocq.install
+12
+lib/coq:flocq/opam.config
+0
+lib/coq/user-contrib/Flocq/Prop/Fprop_plus_error.vo
+38225
+lib/coq/user-contrib/Flocq/Prop/Fprop_Sterbenz.vo
+31343
+lib/coq/user-contrib/Flocq/Prop/Fprop_div_sqrt_error.vo
+59489
+lib/coq/user-contrib/Flocq/Prop/Fprop_relative.vo
+96668
+lib/coq/user-contrib/Flocq/Prop/Fprop_mult_error.vo
+52803
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE.vo
+428381
+lib/coq/user-contrib/Flocq/Appli/Fappli_rnd_odd.vo
+125490
+lib/coq/user-contrib/Flocq/Appli/Fappli_IEEE_bits.vo
+146935
+lib/coq/user-contrib/Flocq/Calc/Fcalc_bracket.vo
+107720
+lib/coq/user-contrib/Flocq/Calc/Fcalc_div.vo
+50402
+lib/coq/user-contrib/Flocq/Calc/Fcalc_digits.vo
+58095
+lib/coq/user-contrib/Flocq/Calc/Fcalc_ops.vo
+35274
+lib/coq/user-contrib/Flocq/Calc/Fcalc_sqrt.vo
+93044
+lib/coq/user-contrib/Flocq/Calc/Fcalc_round.vo
+147866
+lib/coq/user-contrib/Flocq/Core/Fcore_FTZ.vo
+60142
+lib/coq/user-contrib/Flocq/Core/Fcore_FLT.vo
+88393
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd_ne.vo
+82151
+lib/coq/user-contrib/Flocq/Core/Fcore_defs.vo
+28207
+lib/coq/user-contrib/Flocq/Core/Fcore_Raux.vo
+146407
+lib/coq/user-contrib/Flocq/Core/Fcore_rnd.vo
+100671
+lib/coq/user-contrib/Flocq/Core/Fcore_float_prop.vo
+51383
+lib/coq/user-contrib/Flocq/Core/Fcore.vo
+17425
+lib/coq/user-contrib/Flocq/Core/Fcore_Zaux.vo
+88801
+lib/coq/user-contrib/Flocq/Core/Fcore_FLX.vo
+43603
+lib/coq/user-contrib/Flocq/Core/Fcore_ulp.vo
+152235
+lib/coq/user-contrib/Flocq/Core/Fcore_digits.vo
+116852
+lib/coq/user-contrib/Flocq/Core/Fcore_generic_fmt.vo
+210203
+lib/coq/user-contrib/Flocq/Core/Fcore_FIX.vo
+22139
+lib/coq/user-contrib/Flocq/Flocq_version.vo
+12043"
+coq:error-handlers,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:error-handlers/coq:error-handlers.1.0.0,0,0,"",opam install -y --show-action coq:error-handlers.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:error-handlers.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:error-handlers.1.0.0,0,3,"",opam remove -y coq:error-handlers.1.0.0,0,2,"","","","install/coq:error-handlers.install
+12
+lib/coq/user-contrib/ErrorHandlers/All.vo
+2017
+lib/coq:error-handlers/opam.config
+0"
+coq:corn,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:corn/coq:corn.1.0.0,0,0,"",opam install -y --show-action coq:corn.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:corn.1.0.0,0,167,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:corn.1.0.0,0,1365,"",opam remove -y coq:corn.1.0.0,0,2,"","","","install/coq:corn.install
+12
+lib/coq/user-contrib/CoRN/util/Qsums.vo
+56142
+lib/coq/user-contrib/CoRN/util/PointFree.vo
+18253
+lib/coq/user-contrib/CoRN/util/Container.vo
+6450
+lib/coq/user-contrib/CoRN/util/SetoidPermutation.vo
+28041
+lib/coq/user-contrib/CoRN/util/Qdlog.vo
+94928
+lib/coq/user-contrib/CoRN/util/Qgcd.vo
+38563
+lib/coq/user-contrib/CoRN/util/Extract.vo
+39440
+lib/coq/user-contrib/CoRN/reals/Bridges_iso.vo
+225271
+lib/coq/user-contrib/CoRN/reals/Bridges_LUB.vo
+312327
+lib/coq/user-contrib/CoRN/reals/Q_in_CReals.vo
+101880
+lib/coq/user-contrib/CoRN/reals/RealCount.vo
+111270
+lib/coq/user-contrib/CoRN/reals/OddPolyRootIR.vo
+111336
+lib/coq/user-contrib/CoRN/reals/R_morphism.vo
+130147
+lib/coq/user-contrib/CoRN/reals/RealFuncts.vo
+44869
+lib/coq/user-contrib/CoRN/reals/RealLists.vo
+68328
+lib/coq/user-contrib/CoRN/reals/CReals1.vo
+85062
+lib/coq/user-contrib/CoRN/reals/CPoly_Contin.vo
+41528
+lib/coq/user-contrib/CoRN/reals/Series.vo
+201170
+lib/coq/user-contrib/CoRN/reals/iso_CReals.vo
+125862
+lib/coq/user-contrib/CoRN/reals/PosSeq.vo
+39286
+lib/coq/user-contrib/CoRN/reals/CauchySeq.vo
+114865
+lib/coq/user-contrib/CoRN/reals/Max_AbsIR.vo
+209602
+lib/coq/user-contrib/CoRN/reals/CSumsReals.vo
+70612
+lib/coq/user-contrib/CoRN/reals/Intervals.vo
+156958
+lib/coq/user-contrib/CoRN/reals/faster/AQmetric.vo
+148050
+lib/coq/user-contrib/CoRN/reals/faster/ARAlternatingSum.vo
+628138
+lib/coq/user-contrib/CoRN/reals/faster/ARtrans.vo
+35381
+lib/coq/user-contrib/CoRN/reals/faster/ARsin.vo
+275559
+lib/coq/user-contrib/CoRN/reals/faster/ARbigD.vo
+195401
+lib/coq/user-contrib/CoRN/reals/faster/ARexp.vo
+183604
+lib/coq/user-contrib/CoRN/reals/faster/ARroot.vo
+332349
+lib/coq/user-contrib/CoRN/reals/faster/ApproximateRationals.vo
+247487
+lib/coq/user-contrib/CoRN/reals/faster/ARcos.vo
+181026
+lib/coq/user-contrib/CoRN/reals/faster/ARpi.vo
+86276
+lib/coq/user-contrib/CoRN/reals/faster/ARarctan_small.vo
+160342
+lib/coq/user-contrib/CoRN/reals/faster/ARbigQ.vo
+59259
+lib/coq/user-contrib/CoRN/reals/faster/ARQ.vo
+43113
+lib/coq/user-contrib/CoRN/reals/faster/ARarctan.vo
+143932
+lib/coq/user-contrib/CoRN/reals/faster/ARArith.vo
+1084184
+lib/coq/user-contrib/CoRN/reals/faster/ARsign.vo
+35193
+lib/coq/user-contrib/CoRN/reals/Cauchy_CReals.vo
+114661
+lib/coq/user-contrib/CoRN/reals/Cesaro.vo
+58136
+lib/coq/user-contrib/CoRN/reals/CReals.vo
+32044
+lib/coq/user-contrib/CoRN/reals/fast/CRsum.vo
+82007
+lib/coq/user-contrib/CoRN/reals/fast/CRArith.vo
+190496
+lib/coq/user-contrib/CoRN/reals/fast/CRconst.vo
+28972
+lib/coq/user-contrib/CoRN/reals/fast/CRcos.vo
+99596
+lib/coq/user-contrib/CoRN/reals/fast/CRcorrect.vo
+187369
+lib/coq/user-contrib/CoRN/reals/fast/CRFieldOps.vo
+159800
+lib/coq/user-contrib/CoRN/reals/fast/CRroot.vo
+214467
+lib/coq/user-contrib/CoRN/reals/fast/CRpi.vo
+34361
+lib/coq/user-contrib/CoRN/reals/fast/CRGeometricSum.vo
+160478
+lib/coq/user-contrib/CoRN/reals/fast/uneven_CRplus.vo
+44713
+lib/coq/user-contrib/CoRN/reals/fast/CRarctan.vo
+82015
+lib/coq/user-contrib/CoRN/reals/fast/CRln.vo
+98755
+lib/coq/user-contrib/CoRN/reals/fast/ContinuousCorrect.vo
+54022
+lib/coq/user-contrib/CoRN/reals/fast/CRpi_fast.vo
+143938
+lib/coq/user-contrib/CoRN/reals/fast/CRarctan_small.vo
+69287
+lib/coq/user-contrib/CoRN/reals/fast/CRpower.vo
+75689
+lib/coq/user-contrib/CoRN/reals/fast/CRtrans.vo
+35140
+lib/coq/user-contrib/CoRN/reals/fast/CRsign.vo
+31772
+lib/coq/user-contrib/CoRN/reals/fast/CRexp.vo
+180663
+lib/coq/user-contrib/CoRN/reals/fast/Compress.vo
+55922
+lib/coq/user-contrib/CoRN/reals/fast/RasterQ.vo
+78374
+lib/coq/user-contrib/CoRN/reals/fast/MultivariatePolynomials.vo
+361353
+lib/coq/user-contrib/CoRN/reals/fast/Integration.vo
+168954
+lib/coq/user-contrib/CoRN/reals/fast/CRabs.vo
+69161
+lib/coq/user-contrib/CoRN/reals/fast/CRGroupOps.vo
+103111
+lib/coq/user-contrib/CoRN/reals/fast/Plot.vo
+58511
+lib/coq/user-contrib/CoRN/reals/fast/CRAlternatingSum.vo
+120105
+lib/coq/user-contrib/CoRN/reals/fast/CRartanh_slow.vo
+61281
+lib/coq/user-contrib/CoRN/reals/fast/CRpi_slow.vo
+131540
+lib/coq/user-contrib/CoRN/reals/fast/CRIR.vo
+85763
+lib/coq/user-contrib/CoRN/reals/fast/PowerBound.vo
+51022
+lib/coq/user-contrib/CoRN/reals/fast/Interval.vo
+136086
+lib/coq/user-contrib/CoRN/reals/fast/CRseries.vo
+110996
+lib/coq/user-contrib/CoRN/reals/fast/RasterizeQ.vo
+133707
+lib/coq/user-contrib/CoRN/reals/fast/LazyNat.vo
+12671
+lib/coq/user-contrib/CoRN/reals/fast/ModulusDerivative.vo
+80756
+lib/coq/user-contrib/CoRN/reals/fast/CRsin.vo
+188498
+lib/coq/user-contrib/CoRN/reals/fast/CRball.vo
+52734
+lib/coq/user-contrib/CoRN/reals/IVT.vo
+187452
+lib/coq/user-contrib/CoRN/reals/Q_dense.vo
+162644
+lib/coq/user-contrib/CoRN/reals/CMetricFields.vo
+95220
+lib/coq/user-contrib/CoRN/reals/NRootIR.vo
+167892
+lib/coq/user-contrib/CoRN/tactics/csetoid_rewrite.vo
+373607
+lib/coq/user-contrib/CoRN/tactics/Step.vo
+1400
+lib/coq/user-contrib/CoRN/tactics/RingReflection.vo
+355236
+lib/coq/user-contrib/CoRN/tactics/Rational.vo
+22001
+lib/coq/user-contrib/CoRN/tactics/Qauto.vo
+25460
+lib/coq/user-contrib/CoRN/tactics/DiffTactics3.vo
+53597
+lib/coq/user-contrib/CoRN/tactics/FieldReflection.vo
+461438
+lib/coq/user-contrib/CoRN/tactics/DiffTactics2.vo
+105676
+lib/coq/user-contrib/CoRN/tactics/AlgReflection.vo
+111085
+lib/coq/user-contrib/CoRN/tactics/DiffTactics1.vo
+786
+lib/coq/user-contrib/CoRN/tactics/CornTac.vo
+4509
+lib/coq/user-contrib/CoRN/ode/SimpleIntegration.vo
+250169
+lib/coq/user-contrib/CoRN/ode/BanachFixpoint.vo
+161683
+lib/coq/user-contrib/CoRN/ode/FromMetric2.vo
+177596
+lib/coq/user-contrib/CoRN/ode/Picard.vo
+438530
+lib/coq/user-contrib/CoRN/ode/metric.vo
+349626
+lib/coq/user-contrib/CoRN/ode/AbstractIntegration.vo
+392346
+lib/coq/user-contrib/CoRN/order/Lattice.vo
+46136
+lib/coq/user-contrib/CoRN/order/TotalOrder.vo
+73831
+lib/coq/user-contrib/CoRN/order/SemiLattice.vo
+53712
+lib/coq/user-contrib/CoRN/order/PartialOrder.vo
+72073
+lib/coq/user-contrib/CoRN/classes/Qposclasses.vo
+27426
+lib/coq/user-contrib/CoRN/classes/Qclasses.vo
+25657
+lib/coq/user-contrib/CoRN/model/totalorder/QMinMax.vo
+58383
+lib/coq/user-contrib/CoRN/model/totalorder/QposMinMax.vo
+61118
+lib/coq/user-contrib/CoRN/model/totalorder/ZMinMax.vo
+58389
+lib/coq/user-contrib/CoRN/model/ordfields/CRordfield.vo
+34668
+lib/coq/user-contrib/CoRN/model/ordfields/Qordfield.vo
+25265
+lib/coq/user-contrib/CoRN/model/Zmod/Zm.vo
+56753
+lib/coq/user-contrib/CoRN/model/Zmod/ZBasics.vo
+111980
+lib/coq/user-contrib/CoRN/model/Zmod/ZMod.vo
+206624
+lib/coq/user-contrib/CoRN/model/Zmod/ZGcd.vo
+246834
+lib/coq/user-contrib/CoRN/model/Zmod/ZDivides.vo
+168759
+lib/coq/user-contrib/CoRN/model/Zmod/Cmod.vo
+51173
+lib/coq/user-contrib/CoRN/model/Zmod/IrrCrit.vo
+43174
+lib/coq/user-contrib/CoRN/model/reals/CRreal.vo
+64855
+lib/coq/user-contrib/CoRN/model/reals/Cauchy_IR.vo
+20124
+lib/coq/user-contrib/CoRN/model/abgroups/Qposabgroup.vo
+21340
+lib/coq/user-contrib/CoRN/model/abgroups/CRabgroup.vo
+29575
+lib/coq/user-contrib/CoRN/model/abgroups/QSposabgroup.vo
+21370
+lib/coq/user-contrib/CoRN/model/abgroups/Zabgroup.vo
+17554
+lib/coq/user-contrib/CoRN/model/abgroups/Qabgroup.vo
+18728
+lib/coq/user-contrib/CoRN/model/groups/Zgroup.vo
+17855
+lib/coq/user-contrib/CoRN/model/groups/CRgroup.vo
+31811
+lib/coq/user-contrib/CoRN/model/groups/Qposgroup.vo
+22990
+lib/coq/user-contrib/CoRN/model/groups/Qgroup.vo
+19488
+lib/coq/user-contrib/CoRN/model/groups/QSposgroup.vo
+23053
+lib/coq/user-contrib/CoRN/model/monoids/freem_to_Nm.vo
+20353
+lib/coq/user-contrib/CoRN/model/monoids/Nposmonoid.vo
+18766
+lib/coq/user-contrib/CoRN/model/monoids/Qposmonoid.vo
+21932
+lib/coq/user-contrib/CoRN/model/monoids/Nmonoid.vo
+18631
+lib/coq/user-contrib/CoRN/model/monoids/CRmonoid.vo
+30949
+lib/coq/user-contrib/CoRN/model/monoids/QSposmonoid.vo
+23437
+lib/coq/user-contrib/CoRN/model/monoids/Nm_to_freem.vo
+28452
+lib/coq/user-contrib/CoRN/model/monoids/Nm_to_cycm.vo
+23769
+lib/coq/user-contrib/CoRN/model/monoids/Qmonoid.vo
+20475
+lib/coq/user-contrib/CoRN/model/monoids/Zmonoid.vo
+19677
+lib/coq/user-contrib/CoRN/model/setoids/decsetoid.vo
+42024
+lib/coq/user-contrib/CoRN/model/setoids/Zsetoid.vo
+21762
+lib/coq/user-contrib/CoRN/model/setoids/Zfinsetoid.vo
+30758
+lib/coq/user-contrib/CoRN/model/setoids/Nfinsetoid.vo
+28105
+lib/coq/user-contrib/CoRN/model/setoids/Nsetoid.vo
+27557
+lib/coq/user-contrib/CoRN/model/setoids/Qpossetoid.vo
+29640
+lib/coq/user-contrib/CoRN/model/setoids/Npossetoid.vo
+22778
+lib/coq/user-contrib/CoRN/model/setoids/Qsetoid.vo
+23577
+lib/coq/user-contrib/CoRN/model/setoids/CRsetoid.vo
+30780
+lib/coq/user-contrib/CoRN/model/structures/Nsec.vo
+34052
+lib/coq/user-contrib/CoRN/model/structures/NNUpperR.vo
+125961
+lib/coq/user-contrib/CoRN/model/structures/Qinf.vo
+42503
+lib/coq/user-contrib/CoRN/model/structures/Npossec.vo
+23689
+lib/coq/user-contrib/CoRN/model/structures/OpenUnit.vo
+55524
+lib/coq/user-contrib/CoRN/model/structures/Qsec.vo
+49547
+lib/coq/user-contrib/CoRN/model/structures/Zsec.vo
+38127
+lib/coq/user-contrib/CoRN/model/structures/QnnInf.vo
+42068
+lib/coq/user-contrib/CoRN/model/structures/StepQsec.vo
+189552
+lib/coq/user-contrib/CoRN/model/structures/QnonNeg.vo
+57608
+lib/coq/user-contrib/CoRN/model/structures/QposInf.vo
+37833
+lib/coq/user-contrib/CoRN/model/structures/Qpossec.vo
+78659
+lib/coq/user-contrib/CoRN/model/rings/Zring.vo
+18559
+lib/coq/user-contrib/CoRN/model/rings/CRring.vo
+35742
+lib/coq/user-contrib/CoRN/model/rings/Qring.vo
+27245
+lib/coq/user-contrib/CoRN/model/fields/Qfield.vo
+19809
+lib/coq/user-contrib/CoRN/model/fields/CRfield.vo
+32829
+lib/coq/user-contrib/CoRN/model/semigroups/Qsemigroup.vo
+17920
+lib/coq/user-contrib/CoRN/model/semigroups/QSpossemigroup.vo
+19827
+lib/coq/user-contrib/CoRN/model/semigroups/Nsemigroup.vo
+16902
+lib/coq/user-contrib/CoRN/model/semigroups/Qpossemigroup.vo
+19856
+lib/coq/user-contrib/CoRN/model/semigroups/CRsemigroup.vo
+31314
+lib/coq/user-contrib/CoRN/model/semigroups/Npossemigroup.vo
+18040
+lib/coq/user-contrib/CoRN/model/semigroups/Zsemigroup.vo
+17191
+lib/coq/user-contrib/CoRN/model/metric2/BoundedFunction.vo
+28071
+lib/coq/user-contrib/CoRN/model/metric2/LinfDistMonad.vo
+57530
+lib/coq/user-contrib/CoRN/model/metric2/IntegrableFunction.vo
+28533
+lib/coq/user-contrib/CoRN/model/metric2/Qmetric.vo
+90044
+lib/coq/user-contrib/CoRN/model/metric2/LinfMetric.vo
+52604
+lib/coq/user-contrib/CoRN/model/metric2/L1metric.vo
+114134
+lib/coq/user-contrib/CoRN/model/metric2/CRmetric.vo
+29368
+lib/coq/user-contrib/CoRN/model/metric2/LinfMetricMonad.vo
+2832629
+lib/coq/user-contrib/CoRN/model/partialorder/CRpartialorder.vo
+28564
+lib/coq/user-contrib/CoRN/model/lattice/CRlattice.vo
+44175
+lib/coq/user-contrib/CoRN/metrics/CMetricSpaces.vo
+69186
+lib/coq/user-contrib/CoRN/metrics/ContFunctions.vo
+81111
+lib/coq/user-contrib/CoRN/metrics/IR_CPMSpace.vo
+60232
+lib/coq/user-contrib/CoRN/metrics/LipExt.vo
+114946
+lib/coq/user-contrib/CoRN/metrics/Equiv.vo
+59683
+lib/coq/user-contrib/CoRN/metrics/CPMSTheory.vo
+120303
+lib/coq/user-contrib/CoRN/metrics/Prod_Sub.vo
+50807
+lib/coq/user-contrib/CoRN/metrics/CPseudoMSpaces.vo
+56631
+lib/coq/user-contrib/CoRN/algebra/RSetoid.vo
+61763
+lib/coq/user-contrib/CoRN/algebra/COrdFields2.vo
+163933
+lib/coq/user-contrib/CoRN/algebra/COrdFields.vo
+266906
+lib/coq/user-contrib/CoRN/algebra/CAbGroups.vo
+92281
+lib/coq/user-contrib/CoRN/algebra/CSemiGroups.vo
+48564
+lib/coq/user-contrib/CoRN/algebra/COrdCauchy.vo
+131456
+lib/coq/user-contrib/CoRN/algebra/Expon.vo
+126017
+lib/coq/user-contrib/CoRN/algebra/CPoly_ApZero.vo
+177312
+lib/coq/user-contrib/CoRN/algebra/CGroups.vo
+96811
+lib/coq/user-contrib/CoRN/algebra/CPoly_Degree.vo
+238927
+lib/coq/user-contrib/CoRN/algebra/CAbMonoids.vo
+29277
+lib/coq/user-contrib/CoRN/algebra/CSetoidInc.vo
+24971
+lib/coq/user-contrib/CoRN/algebra/CMonoids.vo
+357005
+lib/coq/user-contrib/CoRN/algebra/COrdAbs.vo
+107070
+lib/coq/user-contrib/CoRN/algebra/CRings.vo
+272739
+lib/coq/user-contrib/CoRN/algebra/CSums.vo
+122381
+lib/coq/user-contrib/CoRN/algebra/CRing_as_Ring.vo
+22513
+lib/coq/user-contrib/CoRN/algebra/CornScope.vo
+18427
+lib/coq/user-contrib/CoRN/algebra/CPoly_NthCoeff.vo
+78296
+lib/coq/user-contrib/CoRN/algebra/CSetoids.vo
+174542
+lib/coq/user-contrib/CoRN/algebra/CSetoidFun.vo
+116496
+lib/coq/user-contrib/CoRN/algebra/OperationClasses.vo
+49867
+lib/coq/user-contrib/CoRN/algebra/CFields.vo
+198060
+lib/coq/user-contrib/CoRN/algebra/CRing_Homomorphisms.vo
+65136
+lib/coq/user-contrib/CoRN/algebra/Bernstein.vo
+254065
+lib/coq/user-contrib/CoRN/algebra/CPolynomials.vo
+479702
+lib/coq/user-contrib/CoRN/algebra/Cauchy_COF.vo
+216124
+lib/coq/user-contrib/CoRN/complex/CComplex.vo
+171317
+lib/coq/user-contrib/CoRN/complex/AbsCC.vo
+95309
+lib/coq/user-contrib/CoRN/complex/Complex_Exponential.vo
+113121
+lib/coq/user-contrib/CoRN/complex/NRootCC.vo
+347472
+lib/coq/user-contrib/CoRN/coq_reals/Rsign.vo
+38365
+lib/coq/user-contrib/CoRN/coq_reals/Rreals_iso.vo
+186679
+lib/coq/user-contrib/CoRN/coq_reals/Rreals.vo
+69703
+lib/coq/user-contrib/CoRN/ftc/Taylor.vo
+117433
+lib/coq/user-contrib/CoRN/ftc/MoreIntervals.vo
+219556
+lib/coq/user-contrib/CoRN/ftc/RefSeparated.vo
+640864
+lib/coq/user-contrib/CoRN/ftc/WeakIVT.vo
+221392
+lib/coq/user-contrib/CoRN/ftc/Rolle.vo
+115551
+lib/coq/user-contrib/CoRN/ftc/RefLemma.vo
+5099017
+lib/coq/user-contrib/CoRN/ftc/StrongIVT.vo
+259119
+lib/coq/user-contrib/CoRN/ftc/FTC.vo
+98837
+lib/coq/user-contrib/CoRN/ftc/Continuity.vo
+181896
+lib/coq/user-contrib/CoRN/ftc/CalculusTheorems.vo
+145576
+lib/coq/user-contrib/CoRN/ftc/RefSeparating.vo
+435626
+lib/coq/user-contrib/CoRN/ftc/Integral.vo
+270731
+lib/coq/user-contrib/CoRN/ftc/COrdLemmas.vo
+305323
+lib/coq/user-contrib/CoRN/ftc/MoreIntegrals.vo
+193050
+lib/coq/user-contrib/CoRN/ftc/DerivativeOps.vo
+126155
+lib/coq/user-contrib/CoRN/ftc/MoreFunctions.vo
+179952
+lib/coq/user-contrib/CoRN/ftc/NthDerivative.vo
+132681
+lib/coq/user-contrib/CoRN/ftc/MoreFunSeries.vo
+168160
+lib/coq/user-contrib/CoRN/ftc/PartInterval.vo
+62123
+lib/coq/user-contrib/CoRN/ftc/RefSepRef.vo
+189922
+lib/coq/user-contrib/CoRN/ftc/Partitions.vo
+171420
+lib/coq/user-contrib/CoRN/ftc/Differentiability.vo
+69245
+lib/coq/user-contrib/CoRN/ftc/Composition.vo
+171679
+lib/coq/user-contrib/CoRN/ftc/FunctSeries.vo
+145036
+lib/coq/user-contrib/CoRN/ftc/TaylorLemma.vo
+983751
+lib/coq/user-contrib/CoRN/ftc/FunctSequence.vo
+171451
+lib/coq/user-contrib/CoRN/ftc/FunctSums.vo
+139653
+lib/coq/user-contrib/CoRN/ftc/IntervalFunct.vo
+76929
+lib/coq/user-contrib/CoRN/ftc/Derivative.vo
+92779
+lib/coq/user-contrib/CoRN/ftc/PartFunEquality.vo
+95676
+lib/coq/user-contrib/CoRN/ftc/IntegrationRules.vo
+89201
+lib/coq/user-contrib/CoRN/raster/Raster.vo
+37794
+lib/coq/user-contrib/CoRN/fta/MainLemma.vo
+190875
+lib/coq/user-contrib/CoRN/fta/CPoly_Rev.vo
+111338
+lib/coq/user-contrib/CoRN/fta/CPoly_Contin1.vo
+51460
+lib/coq/user-contrib/CoRN/fta/CC_Props.vo
+72704
+lib/coq/user-contrib/CoRN/fta/KneserLemma.vo
+210659
+lib/coq/user-contrib/CoRN/fta/FTAreg.vo
+203222
+lib/coq/user-contrib/CoRN/fta/KeyLemma.vo
+149535
+lib/coq/user-contrib/CoRN/fta/FTA.vo
+64599
+lib/coq/user-contrib/CoRN/fta/CPoly_Shift.vo
+51518
+lib/coq/user-contrib/CoRN/metric2/StepFunctionMonad.vo
+84893
+lib/coq/user-contrib/CoRN/metric2/Compact.vo
+336622
+lib/coq/user-contrib/CoRN/metric2/Hausdorff.vo
+49510
+lib/coq/user-contrib/CoRN/metric2/MetricMorphisms.vo
+148480
+lib/coq/user-contrib/CoRN/metric2/StepFunctionSetoid.vo
+172005
+lib/coq/user-contrib/CoRN/metric2/Prelength.vo
+126585
+lib/coq/user-contrib/CoRN/metric2/Complete.vo
+174615
+lib/coq/user-contrib/CoRN/metric2/UniformContinuity.vo
+70310
+lib/coq/user-contrib/CoRN/metric2/Graph.vo
+112351
+lib/coq/user-contrib/CoRN/metric2/Classification.vo
+31413
+lib/coq/user-contrib/CoRN/metric2/FinEnum.vo
+173242
+lib/coq/user-contrib/CoRN/metric2/CompletePointFree.vo
+602
+lib/coq/user-contrib/CoRN/metric2/UCFnMonoid.vo
+23856
+lib/coq/user-contrib/CoRN/metric2/Limit.vo
+101804
+lib/coq/user-contrib/CoRN/metric2/Metric.vo
+90534
+lib/coq/user-contrib/CoRN/metric2/ProductMetric.vo
+79949
+lib/coq/user-contrib/CoRN/metric2/StepFunction.vo
+163584
+lib/coq/user-contrib/CoRN/metric2/DistanceMetricSpace.vo
+50285
+lib/coq/user-contrib/CoRN/metric2/CompleteProduct.vo
+41640
+lib/coq/user-contrib/CoRN/transc/TaylorSeries.vo
+143131
+lib/coq/user-contrib/CoRN/transc/RealPowers.vo
+151400
+lib/coq/user-contrib/CoRN/transc/InvTrigonom.vo
+156639
+lib/coq/user-contrib/CoRN/transc/SinCos.vo
+108371
+lib/coq/user-contrib/CoRN/transc/ArTanH.vo
+100697
+lib/coq/user-contrib/CoRN/transc/Trigonometric.vo
+185944
+lib/coq/user-contrib/CoRN/transc/Pi.vo
+195609
+lib/coq/user-contrib/CoRN/transc/Exponential.vo
+225784
+lib/coq/user-contrib/CoRN/transc/PowerSeries.vo
+112987
+lib/coq/user-contrib/CoRN/transc/MoreArcTan.vo
+159548
+lib/coq/user-contrib/CoRN/transc/TrigMon.vo
+137743
+lib/coq/user-contrib/CoRN/logic/CLogic.vo
+198047
+lib/coq/user-contrib/CoRN/logic/Classic.vo
+12270
+lib/coq/user-contrib/CoRN/logic/PropDecid.vo
+1789
+lib/coq/user-contrib/CoRN/logic/Stability.vo
+48840
+lib/coq/user-contrib/CoRN/logic/CornBasics.vo
+128893
+lib/coq/user-contrib/CoRN/stdlib_omissions/Q.vo
+84834
+lib/coq/user-contrib/CoRN/stdlib_omissions/Z.vo
+28320
+lib/coq/user-contrib/CoRN/stdlib_omissions/N.vo
+2485
+lib/coq/user-contrib/CoRN/stdlib_omissions/P.vo
+9997
+lib/coq/user-contrib/CoRN/stdlib_omissions/List.vo
+39379
+lib/coq/user-contrib/CoRN/stdlib_omissions/Pair.vo
+14686
+lib/coq:corn/opam.config
+0"
+coq:coquelicot,2.0.1,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:coquelicot/coq:coquelicot.2.0.1,0,0,"",opam install -y --show-action coq:coquelicot.2.0.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coquelicot.2.0.1,0,31,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:coquelicot.2.0.1,0,80,"",opam remove -y coq:coquelicot.2.0.1,0,2,"","","","install/coq:coquelicot.install
+12
+lib/coq:coquelicot/opam.config
+0
+lib/coq/user-contrib/Coquelicot/Continuity.vo
+189666
+lib/coq/user-contrib/Coquelicot/Compactness.vo
+72123
+lib/coq/user-contrib/Coquelicot/Coquelicot.vo
+19103
+lib/coq/user-contrib/Coquelicot/Derive.vo
+468931
+lib/coq/user-contrib/Coquelicot/Hierarchy.vo
+506692
+lib/coq/user-contrib/Coquelicot/Markov.vo
+32810
+lib/coq/user-contrib/Coquelicot/Series.vo
+162192
+lib/coq/user-contrib/Coquelicot/Derive_2d.vo
+265484
+lib/coq/user-contrib/Coquelicot/SF_seq.vo
+634478
+lib/coq/user-contrib/Coquelicot/Limit.vo
+384005
+lib/coq/user-contrib/Coquelicot/AutoDerive.vo
+306150
+lib/coq/user-contrib/Coquelicot/PSeries.vo
+341237
+lib/coq/user-contrib/Coquelicot/Equiv.vo
+107881
+lib/coq/user-contrib/Coquelicot/Seq_fct.vo
+218583
+lib/coq/user-contrib/Coquelicot/RInt.vo
+1568783
+lib/coq/user-contrib/Coquelicot/Lub.vo
+97029
+lib/coq/user-contrib/Coquelicot/Complex.vo
+133552
+lib/coq/user-contrib/Coquelicot/ElemFct.vo
+63274
+lib/coq/user-contrib/Coquelicot/Rcomplements.vo
+269475
+lib/coq/user-contrib/Coquelicot/Rbar.vo
+143492"
+coq:coqeal:theory,0.9.1,DepsError,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:coqeal:theory/coq:coqeal:theory.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:theory.0.9.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coqeal:theory.0.9.1,31744,300,"The following actions will be performed:
+  - install coq:ssreflect 1.5.0
+  - install coq:math-comp 1.5.0
+===== 2 to install =====
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:math-comp: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect.1.5.0] http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz downloaded
+[coq:math-comp: http] Command started
+[coq:math-comp.1.5.0] http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect: make] Command started
+[coq:ssreflect: make install] Command started
+-> installed coq:ssreflect.1.5.0
+[coq:math-comp: make] Command started
+",true,0,0,"",true,0,0,"","","",""
+coq:coqeal:refinements,0.9.1,DepsError,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:coqeal:refinements/coq:coqeal:refinements.0.9.1,0,0,"",opam install -y --show-action coq:coqeal:refinements.0.9.1 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:coqeal:refinements.0.9.1,31744,300,"The following actions will be performed:
+  - install coq:ssreflect     1.5.0
+  - install coq:math-comp     1.5.0
+  - install coq:coqeal:theory 0.9.1
+===== 3 to install =====
+
+=-=- Gathering sources =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:coqeal:theory: http] Command started
+[coq:math-comp: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect: http] Command started
+[coq:ssreflect.1.5.0] http://ssr.msr-inria.inria.fr/FTP/ssreflect-1.5.tar.gz downloaded
+[coq:math-comp: http] Command started
+[coq:math-comp.1.5.0] http://ssr.msr-inria.inria.fr/FTP/mathcomp-1.5.tar.gz downloaded
+[coq:coqeal:theory: http] Command started
+[coq:coqeal:theory.0.9.1] https://github.com/Barbichu/CoqEAL/raw/master/release/CoqEAL_theory.0.9.1.tgz downloaded
+
+=-=- Processing actions -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[coq:ssreflect: make] Command started
+[coq:ssreflect: make install] Command started
+-> installed coq:ssreflect.1.5.0
+[coq:math-comp: make] Command started
+",true,0,0,"",true,0,0,"","","",""
+coq:constructors,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:constructors/coq:constructors.1.0.0,0,0,"",opam install -y --show-action coq:constructors.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:constructors.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:constructors.1.0.0,0,3,"",opam remove -y coq:constructors.1.0.0,0,1,"","","","install/coq:constructors.install
+12
+lib/coq:constructors/opam.config
+0
+lib/coq/user-contrib/Constructors/constructors_plugin.cmxs
+40568
+lib/coq/user-contrib/Constructors/constructors_plugin.cma
+10092
+lib/coq/user-contrib/Constructors/Dynamic.vo
+3252
+lib/coq/user-contrib/Constructors/Constructors.vo
+1048
+lib/coq/user-contrib/Constructors/constructors.cmi
+4311
+lib/coq/user-contrib/Constructors/constructors_plugin_mod.cmi
+2163"
+coq:concurrency:system,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:concurrency:system/coq:concurrency:system.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:system.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:system.1.0.0,0,13,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:system.1.0.0,0,10,"",opam remove -y coq:concurrency:system.1.0.0,0,2,"","","","install/coq:concurrency:system.install
+12
+lib/coq:concurrency:system/opam.config
+0
+lib/coq/user-contrib/Concurrency/Events.vo
+73442
+lib/coq/user-contrib/Concurrency/Extraction.vo
+71213
+lib/coq/user-contrib/Concurrency/Computation.vo
+34044
+lib/coq/user-contrib/Concurrency/Run.vo
+52613
+lib/coq/user-contrib/Concurrency/Test.vo
+34259
+lib/coq/user-contrib/Concurrency/StdLib.vo
+23657"
+coq:concurrency:proxy,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:concurrency:proxy/coq:concurrency:proxy.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:proxy.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:proxy.1.0.0,0,28,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:proxy.1.0.0,0,14,"",opam remove -y coq:concurrency:proxy.1.0.0,0,1,"","","","install/coq:concurrency:proxy.install
+74
+bin/coqConcurrencyProxy.byte
+448903
+bin/coqConcurrencyProxy.native
+1545136
+lib/coq:concurrency:proxy/opam.config
+0"
+coq:concurrency:pluto,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:concurrency:pluto/coq:concurrency:pluto.1.0.0,0,0,"",opam install -y --show-action coq:concurrency:pluto.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:concurrency:pluto.1.0.0,0,38,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:concurrency:pluto.1.0.0,0,8,"",opam remove -y coq:concurrency:pluto.1.0.0,0,1,"","","","install/coq:concurrency:pluto.install
+106
+bin/pluto.byte
+417676
+bin/pluto.native
+1356152
+lib/coq:concurrency:pluto/opam.config
+0"
+coq:compcert,2.4.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.4.0,0,0,"",opam install -y --show-action coq:compcert.2.4.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.4.0,0,22,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:compcert.2.4.0,0,621,"",opam remove -y coq:compcert.2.4.0,0,1,"","","","install/coq:compcert.install
+52
+bin/ccomp
+6556472
+lib/coq:compcert/libcompcert.a
+9776
+lib/coq:compcert/opam.config
+0"
+coq:compcert,2.3.2,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.3.2,0,0,"",opam install -y --show-action coq:compcert.2.3.2 coq.8.4.5,0,2,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.3.2,0,21,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:compcert.2.3.2,0,610,"",opam remove -y coq:compcert.2.3.2,0,1,"","","","install/coq:compcert.install
+52
+bin/ccomp
+6452704
+lib/coq:compcert/libcompcert.a
+9776
+lib/coq:compcert/opam.config
+0"
+coq:compcert,2.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:compcert/coq:compcert.2.0.0,0,0,"",opam install -y --show-action coq:compcert.2.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:compcert.2.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:compcert.2.0.0,0,409,"",opam remove -y coq:compcert.2.0.0,0,1,"","","","install/coq:compcert.install
+52
+bin/ccomp
+4104192
+lib/coq:compcert/libcompcert.a
+9030
+lib/coq:compcert/opam.config
+0"
+coq:color,1.0.0,Success,"# Installed packages for system:
+base-bigarray   base  Bigarray library distributed with the OCaml compiler
+base-threads    base  Threads library distributed with the OCaml compiler
+base-unix       base  Unix library distributed with the OCaml compiler
+camlp5          6.12  Preprocessor-pretty-printer of OCaml
+coq            8.4.5  Formal proof management system
+",ruby lint.rb stable ../stable/packages/coq:color/coq:color.1.0.0,0,0,"",opam install -y --show-action coq:color.1.0.0 coq.8.4.5,0,1,"",true,0,0,"",ulimit -Sv 2000000; timeout 5m opam install -y --deps-only coq:color.1.0.0,0,1,"",ulimit -Sv 2000000; timeout 30m opam install -y --verbose coq:color.1.0.0,0,394,"",opam remove -y coq:color.1.0.0,0,2,"","","","install/coq:color.install
+12
+lib/coq/user-contrib/CoLoR/SemLab/AFlatCont.vo
+85700
+lib/coq/user-contrib/CoLoR/SemLab/ARootLab.vo
+60531
+lib/coq/user-contrib/CoLoR/SemLab/ASemLab.vo
+270955
+lib/coq/user-contrib/CoLoR/Filter/AFilterPerm.vo
+105795
+lib/coq/user-contrib/CoLoR/Filter/AFilterBool.vo
+91376
+lib/coq/user-contrib/CoLoR/Filter/AProj.vo
+84939
+lib/coq/user-contrib/CoLoR/SubtermCrit/ASimpleProj.vo
+40105
+lib/coq/user-contrib/CoLoR/HORPO/Computability.vo
+8340920
+lib/coq/user-contrib/CoLoR/HORPO/HorpoWf.vo
+9122273
+lib/coq/user-contrib/CoLoR/HORPO/HorpoExMap.vo
+15316331
+lib/coq/user-contrib/CoLoR/HORPO/Horpo.vo
+7591458
+lib/coq/user-contrib/CoLoR/HORPO/HorpoComp.vo
+8747493
+lib/coq/user-contrib/CoLoR/HORPO/HorpoExNonTrans.vo
+15327659
+lib/coq/user-contrib/CoLoR/NonTermin/ALoop.vo
+99922
+lib/coq/user-contrib/CoLoR/NonTermin/SModLoop.vo
+88717
+lib/coq/user-contrib/CoLoR/NonTermin/AVarCond.vo
+31320
+lib/coq/user-contrib/CoLoR/NonTermin/SLoop.vo
+94397
+lib/coq/user-contrib/CoLoR/NonTermin/AModLoop.vo
+102055
+lib/coq/user-contrib/CoLoR/DP/ADPUnif.vo
+58344
+lib/coq/user-contrib/CoLoR/DP/ADPGraph.vo
+103733
+lib/coq/user-contrib/CoLoR/DP/ADecomp.vo
+53828
+lib/coq/user-contrib/CoLoR/DP/AHDE.vo
+76507
+lib/coq/user-contrib/CoLoR/DP/ADP.vo
+71994
+lib/coq/user-contrib/CoLoR/DP/ASCCUnion.vo
+175132
+lib/coq/user-contrib/CoLoR/DP/AGraph.vo
+45043
+lib/coq/user-contrib/CoLoR/ProofChecker/Proof.vo
+19594
+lib/coq/user-contrib/CoLoR/ProofChecker/EmptyChecker.vo
+19987
+lib/coq/user-contrib/CoLoR/ProofChecker/IntBasedChecker.vo
+35211
+lib/coq/user-contrib/CoLoR/ProofChecker/Problem.vo
+22331
+lib/coq/user-contrib/CoLoR/ProofChecker/ProofChecker.vo
+41148
+lib/coq/user-contrib/CoLoR/MannaNess/AMannaNess.vo
+29555
+lib/coq/user-contrib/CoLoR/MannaNess/ARedPair.vo
+1747248
+lib/coq/user-contrib/CoLoR/Conversion/AReverse.vo
+51695
+lib/coq/user-contrib/CoLoR/Conversion/VTerm_of_ATerm.vo
+40377
+lib/coq/user-contrib/CoLoR/Conversion/ATerm_of_String.vo
+65387
+lib/coq/user-contrib/CoLoR/Conversion/String_of_ATerm.vo
+79255
+lib/coq/user-contrib/CoLoR/RPO/VLPO.vo
+1423989
+lib/coq/user-contrib/CoLoR/RPO/VRPO_Results.vo
+276063
+lib/coq/user-contrib/CoLoR/RPO/VMPO.vo
+1426984
+lib/coq/user-contrib/CoLoR/RPO/VPrecedence.vo
+25561
+lib/coq/user-contrib/CoLoR/RPO/VRPO_Status.vo
+1441754
+lib/coq/user-contrib/CoLoR/RPO/VRPO_Prover.vo
+1632489
+lib/coq/user-contrib/CoLoR/RPO/VRPO_Type.vo
+1037452
+lib/coq/user-contrib/CoLoR/Term/Lambda/LAlphaAlt.vo
+3825015
+lib/coq/user-contrib/CoLoR/Term/Lambda/LCompInt.vo
+10261038
+lib/coq/user-contrib/CoLoR/Term/Lambda/LSimple.vo
+4665311
+lib/coq/user-contrib/CoLoR/Term/Lambda/LSubs.vo
+2474824
+lib/coq/user-contrib/CoLoR/Term/Lambda/LCompRewrite.vo
+9478483
+lib/coq/user-contrib/CoLoR/Term/Lambda/LSystemT.vo
+60002397
+lib/coq/user-contrib/CoLoR/Term/Lambda/LAlpha.vo
+3167287
+lib/coq/user-contrib/CoLoR/Term/Lambda/LCompSimple.vo
+17198658
+lib/coq/user-contrib/CoLoR/Term/Lambda/LTerm.vo
+4138849
+lib/coq/user-contrib/CoLoR/Term/Lambda/LCompClos.vo
+65974656
+lib/coq/user-contrib/CoLoR/Term/Lambda/LComp.vo
+5918613
+lib/coq/user-contrib/CoLoR/Term/Lambda/LBeta.vo
+3538509
+lib/coq/user-contrib/CoLoR/Term/Lambda/LCall.vo
+5892427
+lib/coq/user-contrib/CoLoR/Term/Varyadic/VSubstitution.vo
+18908
+lib/coq/user-contrib/CoLoR/Term/Varyadic/VTrs.vo
+35257
+lib/coq/user-contrib/CoLoR/Term/Varyadic/VSignature.vo
+42748
+lib/coq/user-contrib/CoLoR/Term/Varyadic/VTerm.vo
+41842
+lib/coq/user-contrib/CoLoR/Term/Varyadic/VContext.vo
+37293
+lib/coq/user-contrib/CoLoR/Term/String/SContext.vo
+21793
+lib/coq/user-contrib/CoLoR/Term/String/Srs.vo
+44001
+lib/coq/user-contrib/CoLoR/Term/String/SReverse.vo
+34058
+lib/coq/user-contrib/CoLoR/Term/WithArity/ADepRel.vo
+54397
+lib/coq/user-contrib/CoLoR/Term/WithArity/APosition.vo
+192311
+lib/coq/user-contrib/CoLoR/Term/WithArity/ARenCap.vo
+177069
+lib/coq/user-contrib/CoLoR/Term/WithArity/AUnif.vo
+238958
+lib/coq/user-contrib/CoLoR/Term/WithArity/AShift.vo
+76720
+lib/coq/user-contrib/CoLoR/Term/WithArity/AInterpretation.vo
+50717
+lib/coq/user-contrib/CoLoR/Term/WithArity/ACap.vo
+107669
+lib/coq/user-contrib/CoLoR/Term/WithArity/ASubstitution.vo
+448068
+lib/coq/user-contrib/CoLoR/Term/WithArity/AReduct.vo
+354276
+lib/coq/user-contrib/CoLoR/Term/WithArity/ATerm.vo
+141149
+lib/coq/user-contrib/CoLoR/Term/WithArity/AVariables.vo
+3000153
+lib/coq/user-contrib/CoLoR/Term/WithArity/AUnary.vo
+167564
+lib/coq/user-contrib/CoLoR/Term/WithArity/ACompat.vo
+100429
+lib/coq/user-contrib/CoLoR/Term/WithArity/AMonAlg.vo
+34272
+lib/coq/user-contrib/CoLoR/Term/WithArity/ATrs.vo
+336594
+lib/coq/user-contrib/CoLoR/Term/WithArity/AWFMInterpretation.vo
+32754
+lib/coq/user-contrib/CoLoR/Term/WithArity/ARules.vo
+58407
+lib/coq/user-contrib/CoLoR/Term/WithArity/AContext.vo
+157382
+lib/coq/user-contrib/CoLoR/Term/WithArity/AInfSeq.vo
+188136
+lib/coq/user-contrib/CoLoR/Term/WithArity/AMorphism.vo
+94625
+lib/coq/user-contrib/CoLoR/Term/WithArity/ARelation.vo
+60656
+lib/coq/user-contrib/CoLoR/Term/WithArity/ADuplicateSymb.vo
+96102
+lib/coq/user-contrib/CoLoR/Term/WithArity/ANotvar.vo
+20679
+lib/coq/user-contrib/CoLoR/Term/WithArity/ATrsNorm.vo
+23009
+lib/coq/user-contrib/CoLoR/Term/WithArity/ASubterm.vo
+49086
+lib/coq/user-contrib/CoLoR/Term/WithArity/ABinary.vo
+80069
+lib/coq/user-contrib/CoLoR/Term/WithArity/AMatching.vo
+5300034
+lib/coq/user-contrib/CoLoR/Term/WithArity/MonAlgChecker.vo
+204029
+lib/coq/user-contrib/CoLoR/Term/WithArity/ASN.vo
+58394
+lib/coq/user-contrib/CoLoR/Term/WithArity/ABterm.vo
+47127
+lib/coq/user-contrib/CoLoR/Term/WithArity/ASignature.vo
+43561
+lib/coq/user-contrib/CoLoR/Term/WithArity/ACalls.vo
+56381
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsBuilding.vo
+2030058
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsManip.vo
+418665
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsBeta.vo
+4923050
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsEta.vo
+5110105
+lib/coq/user-contrib/CoLoR/Term/SimpleType/Terms.vo
+5774441
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsSubstConv.vo
+4257223
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsTyping.vo
+251490
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsActiveEnv.vo
+1915534
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsEnv.vo
+1688925
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsConv.vo
+3286102
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsSig.vo
+7176
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsDef.vo
+38809
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsPos.vo
+2201168
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsLifting.vo
+766082
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsRed.vo
+4479745
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsAlgebraic.vo
+5594078
+lib/coq/user-contrib/CoLoR/Term/SimpleType/TermsSubst.vo
+3857390
+lib/coq/user-contrib/CoLoR/Util/Polynom/MonotonePolynom.vo
+134042
+lib/coq/user-contrib/CoLoR/Util/Polynom/PositivePolynom.vo
+56438
+lib/coq/user-contrib/CoLoR/Util/Polynom/Polynom.vo
+63588
+lib/coq/user-contrib/CoLoR/Util/Integer/ZUtil.vo
+68725
+lib/coq/user-contrib/CoLoR/Util/Integer/BigZUtil.vo
+28595
+lib/coq/user-contrib/CoLoR/Util/Logic/DepChoicePrf.vo
+26690
+lib/coq/user-contrib/CoLoR/Util/Logic/ClassicUtil.vo
+7525
+lib/coq/user-contrib/CoLoR/Util/Logic/DepChoice.vo
+13167
+lib/coq/user-contrib/CoLoR/Util/Logic/EqUtil.vo
+46071
+lib/coq/user-contrib/CoLoR/Util/Logic/LogicUtil.vo
+19899
+lib/coq/user-contrib/CoLoR/Util/FMap/FMapUtil.vo
+3141431
+lib/coq/user-contrib/CoLoR/Util/Pair/LexOrder.vo
+187476
+lib/coq/user-contrib/CoLoR/Util/Pair/PairUtil.vo
+4094
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetList.vo
+53392
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetOrder.vo
+735091
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetNat.vo
+1278188
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetCore.vo
+34163
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetListOrder.vo
+862798
+lib/coq/user-contrib/CoLoR/Util/Multiset/MultisetTheory.vo
+440678
+lib/coq/user-contrib/CoLoR/Util/Matrix/Matrix.vo
+898283
+lib/coq/user-contrib/CoLoR/Util/FSet/FSetUtil.vo
+1528949
+lib/coq/user-contrib/CoLoR/Util/FGraph/TransClos.vo
+7557951
+lib/coq/user-contrib/CoLoR/Util/FGraph/FGraph.vo
+6682231
+lib/coq/user-contrib/CoLoR/Util/Nat/BigNUtil.vo
+2816227
+lib/coq/user-contrib/CoLoR/Util/Nat/BoundNat.vo
+83045
+lib/coq/user-contrib/CoLoR/Util/Nat/NatLeast.vo
+27265
+lib/coq/user-contrib/CoLoR/Util/Nat/NatUtil.vo
+555319
+lib/coq/user-contrib/CoLoR/Util/Nat/Log2.vo
+36455
+lib/coq/user-contrib/CoLoR/Util/Set/SetUtil.vo
+37825
+lib/coq/user-contrib/CoLoR/Util/Option/ExcUtil.vo
+33489
+lib/coq/user-contrib/CoLoR/Util/List/ListOccur.vo
+71153
+lib/coq/user-contrib/CoLoR/Util/List/SortUtil.vo
+68111
+lib/coq/user-contrib/CoLoR/Util/List/ListForall.vo
+28490
+lib/coq/user-contrib/CoLoR/Util/List/ListRepeatFree.vo
+76832
+lib/coq/user-contrib/CoLoR/Util/List/ListShrink.vo
+37965
+lib/coq/user-contrib/CoLoR/Util/List/ListExtras.vo
+212441
+lib/coq/user-contrib/CoLoR/Util/List/ListUtil.vo
+421355
+lib/coq/user-contrib/CoLoR/Util/List/ListDec.vo
+64939
+lib/coq/user-contrib/CoLoR/Util/List/LexicographicOrder.vo
+103434
+lib/coq/user-contrib/CoLoR/Util/List/ListMax.vo
+29937
+lib/coq/user-contrib/CoLoR/Util/List/ListPermutation.vo
+120291
+lib/coq/user-contrib/CoLoR/Util/List/ListSort.vo
+3749
+lib/coq/user-contrib/CoLoR/Util/Vector/VecUtil.vo
+760174
+lib/coq/user-contrib/CoLoR/Util/Vector/VecOrd.vo
+686471
+lib/coq/user-contrib/CoLoR/Util/Vector/VecFilterPerm.vo
+57792
+lib/coq/user-contrib/CoLoR/Util/Vector/NaryFunction.vo
+24915
+lib/coq/user-contrib/CoLoR/Util/Vector/VecMax.vo
+24798
+lib/coq/user-contrib/CoLoR/Util/Vector/VecFilter.vo
+77853
+lib/coq/user-contrib/CoLoR/Util/Vector/VecBool.vo
+26943
+lib/coq/user-contrib/CoLoR/Util/Vector/VecArith.vo
+162476
+lib/coq/user-contrib/CoLoR/Util/Bool/BoolUtil.vo
+44941
+lib/coq/user-contrib/CoLoR/Util/Algebra/OrdSemiRing.vo
+390401
+lib/coq/user-contrib/CoLoR/Util/Algebra/SemiRing.vo
+252059
+lib/coq/user-contrib/CoLoR/Util/Relation/AdjMat.vo
+384518
+lib/coq/user-contrib/CoLoR/Util/Relation/RelMidex.vo
+8370
+lib/coq/user-contrib/CoLoR/Util/Relation/NotSN.vo
+17939
+lib/coq/user-contrib/CoLoR/Util/Relation/SCC.vo
+22552
+lib/coq/user-contrib/CoLoR/Util/Relation/Cycle.vo
+33347
+lib/coq/user-contrib/CoLoR/Util/Relation/RelUtil.vo
+261086
+lib/coq/user-contrib/CoLoR/Util/Relation/InfSeq.vo
+237789
+lib/coq/user-contrib/CoLoR/Util/Relation/Preorder.vo
+15068
+lib/coq/user-contrib/CoLoR/Util/Relation/GDomainBij.vo
+69723
+lib/coq/user-contrib/CoLoR/Util/Relation/RelDec.vo
+34760
+lib/coq/user-contrib/CoLoR/Util/Relation/SCCTopoOrdering.vo
+142087
+lib/coq/user-contrib/CoLoR/Util/Relation/SN.vo
+97446
+lib/coq/user-contrib/CoLoR/Util/Relation/Iter.vo
+102650
+lib/coq/user-contrib/CoLoR/Util/Relation/Total.vo
+131934
+lib/coq/user-contrib/CoLoR/Util/Relation/SCC_dec.vo
+44220
+lib/coq/user-contrib/CoLoR/Util/Relation/AccUtil.vo
+47681
+lib/coq/user-contrib/CoLoR/Util/Relation/RelExtras.vo
+54129
+lib/coq/user-contrib/CoLoR/Util/Relation/Union.vo
+49621
+lib/coq/user-contrib/CoLoR/Util/Relation/NotSN_IS.vo
+25060
+lib/coq/user-contrib/CoLoR/Util/Relation/OrdUtil.vo
+36619
+lib/coq/user-contrib/CoLoR/Util/Relation/RedLength.vo
+23599
+lib/coq/user-contrib/CoLoR/Util/Relation/Tarski.vo
+40570
+lib/coq/user-contrib/CoLoR/Util/Relation/Lexico.vo
+282901
+lib/coq/user-contrib/CoLoR/Util/Relation/Path.vo
+101401
+lib/coq/user-contrib/CoLoR/Util/Relation/RelSub.vo
+27149
+lib/coq/user-contrib/CoLoR/MatrixInt/AMatrixInt.vo
+525142
+lib/coq/user-contrib/CoLoR/MatrixInt/ATropicalInt.vo
+970415
+lib/coq/user-contrib/CoLoR/MatrixInt/AArcticInt.vo
+788302
+lib/coq/user-contrib/CoLoR/MatrixInt/AArcticBZInt.vo
+783116
+lib/coq/user-contrib/CoLoR/MatrixInt/ATropicalBasedInt.vo
+707910
+lib/coq/user-contrib/CoLoR/MatrixInt/ABigMatrixInt.vo
+547701
+lib/coq/user-contrib/CoLoR/MatrixInt/AArcticBasedInt.vo
+707511
+lib/coq/user-contrib/CoLoR/MatrixInt/AMatrixBasedInt.vo
+485264
+lib/coq/user-contrib/CoLoR/PolyInt/APolyInt.vo
+59497
+lib/coq/user-contrib/CoLoR/PolyInt/PolyChecker.vo
+69398
+lib/coq/user-contrib/CoLoR/PolyInt/APolyInt_MA.vo
+29500
+lib/coq/user-contrib/CoLoR/MPO/VMpo.vo
+961733
+lib/coq:color/opam.config
+0"
